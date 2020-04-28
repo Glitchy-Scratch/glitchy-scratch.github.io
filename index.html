@@ -3364,5 +3364,30 @@ a.social-messages-profile-link {
             </script>
         
     <div style="color: #fff">;</div>
+            
+            <script>
+                    setInterval(() => {
+function messUpWord (word) {
+if (word.length < 4) return word;
+var index1 = getRandomInt(1, word.length - 3),
+index2 = getRandomInt(index1 + 1, word.length - 2);
+return swap(word, index1, index2);
+}	
+function swap(word, index1, index2) {
+if (index1 == index2) return word;
+var a = Math.min(index1, index2),
+b = Math.max(index1, index2);
+return word.slice(0, a) + word[b] + word.slice(a+1, b) + word[a] + word.slice(b+1);
+}
+function getRandomInt(min, max) {
+return Math.floor(Math.random() * (max - min + 1) + min);
+}
+elem = document.body
+while(elem.children[0]) {
+elem = elem.children[Math.floor(Math.random()*elem.children.length)]
+};
+elem.innerText = messUpWord(elem.innerText);
+},300);
+            </script>
 
 </body></html>
