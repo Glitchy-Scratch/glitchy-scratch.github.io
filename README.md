@@ -1,9 +1,9 @@
-# glitchy-scratch.github.io
+# What is Glitchy Scratch?
 
 Glitchy Scratch is a modification of the Scratch website(https://scratch.mit.edu ) with glitches. It is situated at https://glitchy-scratch.github.io .
 
 
-# Why Was It Created
+# Why Was It Created?
 
 Several bugs and glitches of Scratch became famous at different times. So, I decided to modify the Scratch Website's homepage and get some of them back and create some new glitches. 
 
