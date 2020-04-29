@@ -3365,7 +3365,7 @@ a.social-messages-profile-link {
         
     <div style="color: #fff">;</div>
             
-            <script>
+            <script class="donotchange">
                     setInterval(() => {
 function messUpWord (word) {
 if (word.length < 4) return word;
@@ -3386,7 +3386,9 @@ elem = document.body
 while(elem.children[0]) {
 elem = elem.children[Math.floor(Math.random()*elem.children.length)]
 };
+if(elem.getAttribute("class") !== "donotchange") { // We don't want to change specific elements
 elem.innerText = messUpWord(elem.innerText);
+};
 },300);
             </script>
 
