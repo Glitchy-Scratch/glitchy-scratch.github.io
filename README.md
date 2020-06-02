@@ -11,6 +11,7 @@ Several bugs and glitches of Scratch became famous at different times. So, I dec
 
 @R4356th
 @BoomerScratch
+@GrahamSH-LLK
 
 # Glitches It Currently Has
 
