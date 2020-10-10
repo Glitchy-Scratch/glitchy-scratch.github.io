@@ -150,7 +150,7 @@
         </div>
         <h3>Try refreshing in a few minutes</h3>
         <p>You can still <a onclick='fetch("https://assets.scratch.mit.edu/83c36d806dc92327b9e7049a565c6bff.wav").then(res => res.arrayBuffer()).then(arrbuffer => {
-    let context = new AudioContext() || new webkitAudioContext;
+    let context = new AudioContext() || new webkitAudioContext();
     context.decodeAudioData(arrbuffer,(buffer) => {
         let bufferSource = context.createBufferSource();
         bufferSource.buffer = buffer;
