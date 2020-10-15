@@ -434,7 +434,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Welcome to Scratch!",
     "welcome.learn": "Learn how to make a project in Scratch",
     "welcome.tryOut": "Try out starter projects",
-    "welcome.connect": "Connect with other Scratchers"
+    "welcome.connect": "Connect with other Scratchers",
   },
   ar: {
     "general.accountSettings": "إعدادات الحساب",
@@ -865,7 +865,7 @@ window._messages = {
     "welcome.welcomeToScratch": "أهلًا بك في سكراتش!",
     "welcome.learn": "تعلَّم كيفية إنشاء مشروع في سكراتش",
     "welcome.tryOut": "جرب مشاريع للمبتدئين",
-    "welcome.connect": "تواصل مع مستخدمي سكراتش"
+    "welcome.connect": "تواصل مع مستخدمي سكراتش",
   },
   am: {
     "general.accountSettings": "መለያ ማደራጃ",
@@ -1293,7 +1293,7 @@ window._messages = {
     "welcome.welcomeToScratch": "ወደ Scratch እንኳን ደህና መጡ!",
     "welcome.learn": "እንዴት Scratch ላይ ፕሮጀክት መስራት እንደሚቻል ይማሩ",
     "welcome.tryOut": "የጀማሪ ፕሮጀክቶችን ይሞክሩ",
-    "welcome.connect": "ከሌሎች የScratch ተጠቃሚዎች ጋር ይገናኙ"
+    "welcome.connect": "ከሌሎች የScratch ተጠቃሚዎች ጋር ይገናኙ",
   },
   az: {
     "general.accountSettings": "Hesab parametrləri",
@@ -1733,7 +1733,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Skreç-ə Xoş Gəlmisiniz!",
     "welcome.learn": "Skreç-də layihəni necə hazırlamağı öyrənin",
     "welcome.tryOut": "Yeni başlayanlar üçün layihələr",
-    "welcome.connect": "Digər Skreç-lilərlə bağlanmaq"
+    "welcome.connect": "Digər Skreç-lilərlə bağlanmaq",
   },
   id: {
     "general.accountSettings": "Pengaturan akun",
@@ -2179,7 +2179,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Selamat datang di Scratch!",
     "welcome.learn": "Belajar cara membuat karya di Scratch",
     "welcome.tryOut": "Coba karya pemula",
-    "welcome.connect": "Kenalan dengan Scratcher lain"
+    "welcome.connect": "Kenalan dengan Scratcher lain",
   },
   ca: {
     "general.accountSettings": "Configuració del compte",
@@ -2629,7 +2629,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Benvingut a Scratch!",
     "welcome.learn": "Aprèn a crear un projecte amb Scratch",
     "welcome.tryOut": "Prova els projectes d'inici",
-    "welcome.connect": "Connecta amb altres Scratchers"
+    "welcome.connect": "Connecta amb altres Scratchers",
   },
   be: {
     "general.accountSettings": "Наладкі профілю",
@@ -3068,7 +3068,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Вітаем у Scratch!",
     "welcome.learn": "Даведацца як зрабіць праект у Scratch",
     "welcome.tryOut": "Паспрабуй стартавыя праекты",
-    "welcome.connect": "Звязацца з іншымі Scratchers"
+    "welcome.connect": "Звязацца з іншымі Scratchers",
   },
   bg: {
     "general.accountSettings": "Настройки на акаунта",
@@ -3510,7 +3510,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Добре дошли в Scratch!",
     "welcome.learn": "Вижте как да създадете проект",
     "welcome.tryOut": "Опитайте началните проекти",
-    "welcome.connect": "Свържете се с другите потребители"
+    "welcome.connect": "Свържете се с другите потребители",
   },
   cs: {
     "general.accountSettings": "Nastavení účtu",
@@ -3945,7 +3945,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Vítáme tě ve Scratchi!",
     "welcome.learn": "Nauč se jak vytvořit projekt ve Scratchi",
     "welcome.tryOut": "Vyzkoušej projekty pro začátečníky",
-    "welcome.connect": "Spoj se s ostatními Scratchery"
+    "welcome.connect": "Spoj se s ostatními Scratchery",
   },
   cy: {
     "general.accountSettings": "Gosodiadau cyfrif",
@@ -4387,7 +4387,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Croeso i Scratch!",
     "welcome.learn": "Dysgu sut i greu project yn Scratch",
     "welcome.tryOut": "Rhoi cynnig ar ein projectau cychwynnol",
-    "welcome.connect": "Cysylltu â Scratchwyr eraill"
+    "welcome.connect": "Cysylltu â Scratchwyr eraill",
   },
   da: {
     "general.accountSettings": "Kontoindstillinger",
@@ -4823,7 +4823,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Velkommen til Scratch!",
     "welcome.learn": "Lær hvordan man laver et projekt i Scratch",
     "welcome.tryOut": "Prøv nogle begynder projekter",
-    "welcome.connect": "Få kontakt med andre Scratchere"
+    "welcome.connect": "Få kontakt med andre Scratchere",
   },
   de: {
     "general.accountSettings": "Kontoeinstellungen",
@@ -5275,7 +5275,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Willkommen bei Scratch!",
     "welcome.learn": "Lerne, wie man in Scratch ein Projekt erstellt",
     "welcome.tryOut": "Probiere die Einstiegsprojekte aus",
-    "welcome.connect": "Nimm mit anderen Scratchern Kontakt auf"
+    "welcome.connect": "Nimm mit anderen Scratchern Kontakt auf",
   },
   et: {
     "general.accountSettings": "Konto seaded",
@@ -5711,7 +5711,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Tere tulemast Scratchi!",
     "welcome.learn": "Vaata, kuidas teha Scratchi projekti",
     "welcome.tryOut": "Proovi stardiprojekte",
-    "welcome.connect": "Võta ühendust teiste scratchijatega"
+    "welcome.connect": "Võta ühendust teiste scratchijatega",
   },
   el: {
     "general.accountSettings": "Ρυθμίσεις Λογαριασμού",
@@ -6161,7 +6161,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Καλωσορίσατε στο Scratch!",
     "welcome.learn": "Μάθετε πως να δημιουργήσετε ένα έργο στο Scratch",
     "welcome.tryOut": "Δοκιμάστε τα εισαγωγικά έργα",
-    "welcome.connect": "Επικοινωνήστε με άλλους χρήστες"
+    "welcome.connect": "Επικοινωνήστε με άλλους χρήστες",
   },
   es: {
     "general.accountSettings": "Configuración de la cuenta",
@@ -6606,7 +6606,7 @@ window._messages = {
     "welcome.welcomeToScratch": "¡Bienvenido a Scratch!",
     "welcome.learn": "Aprende a hacer un proyecto en Scratch",
     "welcome.tryOut": "Prueba los proyectos de inicio",
-    "welcome.connect": "Conéctate con otros Scratchers"
+    "welcome.connect": "Conéctate con otros Scratchers",
   },
   "es-419": {
     "general.accountSettings": "Configuración de la cuenta",
@@ -7044,7 +7044,7 @@ window._messages = {
     "welcome.welcomeToScratch": "¡Bienvenido a Scratch!",
     "welcome.learn": "Aprende a hacer un proyecto en Scratch",
     "welcome.tryOut": "Prueba los proyectos de inicio",
-    "welcome.connect": "Conéctate con otros Scratchers"
+    "welcome.connect": "Conéctate con otros Scratchers",
   },
   eu: {
     "general.accountSettings": "Kontuaren ezarpenak",
@@ -7482,7 +7482,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Ongi etorri Scratchera!",
     "welcome.learn": "Ikasi nola egiten den proiektu bat Scratchen",
     "welcome.tryOut": "Haserako proiektuekin proba egin",
-    "welcome.connect": "Beste Scratcherrekin konektatu"
+    "welcome.connect": "Beste Scratcherrekin konektatu",
   },
   fa: {
     "general.accountSettings": "تنظیمات حساب کاربری",
@@ -7920,7 +7920,7 @@ window._messages = {
     "welcome.welcomeToScratch": "به اسکرچ خوش آمدید،",
     "welcome.learn": "یاد بگیرید که چطور می‌شود در اسکرچ پروژه‌ای ساخت",
     "welcome.tryOut": "پروژه‌هایی برای مبتدیان را ببینید",
-    "welcome.connect": "به بقیه اسکرچرها متصل شو"
+    "welcome.connect": "به بقیه اسکرچرها متصل شو",
   },
   ga: {
     "general.accountSettings": "Socruithe an chuntais",
@@ -8369,7 +8369,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Fáilte go Scratch!",
     "welcome.learn": "Foghlaim conas tabhairt faoi thionscadal i Scratch",
     "welcome.tryOut": "Baint triail as tionscadail tosaigh",
-    "welcome.connect": "Ceangal le Scratchálaithe eile"
+    "welcome.connect": "Ceangal le Scratchálaithe eile",
   },
   fr: {
     "general.accountSettings": "Paramètres du compte",
@@ -8822,7 +8822,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Bienvenue sur Scratch!",
     "welcome.learn": "Apprendre comment faire un projet dans Scratch",
     "welcome.tryOut": "Essayer des projets de démarrage",
-    "welcome.connect": "Connectez-vous avec d'autres Scratchers"
+    "welcome.connect": "Connectez-vous avec d'autres Scratchers",
   },
   gl: {
     "general.accountSettings": "Configuración da conta",
@@ -9266,7 +9266,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Benvido a Scratch!",
     "welcome.learn": "Aprende como facer un proxecto en Scratch",
     "welcome.tryOut": "Proba os proxectos de arranque",
-    "welcome.connect": "Conectar con outros Scratchers"
+    "welcome.connect": "Conectar con outros Scratchers",
   },
   gd: {
     "general.accountSettings": "Roghainnean a’ chunntais",
@@ -9732,7 +9732,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Fàilte gu Scratch!",
     "welcome.learn": "Ionnsaich mar a nì tu pròiseact ann an Scratch",
     "welcome.tryOut": "Feuch ri pròiseact tòiseachaidh",
-    "welcome.connect": "Ceangail ri Luchd-Scratch eile"
+    "welcome.connect": "Ceangail ri Luchd-Scratch eile",
   },
   ko: {
     "general.accountSettings": "계정 설정",
@@ -10176,7 +10176,7 @@ window._messages = {
     "welcome.welcomeToScratch": "스크래치에 오신것을 환영합니다!",
     "welcome.learn": "스크래치에서 프로젝트를 어떻게 만드는지 배워봅시다.",
     "welcome.tryOut": "초보자용 프로젝트 만들어 보기",
-    "welcome.connect": "다른 스크래쳐와 연결하기"
+    "welcome.connect": "다른 스크래쳐와 연결하기",
   },
   hr: {
     "general.accountSettings": "Postavke računa",
@@ -10613,7 +10613,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Welcome to Scratch!",
     "welcome.learn": "Learn how to make a project in Scratch",
     "welcome.tryOut": "Try out starter projects",
-    "welcome.connect": "Connect with other Scratchers"
+    "welcome.connect": "Connect with other Scratchers",
   },
   zu: {
     "general.accountSettings": "Izinhlelo zokulungisa akhawunti  ",
@@ -11053,7 +11053,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Siyakwamukela ku Scratch!",
     "welcome.learn": "Fudna ukwanza iProject ku Scratch",
     "welcome.tryOut": "Zama ukuqala umsebenzi",
-    "welcome.connect": "Xhumana nabanyo oScratchers"
+    "welcome.connect": "Xhumana nabanyo oScratchers",
   },
   he: {
     "general.accountSettings": "הגדרות חשבון",
@@ -11485,7 +11485,7 @@ window._messages = {
     "welcome.welcomeToScratch": "ברוכים הבאים לסקראץ'!",
     "welcome.learn": "למדו כיצד להכין פרויקט בסקראץ'",
     "welcome.tryOut": "נסו פרויקטים התחלתיים",
-    "welcome.connect": "התחברו למשתמשים אחרים"
+    "welcome.connect": "התחברו למשתמשים אחרים",
   },
   is: {
     "general.accountSettings": "Stillingar reiknings",
@@ -11921,7 +11921,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Velkomin á Scratch!",
     "welcome.learn": "Lærðu að búa til verkefni í Scratch",
     "welcome.tryOut": "Prófa verkefni fyrir byrjendur",
-    "welcome.connect": "Tengjast öðrum notendum"
+    "welcome.connect": "Tengjast öðrum notendum",
   },
   it: {
     "general.accountSettings": "Impostazioni account",
@@ -12376,7 +12376,7 @@ window._messages = {
     "welcome.learn": "Impara come creare un progetto in Scratch",
     "welcome.tryOut": 'Prova i progetti "Per Iniziare"',
     "welcome.connect":
-      "Entra in contatto con altri membri delle comunità di Scratch"
+      "Entra in contatto con altri membri delle comunità di Scratch",
   },
   ka: {
     "general.accountSettings": "ანგარიშის პარამეტრები",
@@ -12817,7 +12817,7 @@ window._messages = {
     "welcome.welcomeToScratch": "კეთილი იყოს შენი მობრძანება Scratch-ში!",
     "welcome.learn": "ისწავლე პროექტის შექმნა Scratch-ში",
     "welcome.tryOut": "სცადე სასტარტო პროექტები",
-    "welcome.connect": "დაუკავშირდი სხვა სკრეთჩერებს"
+    "welcome.connect": "დაუკავშირდი სხვა სკრეთჩერებს",
   },
   sw: {
     "general.accountSettings": "Mipangilio za akaunti",
@@ -13261,7 +13261,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Karibu kwenye Scratch",
     "welcome.learn": "Jifunze jinsi ya kutengeneza mradi katika Scratch",
     "welcome.tryOut": "Jaribu miradi ya kuanzia",
-    "welcome.connect": "Ungana na wanaScratch wengine"
+    "welcome.connect": "Ungana na wanaScratch wengine",
   },
   ht: {
     "general.accountSettings": "Reglaj kont",
@@ -13698,7 +13698,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Bienveni a Scratch,",
     "welcome.learn": "Learn how to make a project in Scratch",
     "welcome.tryOut": "Try out starter projects",
-    "welcome.connect": "Connect with other Scratchers"
+    "welcome.connect": "Connect with other Scratchers",
   },
   ckb: {
     "general.accountSettings": "ڕێکخستنەکانی هەژمار",
@@ -14134,7 +14134,7 @@ window._messages = {
     "welcome.welcomeToScratch": "بەخێربێیت بۆ سکڕاچ!",
     "welcome.learn": "فێربە کە چۆن پڕۆژەیەک لە سکڕاچ دروست دەکەیت",
     "welcome.tryOut": "پڕۆژە دەستپێکەکان تاقی بکەوە",
-    "welcome.connect": "لەگەڵ سکڕاچەرەکانی تر پەیوەندی بکە"
+    "welcome.connect": "لەگەڵ سکڕاچەرەکانی تر پەیوەندی بکە",
   },
   lv: {
     "general.accountSettings": "Konta iestatījumi",
@@ -14567,7 +14567,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Esi sveikts Scratch!",
     "welcome.learn": "Iemācies, kā veidot Scratch projektu",
     "welcome.tryOut": "Izmēģini mūsu iesācēju projektus",
-    "welcome.connect": "Sazinies ar citiem Scratch lietotājiem"
+    "welcome.connect": "Sazinies ar citiem Scratch lietotājiem",
   },
   lt: {
     "general.accountSettings": "Naudotojo nustatymai",
@@ -15004,7 +15004,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Welcome to Scratch!",
     "welcome.learn": "Learn how to make a project in Scratch",
     "welcome.tryOut": "Try out starter projects",
-    "welcome.connect": "Connect with other Scratchers"
+    "welcome.connect": "Connect with other Scratchers",
   },
   hu: {
     "general.accountSettings": "Fiókbeállítások",
@@ -15444,7 +15444,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Üdv a Scratch-ben!",
     "welcome.learn": "Tanuld meg, hogyan hozz lére egy projektet a Scratch-ben",
     "welcome.tryOut": "Próbáld ki a kezdő projekteket",
-    "welcome.connect": "Lépj kapcsolatba más Scratch-előkkel"
+    "welcome.connect": "Lépj kapcsolatba más Scratch-előkkel",
   },
   mi: {
     "general.accountSettings": "Ngā tautuhinga pūkete",
@@ -15892,7 +15892,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Nau mai ki Scratch!",
     "welcome.learn": "Ākona mai te hanga i tētahi kaupapa Scratch",
     "welcome.tryOut": "Whakamātauhia ngā kaupapa tīmata",
-    "welcome.connect": "Hono atu ki Scratcher kē atu"
+    "welcome.connect": "Hono atu ki Scratcher kē atu",
   },
   nl: {
     "general.accountSettings": "Accountinstellingen",
@@ -16338,7 +16338,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Welkom bij Scratch!",
     "welcome.learn": "Leer hoe je een project maakt in Scratch",
     "welcome.tryOut": "Probeer de starterprojecten",
-    "welcome.connect": "Maak contact met andere Scratchers"
+    "welcome.connect": "Maak contact met andere Scratchers",
   },
   ja: {
     "general.accountSettings": "アカウント設定",
@@ -16783,7 +16783,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Scratchへようこそ!",
     "welcome.learn": "Scratchでプロジェクトを作るには",
     "welcome.tryOut": "初心者向けプロジェクトを試す",
-    "welcome.connect": "他のScratcherと交流する"
+    "welcome.connect": "他のScratcherと交流する",
   },
   "ja-Hira": {
     "general.accountSettings": "アカウントせってい",
@@ -17242,7 +17242,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Scratchへようこそ!",
     "welcome.learn": "Scratchでプロジェクトをつくるには",
     "welcome.tryOut": "しょしんしゃむけプロジェクトをためす",
-    "welcome.connect": "ほかのScratcherとこうりゅうする"
+    "welcome.connect": "ほかのScratcherとこうりゅうする",
   },
   nb: {
     "general.accountSettings": "Brukerinnstillinger",
@@ -17680,7 +17680,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Velkommen til Scratch!",
     "welcome.learn": "Lær å lage ditt eget program med Scratch",
     "welcome.tryOut": "For nybegynnere",
-    "welcome.connect": "Ta kontakt med andre Scratchere"
+    "welcome.connect": "Ta kontakt med andre Scratchere",
   },
   nn: {
     "general.accountSettings": "Innstillingar",
@@ -18117,7 +18117,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Velkommen til Scratch!",
     "welcome.learn": "Lær å laga ditt eige program med Scratch",
     "welcome.tryOut": "For nybyrjarar",
-    "welcome.connect": "Ta kontakt med andre scratcharar"
+    "welcome.connect": "Ta kontakt med andre scratcharar",
   },
   uz: {
     "general.accountSettings": "Hisob sozlamalari",
@@ -18565,7 +18565,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Scratch dasturiga xush kelibsiz!",
     "welcome.learn": "Scratchda loyihalar yaratishni o‘rganing",
     "welcome.tryOut": "Boshlang‘ich loyihalarni sinab ko‘ring",
-    "welcome.connect": "Scratch foydalanuvchilari bilan bog‘lanish"
+    "welcome.connect": "Scratch foydalanuvchilari bilan bog‘lanish",
   },
   th: {
     "general.accountSettings": "ตั้งค่าบัญชี",
@@ -19001,7 +19001,7 @@ window._messages = {
     "welcome.welcomeToScratch": "ยินดีต้อนรับสู่ Scratch!",
     "welcome.learn": "เรียนรู้วิธีสร้างโครงงานใน Scratch",
     "welcome.tryOut": "ทดลองทำโครงงานเริ่มต้น",
-    "welcome.connect": "เชื่อมต่อกับ Scratchers อื่นๆ"
+    "welcome.connect": "เชื่อมต่อกับ Scratchers อื่นๆ",
   },
   km: {
     "general.accountSettings": "ការកំណត់គណនី",
@@ -19435,7 +19435,7 @@ window._messages = {
     "welcome.welcomeToScratch": "សូមស្វាគមន៍មកកាន់ Scratch!",
     "welcome.learn": "រៀនពីការបង្កើត​កិច្ចការ​ក្នុង Scratch",
     "welcome.tryOut": "សាកល្បងកិច្ចការស្រួលៗ",
-    "welcome.connect": "ទាក់ទងជាមួយអ្នកប្រើ​ Scratch ផ្សេងទៀត"
+    "welcome.connect": "ទាក់ទងជាមួយអ្នកប្រើ​ Scratch ផ្សេងទៀត",
   },
   pl: {
     "general.accountSettings": "Ustawienia konta",
@@ -19874,7 +19874,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Witamy w Scratch!",
     "welcome.learn": "Naucz się tworzyć projekty w Scratch'u",
     "welcome.tryOut": "Wypróbuj nasze projekty na start",
-    "welcome.connect": "Połącz z innymi Scratchersami"
+    "welcome.connect": "Połącz z innymi Scratchersami",
   },
   pt: {
     "general.accountSettings": "Configurações da conta",
@@ -20326,7 +20326,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Bem-vinda(o) ao Scratch!",
     "welcome.learn": "Aprenda como criar um projecto no Scratch",
     "welcome.tryOut": "Experimente os projectos de arranque",
-    "welcome.connect": "Ligue-se a outros Scratchadores"
+    "welcome.connect": "Ligue-se a outros Scratchadores",
   },
   "pt-br": {
     "general.accountSettings": "Configurações de conta",
@@ -20772,7 +20772,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Bem-vindo ao Scratch!",
     "welcome.learn": "Aprenda como criar um projeto no Scratch",
     "welcome.tryOut": "Experimente os projetos para iniciantes",
-    "welcome.connect": "Conecte-se com outros Scratchers"
+    "welcome.connect": "Conecte-se com outros Scratchers",
   },
   rap: {
     "general.accountSettings": "Configuración de la cuenta",
@@ -21208,7 +21208,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Welcome to Scratch!",
     "welcome.learn": "Learn how to make a project in Scratch",
     "welcome.tryOut": "Try out starter projects",
-    "welcome.connect": "Connect with other Scratchers"
+    "welcome.connect": "Connect with other Scratchers",
   },
   ro: {
     "general.accountSettings": "Setările contului",
@@ -21644,7 +21644,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Bun venit in Scratch!",
     "welcome.learn": "Învață cum să creezi un proiect în Scratch",
     "welcome.tryOut": "Încearcă proiectele noastre pentru începători",
-    "welcome.connect": "Conecteaza-te cu un Scratcher"
+    "welcome.connect": "Conecteaza-te cu un Scratcher",
   },
   ru: {
     "general.accountSettings": "Настройки учётной записи",
@@ -22083,7 +22083,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Добро пожаловать в Scratch!",
     "welcome.learn": "Научись создавать проекты в Scratch",
     "welcome.tryOut": "Попробуй стартовые проекты",
-    "welcome.connect": "Связаться со скретчерами"
+    "welcome.connect": "Связаться со скретчерами",
   },
   sr: {
     "general.accountSettings": "Подешавања налога",
@@ -22516,7 +22516,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Добродошао у Скрач!",
     "welcome.learn": "Научи како да направиш пројекат у Скрачу",
     "welcome.tryOut": "Пробај наше почетничке пројекте",
-    "welcome.connect": "Повежи се са Скрачерима"
+    "welcome.connect": "Повежи се са Скрачерима",
   },
   sk: {
     "general.accountSettings": "Nastavenia účtu",
@@ -22951,7 +22951,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Vitajte v Scratchi!",
     "welcome.learn": "Nauč sa vytvárať projekty v Scratch",
     "welcome.tryOut": "Vyskúšaj štartovacie projekty",
-    "welcome.connect": "Spoj sa so Scratcherom"
+    "welcome.connect": "Spoj sa so Scratcherom",
   },
   sl: {
     "general.accountSettings": "Nastavitve računa",
@@ -23391,7 +23391,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Dobrodošel/dobrodošla v Scratchu!",
     "welcome.learn": "Nauči se ustvariti projekt v Scratchu",
     "welcome.tryOut": "Preizkusi projekte za začetnike",
-    "welcome.connect": "Poveži se z ostalimi Scratcherji"
+    "welcome.connect": "Poveži se z ostalimi Scratcherji",
   },
   fi: {
     "general.accountSettings": "Tunnuksen asetukset",
@@ -23829,7 +23829,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Tervetuloa Scratchiin!",
     "welcome.learn": "Lue kuinka tehdä projekteja Scratchissa",
     "welcome.tryOut": "Kokeile aloitusprojekteja",
-    "welcome.connect": "Hae muita scratchaajia"
+    "welcome.connect": "Hae muita scratchaajia",
   },
   sv: {
     "general.accountSettings": "Kontoinställningar",
@@ -24271,7 +24271,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Välkommen till Scratch!",
     "welcome.learn": "Lär dig hur man gör ett projekt i Scratch",
     "welcome.tryOut": "Testa vårt nybörjarprojekt",
-    "welcome.connect": "Kontakt med en Scratchare"
+    "welcome.connect": "Kontakt med en Scratchare",
   },
   vi: {
     "general.accountSettings": "Cài đặt tài khoản",
@@ -24712,7 +24712,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Chào mừng đến với Scratch!",
     "welcome.learn": "Tìm hiểu cách tạo chương trình trong Scratch",
     "welcome.tryOut": "Trải nghiệm những chương trình khởi đầu",
-    "welcome.connect": "Kết nối với người dùng Scratch"
+    "welcome.connect": "Kết nối với người dùng Scratch",
   },
   tr: {
     "general.accountSettings": "Hesap ayarları",
@@ -25147,7 +25147,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Scratch'a Hoşgeldin!",
     "welcome.learn": "Scratch'de bir proje yapmayı öğren",
     "welcome.tryOut": "Başlangıç projelerini dene",
-    "welcome.connect": "Diğer Scratch'çiler ile bağlantı kur"
+    "welcome.connect": "Diğer Scratch'çiler ile bağlantı kur",
   },
   uk: {
     "general.accountSettings": "Налаштування облікового запису",
@@ -25581,7 +25581,7 @@ window._messages = {
     "welcome.welcomeToScratch": "Ласкаво просимо до Скретчу!",
     "welcome.learn": "Дізнатись як створити проект у Скретчі",
     "welcome.tryOut": "Спробувати прості проекти",
-    "welcome.connect": "Спілкуватися з іншими скретчерами"
+    "welcome.connect": "Спілкуватися з іншими скретчерами",
   },
   "zh-cn": {
     "general.accountSettings": "账号设置",
@@ -25993,7 +25993,7 @@ window._messages = {
     "welcome.welcomeToScratch": "欢迎进入Scratch社区!",
     "welcome.learn": "学习如何在 Scratch 中进行创作",
     "welcome.tryOut": "试试入门项目范例",
-    "welcome.connect": "与Scratch使用者保持联系"
+    "welcome.connect": "与Scratch使用者保持联系",
   },
   "zh-tw": {
     "general.accountSettings": "帳戶設定",
@@ -26396,7 +26396,7 @@ window._messages = {
     "welcome.welcomeToScratch": "歡迎來到 Scratch！",
     "welcome.learn": "學習如何在 Scratch 中建立專案",
     "welcome.tryOut": "試試入門專案範例",
-    "welcome.connect": "和其他的 Scratcher 聯繫"
+    "welcome.connect": "和其他的 Scratcher 聯繫",
   },
   ab: {
     "general.accountSettings": "Аккаунт архиарақәа",
@@ -26831,6 +26831,6 @@ window._messages = {
     "welcome.welcomeToScratch": "Бзиала шәаабеит Scratch аҟны!",
     "welcome.learn": "Иеилышәкаа, Scratch аҟны апроектқәа шыҟаҵатәу ",
     "welcome.tryOut": "Иԥышәа алагаратә проектқәа",
-    "welcome.connect": "Scratcher -цәа рыҽрымадара"
-  }
+    "welcome.connect": "Scratcher -цәа рыҽрымадара",
+  },
 };

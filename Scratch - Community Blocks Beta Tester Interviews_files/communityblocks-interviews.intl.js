@@ -451,7 +451,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   ab: {
     "general.accountSettings": "Аккаунт архиарақәа",
@@ -904,7 +904,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   ar: {
     "general.accountSettings": "إعدادات الحساب",
@@ -1352,7 +1352,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   am: {
     "general.accountSettings": "መለያ ማደራጃ",
@@ -1798,7 +1798,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   az: {
     "general.accountSettings": "Hesab parametrləri",
@@ -2252,7 +2252,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   id: {
     "general.accountSettings": "Pengaturan akun",
@@ -2714,7 +2714,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Pastikan kamu telah menyalakan layanan lokasi di Chromebook atau tablet Android",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth bisa digunakan untuk menyediakan data lokasi ke aplikasi. Selain memberikan Scratch App izin untuk mengakses lokasi, lokasi juga mesti dinyalakan di pengaturan umum perangkatmu. Cari 'Lokasi' atau 'Location' di pengaturanmu dan pastikan ia telah dinyalakan. Di Chromebook cari 'Lokasi' atau 'Location' di pengaturan Google Play Store Android."
+      "Bluetooth bisa digunakan untuk menyediakan data lokasi ke aplikasi. Selain memberikan Scratch App izin untuk mengakses lokasi, lokasi juga mesti dinyalakan di pengaturan umum perangkatmu. Cari 'Lokasi' atau 'Location' di pengaturanmu dan pastikan ia telah dinyalakan. Di Chromebook cari 'Lokasi' atau 'Location' di pengaturan Google Play Store Android.",
   },
   be: {
     "general.accountSettings": "Наладкі профілю",
@@ -3169,7 +3169,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   bg: {
     "general.accountSettings": "Настройки на акаунта",
@@ -3626,7 +3626,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   ca: {
     "general.accountSettings": "Configuració del compte",
@@ -4089,7 +4089,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   cs: {
     "general.accountSettings": "Nastavení účtu",
@@ -4539,7 +4539,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Ujisti se, že máš zapnuté lokační služby na tabletu Android nebo v Chromebooku",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth může být použit k poskytnutí této aplikaci dat o poloze. Kromě povolení aplikaci Scratch App pro přístup k poloze, musí být zjišťování polohy též zapnuto v obecném nastavení tohoto zařízení. Hledej v nabídce nastavení Lokalizace, poloha, a ujisti se, že je zapnuta. Ve Chromebooku hledej Lokace v preferencích Google Play Store Android."
+      "Bluetooth může být použit k poskytnutí této aplikaci dat o poloze. Kromě povolení aplikaci Scratch App pro přístup k poloze, musí být zjišťování polohy též zapnuto v obecném nastavení tohoto zařízení. Hledej v nabídce nastavení Lokalizace, poloha, a ujisti se, že je zapnuta. Ve Chromebooku hledej Lokace v preferencích Google Play Store Android.",
   },
   cy: {
     "general.accountSettings": "Gosodiadau cyfrif",
@@ -4994,7 +4994,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Gwnewch yn siŵr eich bod wedi galluogi gwasanaethau lleoliad ar Chromebooks neu dabledi Android",
     "bluetooth.enableLocationServicesText":
-      "Mae modd defnyddio bluetooth i ddarparu data lleoliad i'r ap. Yn ogystal a darparu caniatâd i Ap Scratch i gael mynediad i leoliad, rhai i leoliad gael ei alluogi yn eich gosodiadau dyfais cyffredinol. Chwiliwch am 'Location' yn eich gosodiadau, a gwneud yn siŵr ei fod ymlaen. Ar Chromebooks chwiliwch am 'Location' yn newisiadau Android y Google Play Store."
+      "Mae modd defnyddio bluetooth i ddarparu data lleoliad i'r ap. Yn ogystal a darparu caniatâd i Ap Scratch i gael mynediad i leoliad, rhai i leoliad gael ei alluogi yn eich gosodiadau dyfais cyffredinol. Chwiliwch am 'Location' yn eich gosodiadau, a gwneud yn siŵr ei fod ymlaen. Ar Chromebooks chwiliwch am 'Location' yn newisiadau Android y Google Play Store.",
   },
   da: {
     "general.accountSettings": "Kontoindstillinger",
@@ -5446,7 +5446,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   de: {
     "general.accountSettings": "Kontoeinstellungen",
@@ -5915,7 +5915,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Aktiviere Standortdienste auf deinem Chromebook oder Android-Tablet.",
     "bluetooth.enableLocationServicesText":
-      "Du kannst deine Standortangaben auch per Bluetooth an die App übertragen. Abgesehen vom Zugriff auf deinen Standort, musst du für die Nutzung der Scratch-App auch Standortdienste in deinen allgemeinen Geräteeinstellungen aktivieren. Suche in den Einstellungen nach „Standort“ und aktiviere diesen Dienst. Auf Chromebooks suche in den Android-Präferenzen im Google Play Store nach „Standort“."
+      "Du kannst deine Standortangaben auch per Bluetooth an die App übertragen. Abgesehen vom Zugriff auf deinen Standort, musst du für die Nutzung der Scratch-App auch Standortdienste in deinen allgemeinen Geräteeinstellungen aktivieren. Suche in den Einstellungen nach „Standort“ und aktiviere diesen Dienst. Auf Chromebooks suche in den Android-Präferenzen im Google Play Store nach „Standort“.",
   },
   et: {
     "general.accountSettings": "Konto seaded",
@@ -6368,7 +6368,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   el: {
     "general.accountSettings": "Ρυθμίσεις Λογαριασμού",
@@ -6835,7 +6835,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   es: {
     "general.accountSettings": "Configuración de la cuenta",
@@ -7296,7 +7296,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   "es-419": {
     "general.accountSettings": "Configuración de la cuenta",
@@ -7750,7 +7750,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   eu: {
     "general.accountSettings": "Kontuaren ezarpenak",
@@ -8204,7 +8204,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   fa: {
     "general.accountSettings": "تنظیمات حساب کاربری",
@@ -8658,7 +8658,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "مطمئن شوید که سرویس لوکیشن روی کروم‌بوک یا تبلت اندرویدی‌تان فعال باشد.",
     "bluetooth.enableLocationServicesText":
-      "بلوتوث می‌تواند اطلاعات موقعیت مکانی را به نرم افزار بدهد. علاوه بر این برای آنکه نرم افزار اسکرچ اجازه دسترسی به موقعیت مکانی را داشته باشد، در تنظیمات دستگاه، باید موقعیت مکانی را فعال کنید. «موقعیت مکانی» و یا 'Location' را جستجو کنید و مطمئن شویدکه روشن است. در Chromebookها به دنبال 'location' در تنظیمات Google Play Store Android بگردید."
+      "بلوتوث می‌تواند اطلاعات موقعیت مکانی را به نرم افزار بدهد. علاوه بر این برای آنکه نرم افزار اسکرچ اجازه دسترسی به موقعیت مکانی را داشته باشد، در تنظیمات دستگاه، باید موقعیت مکانی را فعال کنید. «موقعیت مکانی» و یا 'Location' را جستجو کنید و مطمئن شویدکه روشن است. در Chromebookها به دنبال 'location' در تنظیمات Google Play Store Android بگردید.",
   },
   fr: {
     "general.accountSettings": "Paramètres du compte",
@@ -9126,7 +9126,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Assurez vous que les services de géolocalisation sont activés sur les tablettes Chromebook ou Android. ",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth peut être utilisé pour fournir les informations de géolocalisation à l'application. La permission d'accès à ces informations doit être donnée à l'Application Scratch, mais il faut aussi que la géolocalisation soit activée dans les paramètres généraux de votre appareil. Cherchez après \"Localisation\" dans vos paramètres, et assurez-vous qu'elle soit activée. Sur les Chromebooks, cherchez après \"Localisation\" dans les préférences Android du Google Play Store."
+      "Bluetooth peut être utilisé pour fournir les informations de géolocalisation à l'application. La permission d'accès à ces informations doit être donnée à l'Application Scratch, mais il faut aussi que la géolocalisation soit activée dans les paramètres généraux de votre appareil. Cherchez après \"Localisation\" dans vos paramètres, et assurez-vous qu'elle soit activée. Sur les Chromebooks, cherchez après \"Localisation\" dans les préférences Android du Google Play Store.",
   },
   ga: {
     "general.accountSettings": "Socruithe an chuntais",
@@ -9588,7 +9588,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Deimhnigh go bhfuil seirbhísí geoshuímh ar siúl ar Chromebook nó ar tháibléad Android",
     "bluetooth.enableLocationServicesText":
-      "Is féidir Bluetooth a úsáid chun sonraí geoshuímh a sholáthar don aip. Caithfear cead a thabhairt d'Aip Scratch do shuíomh a fheiceáil, agus geoshuíomh a chumasú i socruithe ginearálta do ghléis. Déan cuardach ar 'Location' sna socruithe agus deimhnigh go bhfuil sé cumasaithe. Ar Chromebook, cuardaigh 'Location' sna sainroghanna Android don Google Play Store."
+      "Is féidir Bluetooth a úsáid chun sonraí geoshuímh a sholáthar don aip. Caithfear cead a thabhairt d'Aip Scratch do shuíomh a fheiceáil, agus geoshuíomh a chumasú i socruithe ginearálta do ghléis. Déan cuardach ar 'Location' sna socruithe agus deimhnigh go bhfuil sé cumasaithe. Ar Chromebook, cuardaigh 'Location' sna sainroghanna Android don Google Play Store.",
   },
   gd: {
     "general.accountSettings": "Roghainnean a’ chunntais",
@@ -10065,7 +10065,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Ma tha thu air Chromebook no tablaid Android, dèan cinnteach gu bheil na seirbheisean ionaid an comas",
     "bluetooth.enableLocationServicesText":
-      "Gabhaidh Bluetooth a chleachdadh airson fiosrachadh mu d’ ionaid a thoirt dhan aplacaid. A bharrachd air ceadan a thoirt dhan aplacaid Scratch airson d’ ionad inntrigeadh, feumaidh tu an t-ionad a chur an comas ann an roghainnean coitcheann an uidheim agad. Lorg airson “Ionad” no “Loation” sna roghainnean agad agus dèan cinnteach gu bheil e air. Ma tha thu air Chromebook, lorg “Location” an an roghainnean Google Play Store Android."
+      "Gabhaidh Bluetooth a chleachdadh airson fiosrachadh mu d’ ionaid a thoirt dhan aplacaid. A bharrachd air ceadan a thoirt dhan aplacaid Scratch airson d’ ionad inntrigeadh, feumaidh tu an t-ionad a chur an comas ann an roghainnean coitcheann an uidheim agad. Lorg airson “Ionad” no “Loation” sna roghainnean agad agus dèan cinnteach gu bheil e air. Ma tha thu air Chromebook, lorg “Location” an an roghainnean Google Play Store Android.",
   },
   gl: {
     "general.accountSettings": "Configuración da conta",
@@ -10524,7 +10524,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Asegúarte de ter os servizos de localización activados en Chromebooks ou tabletas Android. ",
     "bluetooth.enableLocationServicesText":
-      'O bluetooth pode utilizarse para proporcionar os datos de localización á aplicación. Ademais de permitir o acceso á localización na aplicación de Scratch, tamén deberá estar activada na configuración xeral do teu dispositivo. Busca por "localización" na túa configuración e asegúrate que está activada. En Chromebooks busca "Localización" nos permisos en Android da tenda de Google Play.'
+      'O bluetooth pode utilizarse para proporcionar os datos de localización á aplicación. Ademais de permitir o acceso á localización na aplicación de Scratch, tamén deberá estar activada na configuración xeral do teu dispositivo. Busca por "localización" na túa configuración e asegúrate que está activada. En Chromebooks busca "Localización" nos permisos en Android da tenda de Google Play.',
   },
   ko: {
     "general.accountSettings": "계정 설정",
@@ -10979,7 +10979,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Chromebook 또는 Android 태블릿에서 위치 서비스를 사용할 수 있는지 확인하세요",
     "bluetooth.enableLocationServicesText":
-      "블루투스는 앱에게 위치 정보를 제공하기 위해 사용될 수 있습니다. 스크래치 앱이 위치에 접근하도록 허용하는 것 외에도, 일반 장치 설정에서 위치가 사용 가능한 상태여야 합니다. 설정에서 '위치'를 검색하고, 그것이 켜져 있는지 확인하세요. Chromebook에서는 Google Play 스토어 Android 환경설정에서 '위치'를 검색하세요."
+      "블루투스는 앱에게 위치 정보를 제공하기 위해 사용될 수 있습니다. 스크래치 앱이 위치에 접근하도록 허용하는 것 외에도, 일반 장치 설정에서 위치가 사용 가능한 상태여야 합니다. 설정에서 '위치'를 검색하고, 그것이 켜져 있는지 확인하세요. Chromebook에서는 Google Play 스토어 Android 환경설정에서 '위치'를 검색하세요.",
   },
   he: {
     "general.accountSettings": "הגדרות חשבון",
@@ -11429,7 +11429,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   hr: {
     "general.accountSettings": "Postavke računa",
@@ -11883,7 +11883,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   zu: {
     "general.accountSettings": "Izinhlelo zokulungisa akhawunti  ",
@@ -12339,7 +12339,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   is: {
     "general.accountSettings": "Stillingar reiknings",
@@ -12792,7 +12792,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   it: {
     "general.accountSettings": "Impostazioni account",
@@ -13258,7 +13258,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Assicurati di aver attivato la localizzazione su Chromebook o su tablet Android",
     "bluetooth.enableLocationServicesText":
-      "Il bluetooth può fornire all'app la tua posizione. In aggiunta a garantire all'App Scratch il permesso di accedere alla tua posizione, la localizzazione deve essere attivata nelle impostazioni generali del dispositivo. Cerca 'Localizzazione' nelle impostazioni e assicurati che sia attivata. Per il Chromebook cerca 'Localizzazione' nelle preferenze Google Play Store di Android."
+      "Il bluetooth può fornire all'app la tua posizione. In aggiunta a garantire all'App Scratch il permesso di accedere alla tua posizione, la localizzazione deve essere attivata nelle impostazioni generali del dispositivo. Cerca 'Localizzazione' nelle impostazioni e assicurati che sia attivata. Per il Chromebook cerca 'Localizzazione' nelle preferenze Google Play Store di Android.",
   },
   ka: {
     "general.accountSettings": "ანგარიშის პარამეტრები",
@@ -13713,7 +13713,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   sw: {
     "general.accountSettings": "Mipangilio za akaunti",
@@ -14172,7 +14172,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   ht: {
     "general.accountSettings": "Reglaj kont",
@@ -14626,7 +14626,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   ku: {
     "general.accountSettings": "Sazkariyên Hesêb",
@@ -15087,7 +15087,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Ji çalakbûna xizmetên cîgehê yên li ser tabletên Androdî an jî Chromebookan piştrast be",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   ckb: {
     "general.accountSettings": "ڕێکخستنەکانی هەژمار",
@@ -15539,7 +15539,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   lv: {
     "general.accountSettings": "Konta iestatījumi",
@@ -15988,7 +15988,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Pārliecinies, ka atrašanās vietas pakalpojumi ir iespējoti Chromebook vai Android ierīcēs.",
     "bluetooth.enableLocationServicesText":
-      'Bluetooth var tika izmantots, lai iesniegtu lietotnei atrašanās vietas datus. Papildu, lai atļautu Scratch lietotnei piekļūt atrašanās vietai, tai ir jābūt iespējotai vispārīgajos ierīces iestatījumos. Meklē "Atrašanās vieta" savos iestatījumos un pārliecinies, ka tā ir ieslēgta. Chromebook ierīcēs meklē "Atrašanās vieta" Google Play veikala Android preferencēs.'
+      'Bluetooth var tika izmantots, lai iesniegtu lietotnei atrašanās vietas datus. Papildu, lai atļautu Scratch lietotnei piekļūt atrašanās vietai, tai ir jābūt iespējotai vispārīgajos ierīces iestatījumos. Meklē "Atrašanās vieta" savos iestatījumos un pārliecinies, ka tā ir ieslēgta. Chromebook ierīcēs meklē "Atrašanās vieta" Google Play veikala Android preferencēs.',
   },
   lt: {
     "general.accountSettings": "Naudotojo nustatymai",
@@ -16442,7 +16442,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   hu: {
     "general.accountSettings": "Fiókbeállítások",
@@ -16896,7 +16896,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   mi: {
     "general.accountSettings": "Ngā tautuhinga pūkete",
@@ -17356,7 +17356,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   nl: {
     "general.accountSettings": "Accountinstellingen",
@@ -17817,7 +17817,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Zorg ervoor dat locatieservices zijn ingeschakeld op Chromebooks of Android-tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth kan worden gebruikt om locatiegegevens aan de app te verstrekken. Naast het verlenen van toestemming aan de Scratch-app voor toegang tot de locatie, moet de locatie zijn ingeschakeld in je algemene apparaatinstellingen. Zoek naar 'Locatie' in je instellingen en zorg ervoor dat deze is ingeschakeld. Zoek op Chromebooks naar 'Locatie' in de Android-voorkeuren van de Google Play Store."
+      "Bluetooth kan worden gebruikt om locatiegegevens aan de app te verstrekken. Naast het verlenen van toestemming aan de Scratch-app voor toegang tot de locatie, moet de locatie zijn ingeschakeld in je algemene apparaatinstellingen. Zoek naar 'Locatie' in je instellingen en zorg ervoor dat deze is ingeschakeld. Zoek op Chromebooks naar 'Locatie' in de Android-voorkeuren van de Google Play Store.",
   },
   ja: {
     "general.accountSettings": "アカウント設定",
@@ -18273,7 +18273,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "ChromebookとAndroidタブレットでは、位置情報サービスを有効にする",
     "bluetooth.enableLocationServicesText":
-      "Bluetoothは位置情報をアプリに提供するために使われます。Scratchアプリに位置情報へのアクセス権限を与えるとともに、位置情報は一般のデバイス設定でも有効でなければなりません。設定で「位置情報」と検索して、有効であることを確認してください。Chromebookでは、Google PlayストアのAndroid設定で「位置情報」を検索してください。"
+      "Bluetoothは位置情報をアプリに提供するために使われます。Scratchアプリに位置情報へのアクセス権限を与えるとともに、位置情報は一般のデバイス設定でも有効でなければなりません。設定で「位置情報」と検索して、有効であることを確認してください。Chromebookでは、Google PlayストアのAndroid設定で「位置情報」を検索してください。",
   },
   "ja-Hira": {
     "general.accountSettings": "アカウントせってい",
@@ -18742,7 +18742,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   nb: {
     "general.accountSettings": "Brukerinnstillinger",
@@ -19196,7 +19196,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Pass på at du har posisjonstjenester aktivert på Chromebook eller Android-nettbrett.",
     "bluetooth.enableLocationServicesText":
-      'Bluetooth kan brukes til å gi appen informasjon om posisjon. I tillegg til å gi appen tillatelse til dette må posisjonsbaserte tjenester være aktivert i enhetens systeminnstillinger. Søk etter "posisjon" i innstillingene og sjekk at det er skrudd på. På Chromebook kan du søke etter "posisjon" i innstillingene for Google Play Store.'
+      'Bluetooth kan brukes til å gi appen informasjon om posisjon. I tillegg til å gi appen tillatelse til dette må posisjonsbaserte tjenester være aktivert i enhetens systeminnstillinger. Søk etter "posisjon" i innstillingene og sjekk at det er skrudd på. På Chromebook kan du søke etter "posisjon" i innstillingene for Google Play Store.',
   },
   nn: {
     "general.accountSettings": "Innstillingar",
@@ -19649,7 +19649,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   uz: {
     "general.accountSettings": "Hisob sozlamalari",
@@ -20109,7 +20109,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Chromebook yoki Android planshetingizda joylashuvni aniqlash yoqilganligiga ishonch hosil qiling",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth ilovaga joylashuv haqida axborot taqdim etishda foydalanilishi mumkin. Scratch ilovasiga joylashuvni aniqlashga ruxsat berganingizdan tashqari, qurilmangizning asosiy sozlamalarida joylashuvni aniqlash yoqilgan boʻlishi kerak. Sozlamalaringizda “Joylashuv” bandini toping va u faol ekaniga ishonch hosil qiling. Chromebookda Google Play doʻkonidagi Android sozlamalari orasidan “Joylashuv” bandini qidiring."
+      "Bluetooth ilovaga joylashuv haqida axborot taqdim etishda foydalanilishi mumkin. Scratch ilovasiga joylashuvni aniqlashga ruxsat berganingizdan tashqari, qurilmangizning asosiy sozlamalarida joylashuvni aniqlash yoqilgan boʻlishi kerak. Sozlamalaringizda “Joylashuv” bandini toping va u faol ekaniga ishonch hosil qiling. Chromebookda Google Play doʻkonidagi Android sozlamalari orasidan “Joylashuv” bandini qidiring.",
   },
   th: {
     "general.accountSettings": "ตั้งค่าบัญชี",
@@ -20562,7 +20562,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   km: {
     "general.accountSettings": "ការកំណត់គណនី",
@@ -21011,7 +21011,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   pl: {
     "general.accountSettings": "Ustawienia konta",
@@ -21467,7 +21467,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   pt: {
     "general.accountSettings": "Configurações da conta",
@@ -21934,7 +21934,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Assegure-se de que tem os serviços de localização activos em Chromebooks e em tábletes Android",
     "bluetooth.enableLocationServicesText":
-      "O bluetooth pode ser usado para disponibilizar dados de localização à aplicação. Para além de autorizar a aplicação Scratch a aceder à localização, a localização tem de estar activa nas configurações gerais do dispositivo. Procure «Localização» nas suas configurações e assegure-se de que está activa. Em Chromebooks, procure «Localização» nas preferências do Android para a Loja Google Play."
+      "O bluetooth pode ser usado para disponibilizar dados de localização à aplicação. Para além de autorizar a aplicação Scratch a aceder à localização, a localização tem de estar activa nas configurações gerais do dispositivo. Procure «Localização» nas suas configurações e assegure-se de que está activa. Em Chromebooks, procure «Localização» nas preferências do Android para a Loja Google Play.",
   },
   "pt-br": {
     "general.accountSettings": "Configurações de conta",
@@ -22394,7 +22394,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Certifique-se de ativar serviços de localização em Chromebooks ou tablets Android",
     "bluetooth.enableLocationServicesText":
-      'Bluetooth pode ser usado para usar dados de localização no app. Além de garantir ao Aplicativo do Scratch permissão para acessar localização, isto também deve ser ativado nas configurações de seu dispositivo. Pesquise "Localização" em suas configurações, e certifique-se que esteja ligado. Em Chromebooks, pesquise "Localização" nas preferências da Google Play Store.'
+      'Bluetooth pode ser usado para usar dados de localização no app. Além de garantir ao Aplicativo do Scratch permissão para acessar localização, isto também deve ser ativado nas configurações de seu dispositivo. Pesquise "Localização" em suas configurações, e certifique-se que esteja ligado. Em Chromebooks, pesquise "Localização" nas preferências da Google Play Store.',
   },
   rap: {
     "general.accountSettings": "Configuración de la cuenta",
@@ -22847,7 +22847,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   ro: {
     "general.accountSettings": "Setările contului",
@@ -23303,7 +23303,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   ru: {
     "general.accountSettings": "Настройки учётной записи",
@@ -23757,7 +23757,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   sr: {
     "general.accountSettings": "Подешавања налога",
@@ -24208,7 +24208,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   sk: {
     "general.accountSettings": "Nastavenia účtu",
@@ -24656,7 +24656,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   sl: {
     "general.accountSettings": "Nastavitve računa",
@@ -25110,7 +25110,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Prepričajte se, da imate na Chromebook ali Androidnih tablicah vklopljene lokacijske storitve",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth se lahko v aplikaciji uporablja za ugotavljanje položaja. Poleg dovoljenja za dostop do položaja v Scratch aplikaciji, mora biti lokacijska storitev vklopljena tudi v splošnih nastavitvah naprave. V nastavitvah poiščite 'lokacija' in se prepričajte, da so vklopljene. Na Chromebook napravah poiščite 'lokacija' v nastavitvah trgovine Google Play."
+      "Bluetooth se lahko v aplikaciji uporablja za ugotavljanje položaja. Poleg dovoljenja za dostop do položaja v Scratch aplikaciji, mora biti lokacijska storitev vklopljena tudi v splošnih nastavitvah naprave. V nastavitvah poiščite 'lokacija' in se prepričajte, da so vklopljene. Na Chromebook napravah poiščite 'lokacija' v nastavitvah trgovine Google Play.",
   },
   fi: {
     "general.accountSettings": "Tunnuksen asetukset",
@@ -25561,7 +25561,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Varmista, että sijaintipalvelut ovat käytössä Chromebookeissa tai Android-tableteissa",
     "bluetooth.enableLocationServicesText":
-      "Bluetoothia voidaan käyttää sijaintitietojen tarjoamiseen sovellukselle. Sen lisäksi, että myönnät Scratch-sovellukselle pääsyn sijaintiin, sijainnin on oltava käytössä laitteesi yleisissä asetuksissa. Etsi laitteeltasi sijaintiasetukset ja varmista, että ne ovat päällä. Etsi Chromebookeissa sijaintia Google Play Kaupan Android-asetuksista."
+      "Bluetoothia voidaan käyttää sijaintitietojen tarjoamiseen sovellukselle. Sen lisäksi, että myönnät Scratch-sovellukselle pääsyn sijaintiin, sijainnin on oltava käytössä laitteesi yleisissä asetuksissa. Etsi laitteeltasi sijaintiasetukset ja varmista, että ne ovat päällä. Etsi Chromebookeissa sijaintia Google Play Kaupan Android-asetuksista.",
   },
   sv: {
     "general.accountSettings": "Kontoinställningar",
@@ -26019,7 +26019,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   vi: {
     "general.accountSettings": "Cài đặt tài khoản",
@@ -26474,7 +26474,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   tr: {
     "general.accountSettings": "Hesap ayarları",
@@ -26926,7 +26926,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   uk: {
     "general.accountSettings": "Налаштування облікового запису",
@@ -27376,7 +27376,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   "zh-cn": {
     "general.accountSettings": "账号设置",
@@ -27808,7 +27808,7 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "Make sure you have location services enabled on Chromebooks or Android tablets",
     "bluetooth.enableLocationServicesText":
-      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences."
+      "Bluetooth can be used to provide location data to the app. In addition to granting the Scratch App permission to access location, location must be enabled in your general device settings. Search for 'Location' in your settings, and make sure it is on. On Chromebooks search for 'Location' in the Google Play Store Android preferences.",
   },
   "zh-tw": {
     "general.accountSettings": "帳戶設定",
@@ -28228,6 +28228,6 @@ window._messages = {
     "bluetooth.enableLocationServicesTitle":
       "你必須在 Chromebooks 或 Android 平板上允許使用定位服務。",
     "bluetooth.enableLocationServicesText":
-      "藍牙可用來向應用程式提供定位數據。除了授允 Scratch App 存取位置的權限外，還必須在一般裝置中啟用定位功能。在你的設置中找到「定位」的相關設定，確認是否啟動。在Chromebook 上，在 Google Play 商店的 Android 偏好設置中搜索「位置」。"
-  }
+      "藍牙可用來向應用程式提供定位數據。除了授允 Scratch App 存取位置的權限外，還必須在一般裝置中啟用定位功能。在你的設置中找到「定位」的相關設定，確認是否啟動。在Chromebook 上，在 Google Play 商店的 Android 偏好設置中搜索「位置」。",
+  },
 };
