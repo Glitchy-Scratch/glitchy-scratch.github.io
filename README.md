@@ -1,4 +1,5 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 # What is Glitchy Scratch?
 
 Glitchy Scratch is a modification of the Scratch website(https://scratch.mit.edu ) with glitches. It is situated at https://glitchy-scratch.github.io .
