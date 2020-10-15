@@ -194,46 +194,24 @@ webpackJsonp(
           return e.require(t);
         }
         function i() {
-          return (
-            "[object process]" ===
-            Object.prototype.toString.call(void 0 !== e ? e : 0)
-          );
+          return "[object process]" === Object.prototype.toString.call(void 0 !== e ? e : 0);
         }
         function a() {
-          return i()
-            ? r
-            : "undefined" != typeof window
-            ? window
-            : "undefined" != typeof self
-            ? self
-            : {};
+          return i() ? r : "undefined" != typeof window ? window : "undefined" != typeof self ? self : {};
         }
         function s() {
           var e = a(),
             t = e.crypto || e.msCrypto;
           if (void 0 !== t && t.getRandomValues) {
             var n = new Uint16Array(8);
-            t.getRandomValues(n),
-              (n[3] = (4095 & n[3]) | 16384),
-              (n[4] = (16383 & n[4]) | 32768);
+            t.getRandomValues(n), (n[3] = (4095 & n[3]) | 16384), (n[4] = (16383 & n[4]) | 32768);
             var r = function (e) {
               for (var t = e.toString(16); t.length < 4; ) t = "0" + t;
               return t;
             };
-            return (
-              r(n[0]) +
-              r(n[1]) +
-              r(n[2]) +
-              r(n[3]) +
-              r(n[4]) +
-              r(n[5]) +
-              r(n[6]) +
-              r(n[7])
-            );
+            return r(n[0]) + r(n[1]) + r(n[2]) + r(n[3]) + r(n[4]) + r(n[5]) + r(n[6]) + r(n[7]);
           }
-          return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, function (
-            e
-          ) {
+          return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, function (e) {
             var t = (16 * Math.random()) | 0;
             return ("x" === e ? t : (3 & t) | 8).toString(16);
           });
@@ -241,12 +219,7 @@ webpackJsonp(
         function l(e) {
           for (
             var t, n = e, r = [], o = 0, i = 0, a = " > ".length;
-            n &&
-            o++ < 5 &&
-            !(
-              "html" === (t = c(n)) ||
-              (o > 1 && i + r.length * a + t.length >= 80)
-            );
+            n && o++ < 5 && !("html" === (t = c(n)) || (o > 1 && i + r.length * a + t.length >= 80));
 
           )
             r.push(t), (i += t.length), (n = n.parentNode);
@@ -260,24 +233,15 @@ webpackJsonp(
             i,
             a = [];
           if (!e || !e.tagName) return "";
-          if (
-            (a.push(e.tagName.toLowerCase()),
-            e.id && a.push("#" + e.id),
-            (t = e.className) && f.isString(t))
-          )
-            for (n = t.split(/\s+/), i = 0; i < n.length; i++)
-              a.push("." + n[i]);
+          if ((a.push(e.tagName.toLowerCase()), e.id && a.push("#" + e.id), (t = e.className) && f.isString(t)))
+            for (n = t.split(/\s+/), i = 0; i < n.length; i++) a.push("." + n[i]);
           var s = ["type", "name", "title", "alt"];
-          for (i = 0; i < s.length; i++)
-            (r = s[i]),
-              (o = e.getAttribute(r)) && a.push("[" + r + '="' + o + '"]');
+          for (i = 0; i < s.length; i++) (r = s[i]), (o = e.getAttribute(r)) && a.push("[" + r + '="' + o + '"]');
           return a.join("");
         }
         function u(e) {
           if (!e) return {};
-          var t = e.match(
-            /^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/
-          );
+          var t = e.match(/^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/);
           if (!t) return {};
           var n = t[6] || "",
             r = t[8] || "";
@@ -292,9 +256,7 @@ webpackJsonp(
           if (e.message) return e.message;
           if (e.exception && e.exception.values && e.exception.values[0]) {
             var t = e.exception.values[0];
-            return t.type && t.value
-              ? t.type + ": " + t.value
-              : t.type || t.value || e.event_id || "<unknown>";
+            return t.type && t.value ? t.type + ": " + t.value : t.type || t.value || e.event_id || "<unknown>";
           }
           return e.event_id || "<unknown>";
         }
@@ -305,10 +267,7 @@ webpackJsonp(
           var r = t.console,
             o = {};
           n.forEach(function (e) {
-            e in t.console &&
-              r[e].__sentry__ &&
-              ((o[e] = r[e].__sentry_wrapped__),
-              (r[e] = r[e].__sentry_original__));
+            e in t.console && r[e].__sentry__ && ((o[e] = r[e].__sentry_wrapped__), (r[e] = r[e].__sentry_original__));
           });
           var i = e();
           return (
@@ -339,16 +298,11 @@ webpackJsonp(
 */
       !(function () {
         "use strict";
-        var o = !(
-            "undefined" == typeof window ||
-            !window.document ||
-            !window.document.createElement
-          ),
+        var o = !("undefined" == typeof window || !window.document || !window.document.createElement),
           i = {
             canUseDOM: o,
             canUseWorkers: "undefined" != typeof Worker,
-            canUseEventListeners:
-              o && !(!window.addEventListener && !window.attachEvent),
+            canUseEventListeners: o && !(!window.addEventListener && !window.attachEvent),
             canUseViewport: o && !!window.screen,
           };
         void 0 !==
@@ -360,10 +314,7 @@ webpackJsonp(
     111: function (e, t, n) {
       "use strict";
       function r() {
-        var e = this.constructor.getDerivedStateFromProps(
-          this.props,
-          this.state
-        );
+        var e = this.constructor.getDerivedStateFromProps(this.props, this.state);
         null !== e && void 0 !== e && this.setState(e);
       }
       function o(e) {
@@ -387,29 +338,21 @@ webpackJsonp(
       }
       function a(e) {
         var t = e.prototype;
-        if (!t || !t.isReactComponent)
-          throw new Error("Can only polyfill class components");
-        if (
-          "function" != typeof e.getDerivedStateFromProps &&
-          "function" != typeof t.getSnapshotBeforeUpdate
-        )
-          return e;
+        if (!t || !t.isReactComponent) throw new Error("Can only polyfill class components");
+        if ("function" != typeof e.getDerivedStateFromProps && "function" != typeof t.getSnapshotBeforeUpdate) return e;
         var n = null,
           a = null,
           s = null;
         if (
           ("function" == typeof t.componentWillMount
             ? (n = "componentWillMount")
-            : "function" == typeof t.UNSAFE_componentWillMount &&
-              (n = "UNSAFE_componentWillMount"),
+            : "function" == typeof t.UNSAFE_componentWillMount && (n = "UNSAFE_componentWillMount"),
           "function" == typeof t.componentWillReceiveProps
             ? (a = "componentWillReceiveProps")
-            : "function" == typeof t.UNSAFE_componentWillReceiveProps &&
-              (a = "UNSAFE_componentWillReceiveProps"),
+            : "function" == typeof t.UNSAFE_componentWillReceiveProps && (a = "UNSAFE_componentWillReceiveProps"),
           "function" == typeof t.componentWillUpdate
             ? (s = "componentWillUpdate")
-            : "function" == typeof t.UNSAFE_componentWillUpdate &&
-              (s = "UNSAFE_componentWillUpdate"),
+            : "function" == typeof t.UNSAFE_componentWillUpdate && (s = "UNSAFE_componentWillUpdate"),
           null !== n || null !== a || null !== s)
         ) {
           var l = e.displayName || e.name,
@@ -441,9 +384,7 @@ webpackJsonp(
           t.componentWillUpdate = i;
           var u = t.componentDidUpdate;
           t.componentDidUpdate = function (e, t, n) {
-            var r = this.__reactInternalSnapshotFlag
-              ? this.__reactInternalSnapshot
-              : n;
+            var r = this.__reactInternalSnapshotFlag ? this.__reactInternalSnapshot : n;
             u.call(this, e, t, r);
           };
         }
@@ -463,22 +404,15 @@ webpackJsonp(
         return e && e.__esModule ? e : { default: e };
       }
       function o(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function i(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function a(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -487,23 +421,18 @@ webpackJsonp(
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       function s(e) {
         return e();
       }
-      Object.defineProperty(t, "__esModule", { value: !0 }),
-        (t.bodyOpenClassName = t.portalClassName = void 0);
+      Object.defineProperty(t, "__esModule", { value: !0 }), (t.bodyOpenClassName = t.portalClassName = void 0);
       var l =
           Object.assign ||
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -533,9 +462,7 @@ webpackJsonp(
         y = (function (e) {
           if (e && e.__esModule) return e;
           var t = {};
-          if (null != e)
-            for (var n in e)
-              Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+          if (null != e) for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
           return (t.default = e), t;
         })(v),
         b = n(20),
@@ -545,41 +472,24 @@ webpackJsonp(
         k = (t.bodyOpenClassName = "ReactModal__Body--open"),
         C = void 0 !== f.default.createPortal,
         S = function () {
-          return C
-            ? f.default.createPortal
-            : f.default.unstable_renderSubtreeIntoContainer;
+          return C ? f.default.createPortal : f.default.unstable_renderSubtreeIntoContainer;
         },
         _ = (function (e) {
           function t() {
             var e, n, r, a;
             o(this, t);
-            for (var c = arguments.length, u = Array(c), p = 0; p < c; p++)
-              u[p] = arguments[p];
+            for (var c = arguments.length, u = Array(c), p = 0; p < c; p++) u[p] = arguments[p];
             return (
-              (n = r = i(
-                this,
-                (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(
-                  e,
-                  [this].concat(u)
-                )
-              )),
+              (n = r = i(this, (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(e, [this].concat(u)))),
               (r.removePortal = function () {
-                !C && f.default.unmountComponentAtNode(r.node),
-                  s(r.props.parentSelector).removeChild(r.node);
+                !C && f.default.unmountComponentAtNode(r.node), s(r.props.parentSelector).removeChild(r.node);
               }),
               (r.portalRef = function (e) {
                 r.portal = e;
               }),
               (r.renderPortal = function (e) {
                 var n = S(),
-                  o = n(
-                    r,
-                    d.default.createElement(
-                      A.default,
-                      l({ defaultStyles: t.defaultStyles }, e)
-                    ),
-                    r.node
-                  );
+                  o = n(r, d.default.createElement(A.default, l({ defaultStyles: t.defaultStyles }, e)), r.node);
                 r.portalRef(o);
               }),
               (a = n),
@@ -597,8 +507,7 @@ webpackJsonp(
                     if (b.canUseDOM) {
                       C || (this.node = document.createElement("div")),
                         (this.node.className = this.props.portalClassName);
-                      s(this.props.parentSelector).appendChild(this.node),
-                        !C && this.renderPortal(this.props);
+                      s(this.props.parentSelector).appendChild(this.node), !C && this.renderPortal(this.props);
                     }
                   },
                 },
@@ -621,8 +530,7 @@ webpackJsonp(
                       e.portalClassName !== i && (this.node.className = i);
                       var a = n.prevParent,
                         s = n.nextParent;
-                      s !== a &&
-                        (a.removeChild(this.node), s.appendChild(this.node)),
+                      s !== a && (a.removeChild(this.node), s.appendChild(this.node)),
                         (e.isOpen || o) && !C && this.renderPortal(this.props);
                     }
                   },
@@ -633,13 +541,9 @@ webpackJsonp(
                     if (b.canUseDOM && this.node && this.portal) {
                       var e = this.portal.state,
                         t = Date.now(),
-                        n =
-                          e.isOpen &&
-                          this.props.closeTimeoutMS &&
-                          (e.closesAt || t + this.props.closeTimeoutMS);
+                        n = e.isOpen && this.props.closeTimeoutMS && (e.closesAt || t + this.props.closeTimeoutMS);
                       n
-                        ? (e.beforeClose || this.portal.closeWithTimeout(),
-                          setTimeout(this.removePortal, n - t))
+                        ? (e.beforeClose || this.portal.closeWithTimeout(), setTimeout(this.removePortal, n - t))
                         : this.removePortal();
                     }
                   },
@@ -648,9 +552,7 @@ webpackJsonp(
                   key: "render",
                   value: function () {
                     return b.canUseDOM && C
-                      ? (!this.node &&
-                          C &&
-                          (this.node = document.createElement("div")),
+                      ? (!this.node && C && (this.node = document.createElement("div")),
                         S()(
                           d.default.createElement(
                             A.default,
@@ -769,31 +671,22 @@ webpackJsonp(
       function r(e) {
         if (e && e.__esModule) return e;
         var t = {};
-        if (null != e)
-          for (var n in e)
-            Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+        if (null != e) for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
         return (t.default = e), t;
       }
       function o(e) {
         return e && e.__esModule ? e : { default: e };
       }
       function i(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function a(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function s(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -802,10 +695,7 @@ webpackJsonp(
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       Object.defineProperty(t, "__esModule", { value: !0 });
       var l =
@@ -813,8 +703,7 @@ webpackJsonp(
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -824,10 +713,7 @@ webpackJsonp(
                 return typeof e;
               }
             : function (e) {
-                return e &&
-                  "function" == typeof Symbol &&
-                  e.constructor === Symbol &&
-                  e !== Symbol.prototype
+                return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype
                   ? "symbol"
                   : typeof e;
               },
@@ -866,10 +752,7 @@ webpackJsonp(
         I = (function (e) {
           function t(e) {
             i(this, t);
-            var n = a(
-              this,
-              (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-            );
+            var n = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
             return (
               (n.setOverlayRef = function (e) {
                 (n.overlay = e), n.props.overlayRef && n.props.overlayRef(e);
@@ -895,10 +778,8 @@ webpackJsonp(
               (n.open = function () {
                 n.beforeOpen(),
                   n.state.afterOpen && n.state.beforeClose
-                    ? (clearTimeout(n.closeTimer),
-                      n.setState({ beforeClose: !1 }))
-                    : (n.props.shouldFocusAfterRender &&
-                        (g.setupScopedFocus(n.node), g.markForFocusLater()),
+                    ? (clearTimeout(n.closeTimer), n.setState({ beforeClose: !1 }))
+                    : (n.props.shouldFocusAfterRender && (g.setupScopedFocus(n.node), g.markForFocusLater()),
                       n.setState({ isOpen: !0 }, function () {
                         n.setState({ afterOpen: !0 }),
                           n.props.isOpen &&
@@ -910,9 +791,7 @@ webpackJsonp(
                       }));
               }),
               (n.close = function () {
-                n.props.closeTimeoutMS > 0
-                  ? n.closeWithTimeout()
-                  : n.closeWithoutTimeout();
+                n.props.closeTimeoutMS > 0 ? n.closeWithTimeout() : n.closeWithoutTimeout();
               }),
               (n.focusContent = function () {
                 return n.content && !n.contentHasFocus() && n.content.focus();
@@ -920,10 +799,7 @@ webpackJsonp(
               (n.closeWithTimeout = function () {
                 var e = Date.now() + n.props.closeTimeoutMS;
                 n.setState({ beforeClose: !0, closesAt: e }, function () {
-                  n.closeTimer = setTimeout(
-                    n.closeWithoutTimeout,
-                    n.state.closesAt - Date.now()
-                  );
+                  n.closeTimer = setTimeout(n.closeWithoutTimeout, n.state.closesAt - Date.now());
                 });
               }),
               (n.closeWithoutTimeout = function () {
@@ -939,26 +815,20 @@ webpackJsonp(
               }),
               (n.handleKeyDown = function (e) {
                 e.keyCode === S && (0, v.default)(n.content, e),
-                  n.props.shouldCloseOnEsc &&
-                    e.keyCode === _ &&
-                    (e.stopPropagation(), n.requestClose(e));
+                  n.props.shouldCloseOnEsc && e.keyCode === _ && (e.stopPropagation(), n.requestClose(e));
               }),
               (n.handleOverlayOnClick = function (e) {
                 null === n.shouldClose && (n.shouldClose = !0),
                   n.shouldClose &&
                     n.props.shouldCloseOnOverlayClick &&
-                    (n.ownerHandlesClose()
-                      ? n.requestClose(e)
-                      : n.focusContent()),
+                    (n.ownerHandlesClose() ? n.requestClose(e) : n.focusContent()),
                   (n.shouldClose = null);
               }),
               (n.handleContentOnMouseUp = function () {
                 n.shouldClose = !1;
               }),
               (n.handleOverlayOnMouseDown = function (e) {
-                n.props.shouldCloseOnOverlayClick ||
-                  e.target != n.overlay ||
-                  e.preventDefault();
+                n.props.shouldCloseOnOverlayClick || e.target != n.overlay || e.preventDefault();
               }),
               (n.handleContentOnClick = function () {
                 n.shouldClose = !1;
@@ -976,10 +846,7 @@ webpackJsonp(
                 return !n.state.isOpen && !n.state.beforeClose;
               }),
               (n.contentHasFocus = function () {
-                return (
-                  document.activeElement === n.content ||
-                  n.content.contains(document.activeElement)
-                );
+                return document.activeElement === n.content || n.content.contains(document.activeElement);
               }),
               (n.buildClassName = function (e, t) {
                 var r =
@@ -1020,20 +887,14 @@ webpackJsonp(
               {
                 key: "componentDidUpdate",
                 value: function (e, t) {
-                  this.props.isOpen && !e.isOpen
-                    ? this.open()
-                    : !this.props.isOpen && e.isOpen && this.close(),
-                    this.props.shouldFocusAfterRender &&
-                      this.state.isOpen &&
-                      !t.isOpen &&
-                      this.focusContent();
+                  this.props.isOpen && !e.isOpen ? this.open() : !this.props.isOpen && e.isOpen && this.close(),
+                    this.props.shouldFocusAfterRender && this.state.isOpen && !t.isOpen && this.focusContent();
                 },
               },
               {
                 key: "componentWillUnmount",
                 value: function () {
-                  this.state.isOpen && this.afterClose(),
-                    clearTimeout(this.closeTimer);
+                  this.state.isOpen && this.afterClose(), clearTimeout(this.closeTimer);
                 },
               },
               {
@@ -1086,14 +947,8 @@ webpackJsonp(
                               role: this.props.role,
                               "aria-label": this.props.contentLabel,
                             },
-                            this.attributesFromObject(
-                              "aria",
-                              this.props.aria || {}
-                            ),
-                            this.attributesFromObject(
-                              "data",
-                              this.props.data || {}
-                            ),
+                            this.attributesFromObject("aria", this.props.aria || {}),
+                            this.attributesFromObject("data", this.props.data || {}),
                             { "data-testid": this.props.testId }
                           ),
                           this.props.children
@@ -1120,10 +975,7 @@ webpackJsonp(
             overlay: h.default.object,
           }),
           className: h.default.oneOfType([h.default.string, h.default.object]),
-          overlayClassName: h.default.oneOfType([
-            h.default.string,
-            h.default.object,
-          ]),
+          overlayClassName: h.default.oneOfType([h.default.string, h.default.object]),
           bodyOpenClassName: h.default.string,
           htmlOpenClassName: h.default.string,
           ariaHideApp: h.default.bool,
@@ -1152,8 +1004,7 @@ webpackJsonp(
     114: function (e, t, n) {
       "use strict";
       function r() {}
-      Object.defineProperty(t, "__esModule", { value: !0 }),
-        (t.dumpClassLists = r);
+      Object.defineProperty(t, "__esModule", { value: !0 }), (t.dumpClassLists = r);
       var o = {},
         i = {},
         a = function (e, t) {
@@ -1173,18 +1024,10 @@ webpackJsonp(
           });
         };
       (t.add = function (e, t) {
-        return l(
-          e.classList,
-          "html" == e.nodeName.toLowerCase() ? o : i,
-          t.split(" ")
-        );
+        return l(e.classList, "html" == e.nodeName.toLowerCase() ? o : i, t.split(" "));
       }),
         (t.remove = function (e, t) {
-          return c(
-            e.classList,
-            "html" == e.nodeName.toLowerCase() ? o : i,
-            t.split(" ")
-          );
+          return c(e.classList, "html" == e.nodeName.toLowerCase() ? o : i, t.split(" "));
         });
     },
     115: function (e, t, n) {
@@ -1210,13 +1053,7 @@ webpackJsonp(
         try {
           return void (0 !== p.length && ((e = p.pop()), e.focus()));
         } catch (t) {
-          console.warn(
-            [
-              "You tried to return focus to",
-              e,
-              "but it is not in the DOM anymore",
-            ].join(" ")
-          );
+          console.warn(["You tried to return focus to", e, "but it is not in the DOM anymore"].join(" "));
         }
       }
       function s() {
@@ -1225,18 +1062,14 @@ webpackJsonp(
       function l(e) {
         (f = e),
           window.addEventListener
-            ? (window.addEventListener("blur", r, !1),
-              document.addEventListener("focus", o, !0))
-            : (window.attachEvent("onBlur", r),
-              document.attachEvent("onFocus", o));
+            ? (window.addEventListener("blur", r, !1), document.addEventListener("focus", o, !0))
+            : (window.attachEvent("onBlur", r), document.attachEvent("onFocus", o));
       }
       function c() {
         (f = null),
           window.addEventListener
-            ? (window.removeEventListener("blur", r),
-              document.removeEventListener("focus", o))
-            : (window.detachEvent("onBlur", r),
-              document.detachEvent("onFocus", o));
+            ? (window.removeEventListener("blur", r), document.removeEventListener("focus", o))
+            : (window.detachEvent("onBlur", r), document.detachEvent("onFocus", o));
       }
       Object.defineProperty(t, "__esModule", { value: !0 }),
         (t.handleBlur = r),
@@ -1267,18 +1100,10 @@ webpackJsonp(
           s = a;
         }
         var s;
-        if (
-          (a !== document.activeElement || r || (s = o),
-          o === document.activeElement && r && (s = a),
-          s)
-        )
+        if ((a !== document.activeElement || r || (s = o), o === document.activeElement && r && (s = a), s))
           return t.preventDefault(), void s.focus();
         var l = /(\bChrome\b|\bSafari\b)\//.exec(navigator.userAgent);
-        if (
-          null != l &&
-          "Chrome" != l[1] &&
-          null == /\biPod\b|\biPad\b/g.exec(navigator.userAgent)
-        ) {
+        if (null != l && "Chrome" != l[1] && null == /\biPod\b|\biPad\b/g.exec(navigator.userAgent)) {
           var c = n.indexOf(document.activeElement);
           if ((c > -1 && (c += r ? -1 : 1), void 0 === n[c]))
             return t.preventDefault(), (s = r ? a : o), void s.focus();
@@ -1320,15 +1145,9 @@ webpackJsonp(
         i = n(0);
       n(47);
       var a = function (e) {
-        return i.createElement(
-          e.as,
-          { className: r("flex-row", e.className) },
-          e.children
-        );
+        return i.createElement(e.as, { className: r("flex-row", e.className) }, e.children);
       };
-      (a.propTypes = { children: o.node, className: o.string }),
-        (a.defaultProps = { as: "div" }),
-        (e.exports = a);
+      (a.propTypes = { children: o.node, className: o.string }), (a.defaultProps = { as: "div" }), (e.exports = a);
     },
     120: function (e, t, n) {
       var r = n(100);
@@ -1424,29 +1243,23 @@ webpackJsonp(
         {
           id: 128283902498,
           headline: "Update to Scratch Offline Editor",
-          copy:
-            "We’ve released an update to Offline Editor which fixed bugs affecting Windows users.",
+          copy: "We’ve released an update to Offline Editor which fixed bugs affecting Windows users.",
           url: "https://scratch.mit.edu/news#128283902498",
-          image:
-            "https://33.media.tumblr.com/695b93f4ab74c68feaef1fe03baebdd5/tumblr_inline_n0xubtT0vU1szpavb.png",
+          image: "https://33.media.tumblr.com/695b93f4ab74c68feaef1fe03baebdd5/tumblr_inline_n0xubtT0vU1szpavb.png",
         },
         {
           id: 127476896298,
           headline: "Scratch Video Update: Ep 10",
-          copy:
-            "Check out a special Scratch Conference edition of the Scratch Video Update!",
+          copy: "Check out a special Scratch Conference edition of the Scratch Video Update!",
           url: "https://scratch.mit.edu/news#127476896298",
-          image:
-            "https://40.media.tumblr.com/0b5814b2eafa94b3594a36ad84bbcae4/tumblr_inline_nmyxdgwxzU1szpavb_540.png",
+          image: "https://40.media.tumblr.com/0b5814b2eafa94b3594a36ad84bbcae4/tumblr_inline_nmyxdgwxzU1szpavb_540.png",
         },
         {
           id: 126445521858,
           headline: "New Scratch Design Studio!",
-          copy:
-            "In this new Scratch Design Studio, use Custom Blocks to open up more possiblities in Scratch!",
+          copy: "In this new Scratch Design Studio, use Custom Blocks to open up more possiblities in Scratch!",
           url: "https://scratch.mit.edu/news#126445521858",
-          image:
-            "https://31.media.tumblr.com/d99a1da959f7d077d266580842a8d3f4/tumblr_inline_n6jlk1ULuG1szpavb.png",
+          image: "https://31.media.tumblr.com/d99a1da959f7d077d266580842a8d3f4/tumblr_inline_n6jlk1ULuG1szpavb.png",
         },
       ];
     },
@@ -1457,8 +1270,7 @@ webpackJsonp(
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -1469,14 +1281,9 @@ webpackJsonp(
       n(35);
       var l = function (e) {
         var t = o("button", e.className);
-        return s.createElement(
-          "button",
-          r({ className: t }, i(e, ["className", "children"])),
-          e.children
-        );
+        return s.createElement("button", r({ className: t }, i(e, ["className", "children"])), e.children);
       };
-      (l.propTypes = { children: a.node, className: a.string }),
-        (e.exports = l);
+      (l.propTypes = { children: a.node, className: a.string }), (e.exports = l);
     },
     17: function (e, t, n) {
       "use strict";
@@ -1488,8 +1295,7 @@ webpackJsonp(
         s = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+))?@)([\w\.-]+)(?::(\d+))?\/(.+)/,
         l = (function () {
           function e(e) {
-            "string" == typeof e ? this.fromString(e) : this.fromComponents(e),
-              this.validate();
+            "string" == typeof e ? this.fromString(e) : this.fromComponents(e), this.validate();
           }
           return (
             (e.prototype.toString = function (e) {
@@ -1552,14 +1358,12 @@ webpackJsonp(
               var e, t;
               try {
                 for (
-                  var n = r.__values(["protocol", "user", "host", "projectId"]),
-                    i = n.next();
+                  var n = r.__values(["protocol", "user", "host", "projectId"]), i = n.next();
                   !i.done;
                   i = n.next()
                 ) {
                   var s = i.value;
-                  if (!this[s])
-                    throw new a.SentryError("Invalid Dsn: Missing " + s);
+                  if (!this[s]) throw new a.SentryError("Invalid Dsn: Missing " + s);
                 }
               } catch (t) {
                 e = { error: t };
@@ -1571,13 +1375,9 @@ webpackJsonp(
                 }
               }
               if ("http" !== this.protocol && "https" !== this.protocol)
-                throw new a.SentryError(
-                  'Invalid Dsn: Unsupported protocol "' + this.protocol + '"'
-                );
+                throw new a.SentryError('Invalid Dsn: Unsupported protocol "' + this.protocol + '"');
               if (this.port && o.isNaN(parseInt(this.port, 10)))
-                throw new a.SentryError(
-                  'Invalid Dsn: Invalid port number "' + this.port + '"'
-                );
+                throw new a.SentryError('Invalid Dsn: Invalid port number "' + this.port + '"');
             }),
             e
           );
@@ -1642,12 +1442,7 @@ webpackJsonp(
           function t(t) {
             var n = this.constructor,
               r = e.call(this, t) || this;
-            return (
-              (r.message = t),
-              (r.name = n.prototype.constructor.name),
-              Object.setPrototypeOf(r, n.prototype),
-              r
-            );
+            return (r.message = t), (r.name = n.prototype.constructor.name), Object.setPrototypeOf(r, n.prototype), r;
           }
           return r.__extends(t, e), t;
         })(Error);
@@ -1669,10 +1464,7 @@ webpackJsonp(
           if (t in e && !e[t].__sentry__) {
             var r = e[t],
               o = n(r);
-            (o.__sentry__ = !0),
-              (o.__sentry_original__ = r),
-              (o.__sentry_wrapped__ = o),
-              (e[t] = o);
+            (o.__sentry__ = !0), (o.__sentry_original__ = r), (o.__sentry_wrapped__ = o), (e[t] = o);
           }
         }
         function s(e) {
@@ -1689,10 +1481,8 @@ webpackJsonp(
           return l(JSON.stringify(e));
         }
         function u(e) {
-          if ("string" == typeof e)
-            return e.length <= 40 ? e : e.substr(0, 39) + "…";
-          if ("number" == typeof e || "boolean" == typeof e || void 0 === e)
-            return e;
+          if ("string" == typeof e) return e.length <= 40 ? e : e.substr(0, 39) + "…";
+          if ("number" == typeof e || "boolean" == typeof e || void 0 === e) return e;
           if (y.isNaN(e)) return "[NaN]";
           if (y.isUndefined(e)) return "[undefined]";
           var t = Object.prototype.toString.call(e);
@@ -1729,8 +1519,7 @@ webpackJsonp(
           return c(r(o)) > n ? p(e, t - 1) : o;
         }
         function f(e, t) {
-          if ((void 0 === t && (t = x), !e.length))
-            return "[object has no keys]";
+          if ((void 0 === t && (t = x), !e.length)) return "[object has no keys]";
           if (e[0].length >= t) return e[0];
           for (var n = e.length; n > 0; n--) {
             var r = e.slice(0, n).join(", ");
@@ -1739,22 +1528,17 @@ webpackJsonp(
           return "";
         }
         function h(e) {
-          for (var t = [], n = 1; n < arguments.length; n++)
-            t[n - 1] = arguments[n];
-          if (null === e || void 0 === e)
-            throw new TypeError("Cannot convert undefined or null to object");
+          for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
+          if (null === e || void 0 === e) throw new TypeError("Cannot convert undefined or null to object");
           for (var r = Object(e), o = 0; o < t.length; o++) {
             var i = t[o];
-            if (null !== i)
-              for (var a in i)
-                Object.prototype.hasOwnProperty.call(i, a) && (r[a] = i[a]);
+            if (null !== i) for (var a in i) Object.prototype.hasOwnProperty.call(i, a) && (r[a] = i[a]);
           }
           return r;
         }
         function m(e) {
           var t = { message: e.message, name: e.name, stack: e.stack };
-          for (var n in e)
-            Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+          for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
           return t;
         }
         function g(t, n) {
@@ -1782,18 +1566,14 @@ webpackJsonp(
         }
         function A() {
           function e(e, r) {
-            return t[0] === r
-              ? "[Circular ~]"
-              : "[Circular ~." + n.slice(0, t.indexOf(r)).join(".") + "]";
+            return t[0] === r ? "[Circular ~]" : "[Circular ~." + n.slice(0, t.indexOf(r)).join(".") + "]";
           }
           var t = [],
             n = [];
           return function (r, o) {
             if (t.length > 0) {
               var i = t.indexOf(this);
-              -1 === i
-                ? (t.push(this), n.push(r))
-                : (t.splice(i + 1), n.splice(i, 1 / 0, r)),
+              -1 === i ? (t.push(this), n.push(r)) : (t.splice(i + 1), n.splice(i, 1 / 0, r)),
                 -1 !== t.indexOf(o) && (o = e.call(this, r, o));
             } else t.push(o);
             return g(o, r);
@@ -1808,11 +1588,7 @@ webpackJsonp(
         }
         Object.defineProperty(t, "__esModule", { value: !0 });
         var y = n(10);
-        (t.serialize = r),
-          (t.deserialize = o),
-          (t.clone = i),
-          (t.fill = a),
-          (t.urlEncode = s);
+        (t.serialize = r), (t.deserialize = o), (t.clone = i), (t.fill = a), (t.urlEncode = s);
         var b = 3,
           w = 102400,
           x = 40;
@@ -1825,8 +1601,7 @@ webpackJsonp(
     },
     20: function (e, t, n) {
       "use strict";
-      Object.defineProperty(t, "__esModule", { value: !0 }),
-        (t.canUseDOM = void 0);
+      Object.defineProperty(t, "__esModule", { value: !0 }), (t.canUseDOM = void 0);
       var r = n(110),
         o = (function (e) {
           return e && e.__esModule ? e : { default: e };
@@ -1888,9 +1663,7 @@ webpackJsonp(
                       g,
                       a
                     ),
-                      "DEFINE_MANY_MERGED" === g
-                        ? (r[a] = p(r[a], c))
-                        : "DEFINE_MANY" === g && (r[a] = f(r[a], c));
+                      "DEFINE_MANY_MERGED" === g ? (r[a] = p(r[a], c)) : "DEFINE_MANY" === g && (r[a] = f(r[a], c));
                   } else r[a] = c;
                 }
               }
@@ -1982,10 +1755,7 @@ webpackJsonp(
             c(t, e),
             c(t, w),
             t.getDefaultProps && (t.defaultProps = t.getDefaultProps()),
-            s(
-              t.prototype.render,
-              "createClass(...): Class specification must implement a `render` method."
-            );
+            s(t.prototype.render, "createClass(...): Class specification must implement a `render` method.");
           for (var o in v) t.prototype[o] || (t.prototype[o] = null);
           return t;
         }
@@ -2023,9 +1793,7 @@ webpackJsonp(
               e.contextTypes = i({}, e.contextTypes, t);
             },
             getDefaultProps: function (e, t) {
-              e.getDefaultProps
-                ? (e.getDefaultProps = p(e.getDefaultProps, t))
-                : (e.getDefaultProps = t);
+              e.getDefaultProps ? (e.getDefaultProps = p(e.getDefaultProps, t)) : (e.getDefaultProps = t);
             },
             propTypes: function (e, t) {
               e.propTypes = i({}, e.propTypes, t);
@@ -2080,14 +1848,9 @@ webpackJsonp(
         i = n(0);
       n(53);
       var a = function (e) {
-        return i.createElement(
-          "div",
-          { className: r("title-banner", e.className) },
-          e.children
-        );
+        return i.createElement("div", { className: r("title-banner", e.className) }, e.children);
       };
-      (a.propTypes = { children: o.node, className: o.string }),
-        (e.exports = a);
+      (a.propTypes = { children: o.node, className: o.string }), (e.exports = a);
     },
     24: function (e, t) {
       function n() {
@@ -2098,8 +1861,7 @@ webpackJsonp(
       }
       function o(e) {
         if (u === setTimeout) return setTimeout(e, 0);
-        if ((u === n || !u) && setTimeout)
-          return (u = setTimeout), setTimeout(e, 0);
+        if ((u === n || !u) && setTimeout) return (u = setTimeout), setTimeout(e, 0);
         try {
           return u(e, 0);
         } catch (t) {
@@ -2112,8 +1874,7 @@ webpackJsonp(
       }
       function i(e) {
         if (d === clearTimeout) return clearTimeout(e);
-        if ((d === r || !d) && clearTimeout)
-          return (d = clearTimeout), clearTimeout(e);
+        if ((d === r || !d) && clearTimeout) return (d = clearTimeout), clearTimeout(e);
         try {
           return d(e);
         } catch (t) {
@@ -2125,9 +1886,7 @@ webpackJsonp(
         }
       }
       function a() {
-        m &&
-          f &&
-          ((m = !1), f.length ? (h = f.concat(h)) : (g = -1), h.length && s());
+        m && f && ((m = !1), f.length ? (h = f.concat(h)) : (g = -1), h.length && s());
       }
       function s() {
         if (!m) {
@@ -2165,8 +1924,7 @@ webpackJsonp(
         g = -1;
       (p.nextTick = function (e) {
         var t = new Array(arguments.length - 1);
-        if (arguments.length > 1)
-          for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
+        if (arguments.length > 1) for (var n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
         h.push(new l(e, t)), 1 !== h.length || m || o(s);
       }),
         (l.prototype.run = function () {
@@ -2207,9 +1965,7 @@ webpackJsonp(
       "use strict";
       function r(e, t) {
         var n = {};
-        for (var r in e)
-          t.indexOf(r) >= 0 ||
-            (Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]));
+        for (var r in e) t.indexOf(r) >= 0 || (Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]));
         return n;
       }
       var o =
@@ -2217,8 +1973,7 @@ webpackJsonp(
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -2246,8 +2001,7 @@ webpackJsonp(
           )
         );
       };
-      (p.propTypes = { className: l.string, label: l.string }),
-        (e.exports = d(u(p)));
+      (p.propTypes = { className: l.string, label: l.string }), (e.exports = d(u(p)));
     },
     257: function (e, t, n) {
       "use strict";
@@ -2324,11 +2078,7 @@ webpackJsonp(
                 },
                 i.createElement("img", { alt: e.alt, src: e.src })
               )),
-              (a = i.createElement(
-                "a",
-                { href: e.href, key: "titleElement", title: e.title },
-                e.title
-              )))
+              (a = i.createElement("a", { href: e.href, key: "titleElement", title: e.title }, e.title)))
             : ((o = i.createElement("img", { src: e.src })), (a = e.title)),
           n.push(a),
           e.creator &&
@@ -2336,11 +2086,7 @@ webpackJsonp(
               i.createElement(
                 "div",
                 { className: "thumbnail-creator", key: "creator" },
-                i.createElement(
-                  "a",
-                  { href: "/users/" + e.creator + "/" },
-                  e.creator
-                )
+                i.createElement("a", { href: "/users/" + e.creator + "/" }, e.creator)
               )
             ),
           e.avatar &&
@@ -2403,22 +2149,15 @@ webpackJsonp(
     26: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -2427,18 +2166,14 @@ webpackJsonp(
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a =
           Object.assign ||
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -2466,10 +2201,7 @@ webpackJsonp(
       var h = (function (e) {
         function t(e) {
           r(this, t);
-          var n = o(
-            this,
-            (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-          );
+          var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
           return l(n, ["handleRequestClose"]), n;
         }
         return (
@@ -2485,9 +2217,7 @@ webpackJsonp(
               key: "render",
               value: function () {
                 var e = this,
-                  t = this.props.useStandardSizes
-                    ? { bodyOpenClassName: c("overflow-hidden") }
-                    : {};
+                  t = this.props.useStandardSizes ? { bodyOpenClassName: c("overflow-hidden") } : {};
                 return p.createElement(
                   f,
                   a(
@@ -2503,14 +2233,8 @@ webpackJsonp(
                       },
                       overlayClassName: {
                         base: c("modal-overlay", this.props.overlayClassName),
-                        afterOpen: c(
-                          "modal-overlay",
-                          this.props.overlayClassName
-                        ),
-                        beforeClose: c(
-                          "modal-overlay",
-                          this.props.overlayClassName
-                        ),
+                        afterOpen: c("modal-overlay", this.props.overlayClassName),
+                        beforeClose: c("modal-overlay", this.props.overlayClassName),
                       },
                       ref: function (t) {
                         e.modal = t;
@@ -2578,11 +2302,7 @@ webpackJsonp(
             i.createElement(
               "div",
               { className: r("page", n) },
-              i.createElement(
-                "div",
-                { className: r({ staging: !1 }), id: "navigation" },
-                i.createElement(a, null)
-              ),
+              i.createElement("div", { className: r({ staging: !1 }), id: "navigation" }, i.createElement(a, null)),
               i.createElement(
                 "div",
                 { id: "view" },
@@ -2595,17 +2315,8 @@ webpackJsonp(
                   ),
                 t
               ),
-              i.createElement(
-                "div",
-                { id: "footer" },
-                i.createElement(s, null)
-              ),
-              o &&
-                i.createElement(
-                  "div",
-                  { id: "donor" },
-                  i.createElement(l, null)
-                )
+              i.createElement("div", { id: "footer" }, i.createElement(s, null)),
+              o && i.createElement("div", { id: "donor" }, i.createElement(l, null))
             )
           );
         };
@@ -2629,8 +2340,7 @@ webpackJsonp(
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -2647,15 +2357,7 @@ webpackJsonp(
             { className: "box-header" },
             a.createElement("h4", null, e.title),
             a.createElement("h5", null, e.subtitle),
-            a.createElement(
-              "p",
-              null,
-              a.createElement(
-                "a",
-                r({ href: e.moreHref }, e.moreProps),
-                e.moreTitle
-              )
-            )
+            a.createElement("p", null, a.createElement("a", r({ href: e.moreHref }, e.moreProps), e.moreTitle))
           ),
           a.createElement("div", { className: "box-content" }, e.children)
         );
@@ -2710,10 +2412,7 @@ webpackJsonp(
               return r.__awaiter(this, void 0, void 0, function () {
                 var t;
                 return r.__generator(this, function (n) {
-                  return (
-                    (t = this.buffer.splice(this.buffer.indexOf(e), 1)[0]),
-                    [2, t]
-                  );
+                  return (t = this.buffer.splice(this.buffer.indexOf(e), 1)[0]), [2, t];
                 });
               });
             }),
@@ -2753,8 +2452,7 @@ webpackJsonp(
         var e = a.getGlobalObject();
         return (
           (e.__SENTRY__ = e.__SENTRY__ || {}),
-          (e.__SENTRY__.globalEventProcessors =
-            e.__SENTRY__.globalEventProcessors || []),
+          (e.__SENTRY__.globalEventProcessors = e.__SENTRY__.globalEventProcessors || []),
           e.__SENTRY__.globalEventProcessors
         );
       }
@@ -2809,9 +2507,7 @@ webpackJsonp(
                       if (l.done) return [3, 7];
                       (c = l.value), (p.label = 3);
                     case 3:
-                      return (
-                        p.trys.push([3, 5, , 6]), [4, c(i.__assign({}, a), t)]
-                      );
+                      return p.trys.push([3, 5, , 6]), [4, c(i.__assign({}, a), t)];
                     case 4:
                       return (a = p.sent()), null === a ? [2, null] : [3, 6];
                     case 5:
@@ -2836,20 +2532,12 @@ webpackJsonp(
               });
             }),
             (e.prototype.setUser = function (e) {
-              return (
-                (this.user = s.safeNormalize(e)),
-                this.notifyScopeListeners(),
-                this
-              );
+              return (this.user = s.safeNormalize(e)), this.notifyScopeListeners(), this;
             }),
             (e.prototype.setTag = function (e, t) {
               var n;
               return (
-                (this.tags = i.__assign(
-                  {},
-                  this.tags,
-                  ((n = {}), (n[e] = s.safeNormalize(t)), n)
-                )),
+                (this.tags = i.__assign({}, this.tags, ((n = {}), (n[e] = s.safeNormalize(t)), n))),
                 this.notifyScopeListeners(),
                 this
               );
@@ -2857,28 +2545,16 @@ webpackJsonp(
             (e.prototype.setExtra = function (e, t) {
               var n;
               return (
-                (this.extra = i.__assign(
-                  {},
-                  this.extra,
-                  ((n = {}), (n[e] = s.safeNormalize(t)), n)
-                )),
+                (this.extra = i.__assign({}, this.extra, ((n = {}), (n[e] = s.safeNormalize(t)), n))),
                 this.notifyScopeListeners(),
                 this
               );
             }),
             (e.prototype.setFingerprint = function (e) {
-              return (
-                (this.fingerprint = s.safeNormalize(e)),
-                this.notifyScopeListeners(),
-                this
-              );
+              return (this.fingerprint = s.safeNormalize(e)), this.notifyScopeListeners(), this;
             }),
             (e.prototype.setLevel = function (e) {
-              return (
-                (this.level = s.safeNormalize(e)),
-                this.notifyScopeListeners(),
-                this
-              );
+              return (this.level = s.safeNormalize(e)), this.notifyScopeListeners(), this;
             }),
             (e.clone = function (t) {
               var n = new e();
@@ -2909,15 +2585,10 @@ webpackJsonp(
                 this.notifyScopeListeners();
             }),
             (e.prototype.applyFingerprint = function (e) {
-              (e.fingerprint = e.fingerprint
-                ? Array.isArray(e.fingerprint)
-                  ? e.fingerprint
-                  : [e.fingerprint]
-                : []),
+              (e.fingerprint = e.fingerprint ? (Array.isArray(e.fingerprint) ? e.fingerprint : [e.fingerprint]) : []),
                 this.fingerprint
                   ? (e.fingerprint = e.fingerprint.concat(this.fingerprint))
-                  : e.message &&
-                    (e.fingerprint = e.fingerprint.concat(e.message)),
+                  : e.message && (e.fingerprint = e.fingerprint.concat(e.message)),
                 e.fingerprint && !e.fingerprint.length && delete e.fingerprint;
             }),
             (e.prototype.applyToEvent = function (e, t, n) {
@@ -2925,24 +2596,15 @@ webpackJsonp(
                 var r;
                 return i.__generator(this, function (o) {
                   return (
-                    this.extra &&
-                      Object.keys(this.extra).length &&
-                      (e.extra = i.__assign({}, this.extra, e.extra)),
-                    this.tags &&
-                      Object.keys(this.tags).length &&
-                      (e.tags = i.__assign({}, this.tags, e.tags)),
-                    this.user &&
-                      Object.keys(this.user).length &&
-                      (e.user = i.__assign({}, this.user, e.user)),
+                    this.extra && Object.keys(this.extra).length && (e.extra = i.__assign({}, this.extra, e.extra)),
+                    this.tags && Object.keys(this.tags).length && (e.tags = i.__assign({}, this.tags, e.tags)),
+                    this.user && Object.keys(this.user).length && (e.user = i.__assign({}, this.user, e.user)),
                     this.level && (e.level = this.level),
                     this.applyFingerprint(e),
                     (r = !e.breadcrumbs || 0 === e.breadcrumbs.length),
                     r &&
                       this.breadcrumbs.length > 0 &&
-                      (e.breadcrumbs =
-                        void 0 !== n && n >= 0
-                          ? this.breadcrumbs.slice(-n)
-                          : this.breadcrumbs),
+                      (e.breadcrumbs = void 0 !== n && n >= 0 ? this.breadcrumbs.slice(-n) : this.breadcrumbs),
                     [2, this.notifyEventProcessors(e, t)]
                   );
                 });
@@ -2956,14 +2618,7 @@ webpackJsonp(
     30: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        return (
-          void 0 === t && (t = 0),
-          0 !== t && s.isString(e)
-            ? e.length <= t
-              ? e
-              : e.substr(0, t) + "…"
-            : e
-        );
+        return void 0 === t && (t = 0), 0 !== t && s.isString(e) ? (e.length <= t ? e : e.substr(0, t) + "…") : e;
       }
       function o(e, t) {
         var n = e,
@@ -3004,22 +2659,15 @@ webpackJsonp(
     31: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -3028,10 +2676,7 @@ webpackJsonp(
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -3056,10 +2701,7 @@ webpackJsonp(
       var p = (function (e) {
         function t(e) {
           r(this, t);
-          var n = o(
-            this,
-            (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-          );
+          var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
           return s(n, ["handleClickOutside"]), n;
         }
         return (
@@ -3101,10 +2743,7 @@ webpackJsonp(
     32: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!e || !e.length)
-          throw new Error(
-            "react-modal: No elements were found for selector " + t + "."
-          );
+        if (!e || !e.length) throw new Error("react-modal: No elements were found for selector " + t + ".");
       }
       function o(e) {
         var t = e;
@@ -3168,8 +2807,7 @@ webpackJsonp(
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -3190,9 +2828,7 @@ webpackJsonp(
             if (e.vertical) t = this.getWidth(l.default.findDOMNode(this));
             else {
               var s = e.centerMode && 2 * parseInt(e.centerPadding);
-              t =
-                (this.getWidth(l.default.findDOMNode(this)) - s) /
-                e.slidesToShow;
+              t = (this.getWidth(l.default.findDOMNode(this)) - s) / e.slidesToShow;
             }
             var u = this.getHeight(n.querySelector('[data-index="0"]')),
               p = u * e.slidesToShow,
@@ -3218,9 +2854,7 @@ webpackJsonp(
                       this.state
                     )
                   ),
-                  n = (0, c.getTrackCSS)(
-                    (0, d.default)({ left: t }, e, this.state)
-                  );
+                  n = (0, c.getTrackCSS)((0, d.default)({ left: t }, e, this.state));
                 this.setState({ trackStyle: n }), this.autoPlay();
               }
             );
@@ -3234,9 +2868,7 @@ webpackJsonp(
             if (e.vertical) t = this.getWidth(l.default.findDOMNode(this));
             else {
               var s = e.centerMode && 2 * parseInt(e.centerPadding);
-              t =
-                (this.getWidth(l.default.findDOMNode(this)) - s) /
-                e.slidesToShow;
+              t = (this.getWidth(l.default.findDOMNode(this)) - s) / e.slidesToShow;
             }
             var u = this.getHeight(n.querySelector('[data-index="0"]')),
               p = u * e.slidesToShow;
@@ -3261,22 +2893,16 @@ webpackJsonp(
                         this.state
                       )
                     ),
-                    n = (0, c.getTrackCSS)(
-                      (0, d.default)({ left: t }, e, this.state)
-                    );
+                    n = (0, c.getTrackCSS)((0, d.default)({ left: t }, e, this.state));
                   this.setState({ trackStyle: n });
                 }
               );
           },
           getWidth: function (e) {
-            return (
-              (e && (e.getBoundingClientRect().width || e.offsetWidth)) || 0
-            );
+            return (e && (e.getBoundingClientRect().width || e.offsetWidth)) || 0;
           },
           getHeight: function (e) {
-            return (
-              (e && (e.getBoundingClientRect().height || e.offsetHeight)) || 0
-            );
+            return (e && (e.getBoundingClientRect().height || e.offsetHeight)) || 0;
           },
           adaptHeight: function () {
             if (this.props.adaptiveHeight) {
@@ -3293,9 +2919,7 @@ webpackJsonp(
               e.infinite ||
                 (e.centerMode
                   ? e.currentSlide >= e.slideCount - 1 && (t = !1)
-                  : (e.slideCount <= e.slidesToShow ||
-                      e.currentSlide >= e.slideCount - e.slidesToShow) &&
-                    (t = !1)),
+                  : (e.slideCount <= e.slidesToShow || e.currentSlide >= e.slideCount - e.slidesToShow) && (t = !1)),
               t
             );
           },
@@ -3309,18 +2933,11 @@ webpackJsonp(
             if (!this.props.waitForAnimate || !this.state.animating) {
               if (this.props.fade) {
                 if (
-                  ((n = this.state.currentSlide),
-                  !1 === this.props.infinite &&
-                    (e < 0 || e >= this.state.slideCount))
+                  ((n = this.state.currentSlide), !1 === this.props.infinite && (e < 0 || e >= this.state.slideCount))
                 )
                   return;
                 return (
-                  (t =
-                    e < 0
-                      ? e + this.state.slideCount
-                      : e >= this.state.slideCount
-                      ? e - this.state.slideCount
-                      : e),
+                  (t = e < 0 ? e + this.state.slideCount : e >= this.state.slideCount ? e - this.state.slideCount : e),
                   this.props.lazyLoad &&
                     this.state.lazyLoadedList.indexOf(t) < 0 &&
                     this.setState({
@@ -3331,17 +2948,10 @@ webpackJsonp(
                       a.props.afterChange && a.props.afterChange(t),
                       delete a.animationEndCallback;
                   }),
-                  this.setState(
-                    { animating: !0, currentSlide: t },
-                    function () {
-                      this.animationEndCallback = setTimeout(
-                        i,
-                        this.props.speed
-                      );
-                    }
-                  ),
-                  this.props.beforeChange &&
-                    this.props.beforeChange(this.state.currentSlide, t),
+                  this.setState({ animating: !0, currentSlide: t }, function () {
+                    this.animationEndCallback = setTimeout(i, this.props.speed);
+                  }),
+                  this.props.beforeChange && this.props.beforeChange(this.state.currentSlide, t),
                   void this.autoPlay()
                 );
               }
@@ -3352,8 +2962,7 @@ webpackJsonp(
                     ? !1 === this.props.infinite
                       ? 0
                       : this.state.slideCount % this.props.slidesToScroll != 0
-                      ? this.state.slideCount -
-                        (this.state.slideCount % this.props.slidesToScroll)
+                      ? this.state.slideCount - (this.state.slideCount % this.props.slidesToScroll)
                       : this.state.slideCount + t
                     : t >= this.state.slideCount
                     ? !1 === this.props.infinite
@@ -3363,31 +2972,17 @@ webpackJsonp(
                       : t - this.state.slideCount
                     : t),
                 (r = (0, c.getTrackLeft)(
-                  (0, d.default)(
-                    { slideIndex: t, trackRef: this.track },
-                    this.props,
-                    this.state
-                  )
+                  (0, d.default)({ slideIndex: t, trackRef: this.track }, this.props, this.state)
                 )),
                 (o = (0, c.getTrackLeft)(
-                  (0, d.default)(
-                    { slideIndex: n, trackRef: this.track },
-                    this.props,
-                    this.state
-                  )
+                  (0, d.default)({ slideIndex: n, trackRef: this.track }, this.props, this.state)
                 )),
                 !1 === this.props.infinite && (r = o),
-                this.props.beforeChange &&
-                  this.props.beforeChange(this.state.currentSlide, n),
+                this.props.beforeChange && this.props.beforeChange(this.state.currentSlide, n),
                 this.props.lazyLoad)
               ) {
-                for (
-                  var s = !0, l = [], u = t;
-                  u < t + this.props.slidesToShow;
-                  u++
-                )
-                  (s = s && this.state.lazyLoadedList.indexOf(u) >= 0) ||
-                    l.push(u);
+                for (var s = !0, l = [], u = t; u < t + this.props.slidesToShow; u++)
+                  (s = s && this.state.lazyLoadedList.indexOf(u) >= 0) || l.push(u);
                 s ||
                   this.setState({
                     lazyLoadedList: this.state.lazyLoadedList.concat(l),
@@ -3397,9 +2992,7 @@ webpackJsonp(
                 this.setState(
                   {
                     currentSlide: n,
-                    trackStyle: (0, c.getTrackCSS)(
-                      (0, d.default)({ left: o }, this.props, this.state)
-                    ),
+                    trackStyle: (0, c.getTrackCSS)((0, d.default)({ left: o }, this.props, this.state)),
                   },
                   function () {
                     this.props.afterChange && this.props.afterChange(n);
@@ -3409,29 +3002,20 @@ webpackJsonp(
                 var p = {
                   animating: !1,
                   currentSlide: n,
-                  trackStyle: (0, c.getTrackCSS)(
-                    (0, d.default)({ left: o }, this.props, this.state)
-                  ),
+                  trackStyle: (0, c.getTrackCSS)((0, d.default)({ left: o }, this.props, this.state)),
                   swipeLeft: null,
                 };
                 (i = function () {
-                  a.setState(p),
-                    a.props.afterChange && a.props.afterChange(n),
-                    delete a.animationEndCallback;
+                  a.setState(p), a.props.afterChange && a.props.afterChange(n), delete a.animationEndCallback;
                 }),
                   this.setState(
                     {
                       animating: !0,
                       currentSlide: n,
-                      trackStyle: (0, c.getTrackAnimateCSS)(
-                        (0, d.default)({ left: r }, this.props, this.state)
-                      ),
+                      trackStyle: (0, c.getTrackAnimateCSS)((0, d.default)({ left: r }, this.props, this.state)),
                     },
                     function () {
-                      this.animationEndCallback = setTimeout(
-                        i,
-                        this.props.speed
-                      );
+                      this.animationEndCallback = setTimeout(i, this.props.speed);
                     }
                   );
               }
@@ -3464,8 +3048,7 @@ webpackJsonp(
           play: function () {
             var e;
             if (!this.state.mounted) return !1;
-            if (this.props.rtl)
-              e = this.state.currentSlide - this.props.slidesToScroll;
+            if (this.props.rtl) e = this.state.currentSlide - this.props.slidesToScroll;
             else {
               if (!this.canGoNext(o({}, this.props, this.state))) return !1;
               e = this.state.currentSlide + this.props.slidesToScroll;
@@ -3476,16 +3059,12 @@ webpackJsonp(
             this.state.autoPlayTimer && clearTimeout(this.state.autoPlayTimer),
               this.props.autoplay &&
                 this.setState({
-                  autoPlayTimer: setTimeout(
-                    this.play,
-                    this.props.autoplaySpeed
-                  ),
+                  autoPlayTimer: setTimeout(this.play, this.props.autoplaySpeed),
                 });
           },
           pause: function () {
             this.state.autoPlayTimer &&
-              (clearTimeout(this.state.autoPlayTimer),
-              this.setState({ autoPlayTimer: null }));
+              (clearTimeout(this.state.autoPlayTimer), this.setState({ autoPlayTimer: null }));
           },
         };
       t.default = p;
@@ -3497,8 +3076,7 @@ webpackJsonp(
         if (t && !e.innerHTML) return !0;
         var n = window.getComputedStyle(e);
         return t
-          ? "visible" !== n.getPropertyValue("overflow") ||
-              (e.scrollWidth <= 0 && e.scrollHeight <= 0)
+          ? "visible" !== n.getPropertyValue("overflow") || (e.scrollWidth <= 0 && e.scrollHeight <= 0)
           : "none" == n.getPropertyValue("display");
       }
       function o(e) {
@@ -3510,9 +3088,7 @@ webpackJsonp(
       }
       function i(e, t) {
         var n = e.nodeName.toLowerCase();
-        return (
-          ((l.test(n) && !e.disabled) || ("a" === n ? e.href || t : t)) && o(e)
-        );
+        return ((l.test(n) && !e.disabled) || ("a" === n ? e.href || t : t)) && o(e);
       }
       function a(e) {
         var t = e.getAttribute("tabindex");
@@ -3595,22 +3171,15 @@ webpackJsonp(
     41: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -3619,10 +3188,7 @@ webpackJsonp(
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -3650,10 +3216,7 @@ webpackJsonp(
       var m = (function (e) {
         function t(e) {
           r(this, t);
-          var n = o(
-            this,
-            (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-          );
+          var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
           return s(n, ["handleSetLanguage"]), n;
         }
         return (
@@ -3663,8 +3226,7 @@ webpackJsonp(
               key: "handleSetLanguage",
               value: function (e, t) {
                 var n = {};
-                "localhost" !== window.location.hostname &&
-                  (n = { domain: "." + window.location.hostname }),
+                "localhost" !== window.location.hostname && (n = { domain: "." + window.location.hostname }),
                   d.set("scratchlanguage", t, n),
                   window.location.reload();
               },
@@ -3708,14 +3270,9 @@ webpackJsonp(
         i = n(0);
       n(50);
       var a = function (e) {
-        return i.createElement(
-          "div",
-          { className: r("inner", e.className) },
-          e.children
-        );
+        return i.createElement("div", { className: r("inner", e.className) }, e.children);
       };
-      (a.propTypes = { children: o.node, className: o.string }),
-        (e.exports = a);
+      (a.propTypes = { children: o.node, className: o.string }), (e.exports = a);
     },
     43: function (e, t, n) {
       (t = e.exports = n(2)()),
@@ -3848,8 +3405,7 @@ webpackJsonp(
       function r(e) {
         return e && e.__esModule ? e : { default: e };
       }
-      (t.__esModule = !0),
-        (t.getTrackLeft = t.getTrackAnimateCSS = t.getTrackCSS = void 0);
+      (t.__esModule = !0), (t.getTrackLeft = t.getTrackAnimateCSS = t.getTrackCSS = void 0);
       var o = n(39),
         i = r(o),
         a = n(152),
@@ -3862,13 +3418,7 @@ webpackJsonp(
             : console.error("Keys Missing", e);
         },
         c = (t.getTrackCSS = function (e) {
-          l(e, [
-            "left",
-            "variableWidth",
-            "slideCount",
-            "slidesToShow",
-            "slideWidth",
-          ]);
+          l(e, ["left", "variableWidth", "slideCount", "slidesToShow", "slideWidth"]);
           var t,
             n,
             r = e.slideCount + 2 * e.slidesToShow;
@@ -3889,9 +3439,7 @@ webpackJsonp(
               : "translate3d(" + e.left + "px, 0px, 0px)",
             transition: "",
             WebkitTransition: "",
-            msTransform: e.vertical
-              ? "translateY(" + e.left + "px)"
-              : "translateX(" + e.left + "px)",
+            msTransform: e.vertical ? "translateY(" + e.left + "px)" : "translateX(" + e.left + "px)",
           };
           return (
             t && (0, s.default)(o, { width: t }),
@@ -3899,26 +3447,15 @@ webpackJsonp(
             window &&
               !window.addEventListener &&
               window.attachEvent &&
-              (e.vertical
-                ? (o.marginTop = e.left + "px")
-                : (o.marginLeft = e.left + "px")),
+              (e.vertical ? (o.marginTop = e.left + "px") : (o.marginLeft = e.left + "px")),
             o
           );
         });
       (t.getTrackAnimateCSS = function (e) {
-        l(e, [
-          "left",
-          "variableWidth",
-          "slideCount",
-          "slidesToShow",
-          "slideWidth",
-          "speed",
-          "cssEase",
-        ]);
+        l(e, ["left", "variableWidth", "slideCount", "slidesToShow", "slideWidth", "speed", "cssEase"]);
         var t = c(e);
         return (
-          (t.WebkitTransition =
-            "-webkit-transform " + e.speed + "ms " + e.cssEase),
+          (t.WebkitTransition = "-webkit-transform " + e.speed + "ms " + e.cssEase),
           (t.transition = "transform " + e.speed + "ms " + e.cssEase),
           t
         );
@@ -3944,24 +3481,15 @@ webpackJsonp(
           if (e.fade) return 0;
           if (e.infinite)
             e.slideCount >= e.slidesToShow &&
-              ((r = e.slideWidth * e.slidesToShow * -1),
-              (o = e.slideHeight * e.slidesToShow * -1)),
+              ((r = e.slideWidth * e.slidesToShow * -1), (o = e.slideHeight * e.slidesToShow * -1)),
               e.slideCount % e.slidesToScroll != 0 &&
                 e.slideIndex + e.slidesToScroll > e.slideCount &&
                 e.slideCount > e.slidesToShow &&
                 (e.slideIndex > e.slideCount
-                  ? ((r =
-                      (e.slidesToShow - (e.slideIndex - e.slideCount)) *
-                      e.slideWidth *
-                      -1),
-                    (o =
-                      (e.slidesToShow - (e.slideIndex - e.slideCount)) *
-                      e.slideHeight *
-                      -1))
-                  : ((r =
-                      (e.slideCount % e.slidesToScroll) * e.slideWidth * -1),
-                    (o =
-                      (e.slideCount % e.slidesToScroll) * e.slideHeight * -1)));
+                  ? ((r = (e.slidesToShow - (e.slideIndex - e.slideCount)) * e.slideWidth * -1),
+                    (o = (e.slidesToShow - (e.slideIndex - e.slideCount)) * e.slideHeight * -1))
+                  : ((r = (e.slideCount % e.slidesToScroll) * e.slideWidth * -1),
+                    (o = (e.slideCount % e.slidesToScroll) * e.slideHeight * -1)));
           else if (
             e.slideCount % e.slidesToScroll != 0 &&
             e.slideIndex + e.slidesToScroll > e.slideCount &&
@@ -3975,24 +3503,19 @@ webpackJsonp(
               (e.infinite
                 ? (r += e.slideWidth * Math.floor(e.slidesToShow / 2))
                 : (r = e.slideWidth * Math.floor(e.slidesToShow / 2))),
-            (t = e.vertical
-              ? e.slideIndex * e.slideHeight * -1 + o
-              : e.slideIndex * e.slideWidth * -1 + r),
+            (t = e.vertical ? e.slideIndex * e.slideHeight * -1 + o : e.slideIndex * e.slideWidth * -1 + r),
             !0 === e.variableWidth)
           ) {
             var s;
             e.slideCount <= e.slidesToShow || !1 === e.infinite
               ? (n = i.default.findDOMNode(e.trackRef).childNodes[e.slideIndex])
-              : ((s = e.slideIndex + e.slidesToShow),
-                (n = i.default.findDOMNode(e.trackRef).childNodes[s])),
+              : ((s = e.slideIndex + e.slidesToShow), (n = i.default.findDOMNode(e.trackRef).childNodes[s])),
               (t = n ? -1 * n.offsetLeft : 0),
               !0 === e.centerMode &&
                 (n =
                   !1 === e.infinite
                     ? i.default.findDOMNode(e.trackRef).children[e.slideIndex]
-                    : i.default.findDOMNode(e.trackRef).children[
-                        e.slideIndex + e.slidesToShow + 1
-                      ]) &&
+                    : i.default.findDOMNode(e.trackRef).children[e.slideIndex + e.slidesToShow + 1]) &&
                 (t = -1 * n.offsetLeft + (e.listWidth - n.offsetWidth) / 2);
           }
           return t;
@@ -4125,8 +3648,7 @@ webpackJsonp(
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -4239,10 +3761,7 @@ webpackJsonp(
             frameBorder: "0",
             height: e.height,
             scrolling: "no",
-            src:
-              "https://fast.wistia.net/embed/iframe/" +
-              e.videoId +
-              "?seo=false&videoFoam=true",
+            src: "https://fast.wistia.net/embed/iframe/" + e.videoId + "?seo=false&videoFoam=true",
             title: e.title,
             width: e.width,
           }),
@@ -4275,8 +3794,7 @@ webpackJsonp(
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -4285,15 +3803,11 @@ webpackJsonp(
         a = n(1),
         s = n(0),
         l = function (e) {
-          return s.createElement(
-            "img",
-            r({ className: o("avatar", e.className) }, i(e, ["className"]))
-          );
+          return s.createElement("img", r({ className: o("avatar", e.className) }, i(e, ["className"])));
         };
       (l.propTypes = { className: a.string, src: a.string }),
         (l.defaultProps = {
-          src:
-            "//cdn2.scratch.mit.edu/get_image/user/2584924_24x24.png?v=1438702210.96",
+          src: "//cdn2.scratch.mit.edu/get_image/user/2584924_24x24.png?v=1438702210.96",
         }),
         (e.exports = l);
     },
@@ -4316,16 +3830,8 @@ webpackJsonp(
             ? i.createElement(
                 i.Fragment,
                 null,
-                i.createElement(
-                  "span",
-                  { className: "toggle", onClick: s },
-                  "x"
-                ),
-                i.createElement(
-                  "div",
-                  { className: "admin-header" },
-                  i.createElement("h3", null, "Admin Panel")
-                ),
+                i.createElement("span", { className: "toggle", onClick: s }, "x"),
+                i.createElement("div", { className: "admin-header" }, i.createElement("h3", null, "Admin Panel")),
                 i.createElement("div", { className: "admin-content" }, n)
               )
             : i.createElement("span", { className: "toggle", onClick: a }, ">")
@@ -4359,11 +3865,7 @@ webpackJsonp(
         ]);
     },
     560: function (e, t) {
-      var n = !(
-        "undefined" == typeof window ||
-        !window.document ||
-        !window.document.createElement
-      );
+      var n = !("undefined" == typeof window || !window.document || !window.document.createElement);
       e.exports = n;
     },
     566: function (e, t, n) {
@@ -4421,9 +3923,7 @@ webpackJsonp(
     58: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        (e.prototype = Object.create(t.prototype)),
-          (e.prototype.constructor = e),
-          (e.__proto__ = t);
+        (e.prototype = Object.create(t.prototype)), (e.prototype.constructor = e), (e.__proto__ = t);
       }
       function o(e, t) {
         if (null == e) return {};
@@ -4431,24 +3931,17 @@ webpackJsonp(
           r,
           o = {},
           i = Object.keys(e);
-        for (r = 0; r < i.length; r++)
-          (n = i[r]), t.indexOf(n) >= 0 || (o[n] = e[n]);
+        for (r = 0; r < i.length; r++) (n = i[r]), t.indexOf(n) >= 0 || (o[n] = e[n]);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           for (r = 0; r < a.length; r++)
-            (n = a[r]),
-              t.indexOf(n) >= 0 ||
-                (Object.prototype.propertyIsEnumerable.call(e, n) &&
-                  (o[n] = e[n]));
+            (n = a[r]), t.indexOf(n) >= 0 || (Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]));
         }
         return o;
       }
       function i(e, t, n) {
         return (
-          e === t ||
-          (e.correspondingElement
-            ? e.correspondingElement.classList.contains(n)
-            : e.classList.contains(n))
+          e === t || (e.correspondingElement ? e.correspondingElement.classList.contains(n) : e.classList.contains(n))
         );
       }
       function a(e, t, n) {
@@ -4460,19 +3953,11 @@ webpackJsonp(
         return e;
       }
       function s(e) {
-        return (
-          document.documentElement.clientWidth <= e.clientX ||
-          document.documentElement.clientHeight <= e.clientY
-        );
+        return document.documentElement.clientWidth <= e.clientX || document.documentElement.clientHeight <= e.clientY;
       }
       function l(e, t) {
         var n = null;
-        return (
-          -1 !== A.indexOf(t) &&
-            u &&
-            (n = { passive: !e.props.preventDefault }),
-          n
-        );
+        return -1 !== A.indexOf(t) && u && (n = { passive: !e.props.preventDefault }), n;
       }
       function c(e, t) {
         var i, c;
@@ -4483,13 +3968,10 @@ webpackJsonp(
               return (
                 (t = i.call(this, e) || this),
                 (t.__outsideClickHandler = function (e) {
-                  if ("function" == typeof t.__clickOutsideHandlerProp)
-                    return void t.__clickOutsideHandlerProp(e);
+                  if ("function" == typeof t.__clickOutsideHandlerProp) return void t.__clickOutsideHandlerProp(e);
                   var n = t.getInstance();
-                  if ("function" == typeof n.props.handleClickOutside)
-                    return void n.props.handleClickOutside(e);
-                  if ("function" == typeof n.handleClickOutside)
-                    return void n.handleClickOutside(e);
+                  if ("function" == typeof n.props.handleClickOutside) return void n.props.handleClickOutside(e);
+                  if ("function" == typeof n.handleClickOutside) return void n.handleClickOutside(e);
                   throw new Error(
                     "WrappedComponent lacks a handleClickOutside(event) function for processing outside click events."
                   );
@@ -4507,11 +3989,8 @@ webpackJsonp(
                           t.props.stopPropagation && e.stopPropagation(),
                           !t.props.excludeScrollbar || !s(e))
                         ) {
-                          a(
-                            e.target,
-                            t.componentNode,
-                            t.props.outsideClickIgnoreClass
-                          ) === document && t.__outsideClickHandler(e);
+                          a(e.target, t.componentNode, t.props.outsideClickIgnoreClass) === document &&
+                            t.__outsideClickHandler(e);
                         }
                       }),
                       e.forEach(function (e) {
@@ -4558,8 +4037,7 @@ webpackJsonp(
                     throw new Error(
                       "WrappedComponent lacks a function for processing outside click events specified by the handleClickOutside config option."
                     );
-                  (this.componentNode = n.i(p.findDOMNode)(this.getInstance())),
-                    this.enableOnClickOutside();
+                  (this.componentNode = n.i(p.findDOMNode)(this.getInstance())), this.enableOnClickOutside();
                 }
               }),
               (A.componentDidUpdate = function () {
@@ -4572,9 +4050,7 @@ webpackJsonp(
                 var t = this.props,
                   r = (t.excludeScrollbar, o(t, ["excludeScrollbar"]));
                 return (
-                  e.prototype.isReactComponent
-                    ? (r.ref = this.getRef)
-                    : (r.wrappedRef = this.getRef),
+                  e.prototype.isReactComponent ? (r.ref = this.getRef) : (r.wrappedRef = this.getRef),
                   (r.disableOnClickOutside = this.disableOnClickOutside),
                   (r.enableOnClickOutside = this.enableOnClickOutside),
                   n.i(d.createElement)(e, r)
@@ -4583,8 +4059,7 @@ webpackJsonp(
               c
             );
           })(d.Component)),
-          (i.displayName =
-            "OnClickOutside(" + (e.displayName || e.name || "Component") + ")"),
+          (i.displayName = "OnClickOutside(" + (e.displayName || e.name || "Component") + ")"),
           (i.defaultProps = {
             eventTypes: ["mousedown", "touchstart"],
             excludeScrollbar: (t && t.excludeScrollbar) || !1,
@@ -4608,10 +4083,7 @@ webpackJsonp(
         f =
           (n.n(p),
           function () {
-            if (
-              "undefined" != typeof window &&
-              "function" == typeof window.addEventListener
-            ) {
+            if ("undefined" != typeof window && "function" == typeof window.addEventListener) {
               var e = !1,
                 t = Object.defineProperty({}, "passive", {
                   get: function () {
@@ -4664,10 +4136,7 @@ webpackJsonp(
     },
     594: function (e, t, n) {
       function r(e, t) {
-        (this.query = e),
-          (this.isUnconditional = t),
-          (this.handlers = []),
-          (this.mql = window.matchMedia(e));
+        (this.query = e), (this.isUnconditional = t), (this.handlers = []), (this.mql = window.matchMedia(e));
         var n = this;
         (this.listener = function (e) {
           (n.mql = e.currentTarget || e), n.assess();
@@ -4709,12 +4178,8 @@ webpackJsonp(
     },
     595: function (e, t, n) {
       function r() {
-        if (!window.matchMedia)
-          throw new Error(
-            "matchMedia not present, legacy browsers require a polyfill"
-          );
-        (this.queries = {}),
-          (this.browserIsIncapable = !window.matchMedia("only all").matches);
+        if (!window.matchMedia) throw new Error("matchMedia not present, legacy browsers require a polyfill");
+        (this.queries = {}), (this.browserIsIncapable = !window.matchMedia("only all").matches);
       }
       var o = n(594),
         i = n(471),
@@ -4738,10 +4203,7 @@ webpackJsonp(
         },
         unregister: function (e, t) {
           var n = this.queries[e];
-          return (
-            n && (t ? n.removeHandler(t) : (n.clear(), delete this.queries[e])),
-            this
-          );
+          return n && (t ? n.removeHandler(t) : (n.clear(), delete this.queries[e])), this;
         },
       }),
         (e.exports = r);
@@ -4756,8 +4218,7 @@ webpackJsonp(
           this.options.setup && this.options.setup(), (this.initialised = !0);
         },
         on: function () {
-          !this.initialised && this.setup(),
-            this.options.match && this.options.match();
+          !this.initialised && this.setup(), this.options.match && this.options.match();
         },
         off: function () {
           this.options.unmatch && this.options.unmatch();
@@ -4781,44 +4242,24 @@ webpackJsonp(
         function n() {
           this.constructor = e;
         }
-        x(e, t),
-          (e.prototype =
-            null === t
-              ? Object.create(t)
-              : ((n.prototype = t.prototype), new n()));
+        x(e, t), (e.prototype = null === t ? Object.create(t) : ((n.prototype = t.prototype), new n()));
       }
       function o(e, t) {
         var n = {};
-        for (var r in e)
-          Object.prototype.hasOwnProperty.call(e, r) &&
-            t.indexOf(r) < 0 &&
-            (n[r] = e[r]);
+        for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
         if (null != e && "function" == typeof Object.getOwnPropertySymbols)
-          for (
-            var o = 0, r = Object.getOwnPropertySymbols(e);
-            o < r.length;
-            o++
-          )
-            t.indexOf(r[o]) < 0 &&
-              Object.prototype.propertyIsEnumerable.call(e, r[o]) &&
-              (n[r[o]] = e[r[o]]);
+          for (var o = 0, r = Object.getOwnPropertySymbols(e); o < r.length; o++)
+            t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]]);
         return n;
       }
       function i(e, t, n, r) {
         var o,
           i = arguments.length,
-          a =
-            i < 3
-              ? t
-              : null === r
-              ? (r = Object.getOwnPropertyDescriptor(t, n))
-              : r;
-        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate)
-          a = Reflect.decorate(e, t, n, r);
+          a = i < 3 ? t : null === r ? (r = Object.getOwnPropertyDescriptor(t, n)) : r;
+        if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(e, t, n, r);
         else
           for (var s = e.length - 1; s >= 0; s--)
-            (o = e[s]) &&
-              (a = (i < 3 ? o(a) : i > 3 ? o(t, n, a) : o(t, n)) || a);
+            (o = e[s]) && (a = (i < 3 ? o(a) : i > 3 ? o(t, n, a) : o(t, n)) || a);
         return i > 3 && a && Object.defineProperty(t, n, a), a;
       }
       function a(e, t) {
@@ -4827,8 +4268,7 @@ webpackJsonp(
         };
       }
       function s(e, t) {
-        if ("object" == typeof Reflect && "function" == typeof Reflect.metadata)
-          return Reflect.metadata(e, t);
+        if ("object" == typeof Reflect && "function" == typeof Reflect.metadata) return Reflect.metadata(e, t);
       }
       function l(e, t, n, r) {
         return new (n || (n = Promise))(function (o, i) {
@@ -4869,12 +4309,7 @@ webpackJsonp(
               if (
                 ((o = 1),
                 i &&
-                  (a =
-                    2 & n[0]
-                      ? i.return
-                      : n[0]
-                      ? i.throw || ((a = i.return) && a.call(i), 0)
-                      : i.next) &&
+                  (a = 2 & n[0] ? i.return : n[0] ? i.throw || ((a = i.return) && a.call(i), 0) : i.next) &&
                   !(a = a.call(i, n[1])).done)
               )
                 return a;
@@ -4892,11 +4327,7 @@ webpackJsonp(
                   (n = l.ops.pop()), l.trys.pop();
                   continue;
                 default:
-                  if (
-                    ((a = l.trys),
-                    !(a = a.length > 0 && a[a.length - 1]) &&
-                      (6 === n[0] || 2 === n[0]))
-                  ) {
+                  if (((a = l.trys), !(a = a.length > 0 && a[a.length - 1]) && (6 === n[0] || 2 === n[0]))) {
                     l = 0;
                     continue;
                   }
@@ -4956,10 +4387,7 @@ webpackJsonp(
           ? t.call(e)
           : {
               next: function () {
-                return (
-                  e && n >= e.length && (e = void 0),
-                  { value: e && e[n++], done: !e }
-                );
+                return e && n >= e.length && (e = void 0), { value: e && e[n++], done: !e };
               },
             };
       }
@@ -4971,8 +4399,7 @@ webpackJsonp(
           i = n.call(e),
           a = [];
         try {
-          for (; (void 0 === t || t-- > 0) && !(r = i.next()).done; )
-            a.push(r.value);
+          for (; (void 0 === t || t-- > 0) && !(r = i.next()).done; ) a.push(r.value);
         } catch (e) {
           o = { error: e };
         } finally {
@@ -4985,16 +4412,13 @@ webpackJsonp(
         return a;
       }
       function f() {
-        for (var e = [], t = 0; t < arguments.length; t++)
-          e = e.concat(p(arguments[t]));
+        for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(p(arguments[t]));
         return e;
       }
       function h() {
-        for (var e = 0, t = 0, n = arguments.length; t < n; t++)
-          e += arguments[t].length;
+        for (var e = 0, t = 0, n = arguments.length; t < n; t++) e += arguments[t].length;
         for (var r = Array(e), o = 0, t = 0; t < n; t++)
-          for (var i = arguments[t], a = 0, s = i.length; a < s; a++, o++)
-            r[o] = i[a];
+          for (var i = arguments[t], a = 0, s = i.length; a < s; a++, o++) r[o] = i[a];
         return r;
       }
       function m(e) {
@@ -5017,9 +4441,7 @@ webpackJsonp(
           }
         }
         function i(e) {
-          e.value instanceof m
-            ? Promise.resolve(e.value.v).then(a, s)
-            : l(d[0][2], e);
+          e.value instanceof m ? Promise.resolve(e.value.v).then(a, s) : l(d[0][2], e);
         }
         function a(e) {
           o("next", e);
@@ -5030,8 +4452,7 @@ webpackJsonp(
         function l(e, t) {
           e(t), d.shift(), d.length && o(d[0][0], d[0][1]);
         }
-        if (!Symbol.asyncIterator)
-          throw new TypeError("Symbol.asyncIterator is not defined.");
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var c,
           u = n.apply(e, t || []),
           d = [];
@@ -5050,11 +4471,7 @@ webpackJsonp(
         function t(t, o) {
           n[t] = e[t]
             ? function (n) {
-                return (r = !r)
-                  ? { value: m(e[t](n)), done: "return" === t }
-                  : o
-                  ? o(n)
-                  : n;
+                return (r = !r) ? { value: m(e[t](n)), done: "return" === t } : o ? o(n) : n;
               }
             : o;
         }
@@ -5087,8 +4504,7 @@ webpackJsonp(
             e({ value: t, done: n });
           }, t);
         }
-        if (!Symbol.asyncIterator)
-          throw new TypeError("Symbol.asyncIterator is not defined.");
+        if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
         var r,
           o = e[Symbol.asyncIterator];
         return o
@@ -5104,18 +4520,12 @@ webpackJsonp(
             r);
       }
       function y(e, t) {
-        return (
-          Object.defineProperty
-            ? Object.defineProperty(e, "raw", { value: t })
-            : (e.raw = t),
-          e
-        );
+        return Object.defineProperty ? Object.defineProperty(e, "raw", { value: t }) : (e.raw = t), e;
       }
       function b(e) {
         if (e && e.__esModule) return e;
         var t = {};
-        if (null != e)
-          for (var n in e) Object.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+        if (null != e) for (var n in e) Object.hasOwnProperty.call(e, n) && (t[n] = e[n]);
         return (t.default = e), t;
       }
       function w(e) {
@@ -5175,8 +4585,7 @@ and limitations under the License.
               function (e) {
                 for (var t, n = 1, r = arguments.length; n < r; n++) {
                   t = arguments[n];
-                  for (var o in t)
-                    Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
+                  for (var o in t) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
                 }
                 return e;
               }),
@@ -5203,12 +4612,7 @@ and limitations under the License.
               var s = e[i];
               (i = r(i)),
                 o(i) && "number" == typeof s && (s += "px"),
-                (t +=
-                  !0 === s
-                    ? i
-                    : !1 === s
-                    ? "not " + i
-                    : "(" + i + ": " + s + ")"),
+                (t += !0 === s ? i : !1 === s ? "not " + i : "(" + i + ": " + s + ")"),
                 a < n.length - 1 && (t += " and ");
             }),
             t
@@ -5268,11 +4672,7 @@ and limitations under the License.
           );
         })([
           function (e, t, n) {
-            var r =
-                ("function" == typeof Symbol &&
-                  Symbol.for &&
-                  Symbol.for("react.element")) ||
-                60103,
+            var r = ("function" == typeof Symbol && Symbol.for && Symbol.for("react.element")) || 60103,
               o = function (e) {
                 return "object" == typeof e && null !== e && e.$$typeof === r;
               };
@@ -5322,8 +4722,7 @@ and limitations under the License.
             }
             var o = function (e) {};
             (o = function (e) {
-              if (void 0 === e)
-                throw new Error("invariant requires an error message argument");
+              if (void 0 === e) throw new Error("invariant requires an error message argument");
             }),
               (e.exports = r);
           },
@@ -5332,12 +4731,7 @@ and limitations under the License.
             var r = n(1),
               o = r,
               i = function (e) {
-                for (
-                  var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1;
-                  r < t;
-                  r++
-                )
-                  n[r - 1] = arguments[r];
+                for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
                 var o = 0,
                   i =
                     "Warning: " +
@@ -5351,16 +4745,9 @@ and limitations under the License.
               };
             (o = function (e, t) {
               if (void 0 === t)
-                throw new Error(
-                  "`warning(condition, format, ...args)` requires a warning message argument"
-                );
+                throw new Error("`warning(condition, format, ...args)` requires a warning message argument");
               if (0 !== t.indexOf("Failed Composite propType: ") && !e) {
-                for (
-                  var n = arguments.length, r = Array(n > 2 ? n - 2 : 0), o = 2;
-                  o < n;
-                  o++
-                )
-                  r[o - 2] = arguments[o];
+                for (var n = arguments.length, r = Array(n > 2 ? n - 2 : 0), o = 2; o < n; o++) r[o - 2] = arguments[o];
                 i.apply(void 0, [t].concat(r));
               }
             }),
@@ -5373,9 +4760,7 @@ and limitations under the License.
           function (e, t, n) {
             "use strict";
             function r(e) {
-              return e in a
-                ? a[e]
-                : (a[e] = e.replace(o, "-$&").toLowerCase().replace(i, "-ms-"));
+              return e in a ? a[e] : (a[e] = e.replace(o, "-$&").toLowerCase().replace(i, "-ms-"));
             }
             var o = /[A-Z]/g,
               i = /^ms-/,
@@ -5390,9 +4775,7 @@ and limitations under the License.
                 function (e) {
                   for (var t = 1; t < arguments.length; t++) {
                     var n = arguments[t];
-                    for (var r in n)
-                      Object.prototype.hasOwnProperty.call(n, r) &&
-                        (e[r] = n[r]);
+                    for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
                   }
                   return e;
                 },
@@ -5464,24 +4847,15 @@ and limitations under the License.
               return e && e.__esModule ? e : { default: e };
             }
             function o(e, t) {
-              if (!(e instanceof t))
-                throw new TypeError("Cannot call a class as a function");
+              if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
             }
             function i(e, t) {
-              if (!e)
-                throw new ReferenceError(
-                  "this hasn't been initialised - super() hasn't been called"
-                );
-              return !t || ("object" != typeof t && "function" != typeof t)
-                ? e
-                : t;
+              if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+              return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
             }
             function a(e, t) {
               if ("function" != typeof t && null !== t)
-                throw new TypeError(
-                  "Super expression must either be null or a function, not " +
-                    typeof t
-                );
+                throw new TypeError("Super expression must either be null or a function, not " + typeof t);
               (e.prototype = Object.create(t && t.prototype, {
                 constructor: {
                   value: e,
@@ -5490,10 +4864,7 @@ and limitations under the License.
                   configurable: !0,
                 },
               })),
-                t &&
-                  (Object.setPrototypeOf
-                    ? Object.setPrototypeOf(e, t)
-                    : (e.__proto__ = t));
+                t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
             }
             function s(e, t) {
               var n = c({}, e);
@@ -5504,8 +4875,7 @@ and limitations under the License.
                 n
               );
             }
-            Object.defineProperty(t, "__esModule", { value: !0 }),
-              (t.toQuery = t.default = void 0);
+            Object.defineProperty(t, "__esModule", { value: !0 }), (t.toQuery = t.default = void 0);
             var l = (function () {
                 function e(e, t) {
                   for (var n = 0; n < t.length; n++) {
@@ -5525,9 +4895,7 @@ and limitations under the License.
                 function (e) {
                   for (var t = 1; t < arguments.length; t++) {
                     var n = arguments[t];
-                    for (var r in n)
-                      Object.prototype.hasOwnProperty.call(n, r) &&
-                        (e[r] = n[r]);
+                    for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
                   }
                   return e;
                 },
@@ -5558,29 +4926,15 @@ and limitations under the License.
                 function t() {
                   var e, n, r, a;
                   o(this, t);
-                  for (
-                    var s = arguments.length, l = Array(s), c = 0;
-                    c < s;
-                    c++
-                  )
-                    l[c] = arguments[c];
+                  for (var s = arguments.length, l = Array(s), c = 0; c < s; c++) l[c] = arguments[c];
                   return (
-                    (n = r = i(
-                      this,
-                      (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(
-                        e,
-                        [this].concat(l)
-                      )
-                    )),
+                    (n = r = i(this, (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(e, [this].concat(l)))),
                     (r.state = { matches: !1 }),
                     (r.updateMatches = function () {
-                      r._mql.matches !== r.state.matches &&
-                        r.setState({ matches: r._mql.matches });
+                      r._mql.matches !== r.state.matches && r.setState({ matches: r._mql.matches });
                     }),
                     (r.removeMql = function () {
-                      r._mql &&
-                        (r._mql.removeListener(r.updateMatches),
-                        r._mql.dispose());
+                      r._mql && (r._mql.removeListener(r.updateMatches), r._mql.dispose());
                     }),
                     (a = n),
                     i(r, a)
@@ -5605,12 +4959,7 @@ and limitations under the License.
                       key: "updateQuery",
                       value: function (e) {
                         var t = void 0;
-                        if (
-                          (e.query
-                            ? (this.query = e.query)
-                            : (this.query = (0, w.default)(s(e, k))),
-                          !this.query)
-                        )
+                        if ((e.query ? (this.query = e.query) : (this.query = (0, w.default)(s(e, k))), !this.query))
                           throw new Error("Invalid or missing MediaQuery!");
                         e.values &&
                           (t = Object.keys(e.values).reduce(function (t, n) {
@@ -5647,8 +4996,7 @@ and limitations under the License.
                     {
                       key: "render",
                       value: function () {
-                        if ("function" == typeof this.props.children)
-                          return this.props.children(this.state.matches);
+                        if ("function" == typeof this.props.children) return this.props.children(this.state.matches);
                         if (!1 === this.state.matches) return null;
                         var e = s(this.props, C),
                           t = Object.keys(e).length > 0,
@@ -5658,11 +5006,7 @@ and limitations under the License.
                           "string" == typeof this.props.children ||
                           (Array.isArray(this.props.children) && 1 == n) ||
                           void 0 === this.props.children
-                          ? d.default.createElement(
-                              this.props.component || "div",
-                              e,
-                              this.props.children
-                            )
+                          ? d.default.createElement(this.props.component || "div", e, this.props.children)
                           : t
                           ? d.default.cloneElement(this.props.children, e)
                           : n
@@ -5674,10 +5018,7 @@ and limitations under the License.
                   t
                 );
               })(d.default.Component);
-            (S.displayName = "MediaQuery"),
-              (S.defaultProps = { values: {} }),
-              (t.default = S),
-              (t.toQuery = w.default);
+            (S.displayName = "MediaQuery"), (S.defaultProps = { values: {} }), (t.default = S), (t.toQuery = w.default);
           },
           function (t, n) {
             t.exports = e;
@@ -5726,13 +5067,7 @@ and limitations under the License.
                     ? n
                       ? new u(
                           null === l[c]
-                            ? "The " +
-                              p +
-                              " `" +
-                              f +
-                              "` is marked as required in `" +
-                              d +
-                              "`, but its value is `null`."
+                            ? "The " + p + " `" + f + "` is marked as required in `" + d + "`, but its value is `null`."
                             : "The " +
                               p +
                               " `" +
@@ -5774,24 +5109,12 @@ and limitations under the License.
                 function t(t, n, r, o, i) {
                   if ("function" != typeof e)
                     return new u(
-                      "Property `" +
-                        i +
-                        "` of component `" +
-                        r +
-                        "` has invalid PropType notation inside arrayOf."
+                      "Property `" + i + "` of component `" + r + "` has invalid PropType notation inside arrayOf."
                     );
                   var a = t[n];
                   if (!Array.isArray(a)) {
                     return new u(
-                      "Invalid " +
-                        o +
-                        " `" +
-                        i +
-                        "` of type `" +
-                        x(a) +
-                        "` supplied to `" +
-                        r +
-                        "`, expected an array."
+                      "Invalid " + o + " `" + i + "` of type `" + x(a) + "` supplied to `" + r + "`, expected an array."
                     );
                   }
                   for (var l = 0; l < a.length; l++) {
@@ -5826,8 +5149,7 @@ and limitations under the License.
               }
               function m(e) {
                 function t(t, n, r, o, i) {
-                  for (var a = t[n], s = 0; s < e.length; s++)
-                    if (c(a, e[s])) return null;
+                  for (var a = t[n], s = 0; s < e.length; s++) if (c(a, e[s])) return null;
                   return new u(
                     "Invalid " +
                       o +
@@ -5844,35 +5166,19 @@ and limitations under the License.
                 }
                 return Array.isArray(e)
                   ? d(t)
-                  : (i(
-                      !1,
-                      "Invalid argument supplied to oneOf, expected an instance of array."
-                    ),
-                    r.thatReturnsNull);
+                  : (i(!1, "Invalid argument supplied to oneOf, expected an instance of array."), r.thatReturnsNull);
               }
               function g(e) {
                 function t(t, n, r, o, i) {
                   if ("function" != typeof e)
                     return new u(
-                      "Property `" +
-                        i +
-                        "` of component `" +
-                        r +
-                        "` has invalid PropType notation inside objectOf."
+                      "Property `" + i + "` of component `" + r + "` has invalid PropType notation inside objectOf."
                     );
                   var a = t[n],
                     l = x(a);
                   if ("object" !== l)
                     return new u(
-                      "Invalid " +
-                        o +
-                        " `" +
-                        i +
-                        "` of type `" +
-                        l +
-                        "` supplied to `" +
-                        r +
-                        "`, expected an object."
+                      "Invalid " + o + " `" + i + "` of type `" + l + "` supplied to `" + r + "`, expected an object."
                     );
                   for (var c in a)
                     if (a.hasOwnProperty(c)) {
@@ -5888,17 +5194,11 @@ and limitations under the License.
                   for (var a = 0; a < e.length; a++) {
                     if (null == (0, e[a])(t, n, r, o, i, s)) return null;
                   }
-                  return new u(
-                    "Invalid " + o + " `" + i + "` supplied to `" + r + "`."
-                  );
+                  return new u("Invalid " + o + " `" + i + "` supplied to `" + r + "`.");
                 }
                 if (!Array.isArray(e))
                   return (
-                    i(
-                      !1,
-                      "Invalid argument supplied to oneOfType, expected an instance of array."
-                    ),
-                    r.thatReturnsNull
+                    i(!1, "Invalid argument supplied to oneOfType, expected an instance of array."), r.thatReturnsNull
                   );
                 for (var n = 0; n < e.length; n++) {
                   var o = e[n];
@@ -5921,15 +5221,7 @@ and limitations under the License.
                     l = x(a);
                   if ("object" !== l)
                     return new u(
-                      "Invalid " +
-                        o +
-                        " `" +
-                        i +
-                        "` of type `" +
-                        l +
-                        "` supplied to `" +
-                        r +
-                        "`, expected `object`."
+                      "Invalid " + o + " `" + i + "` of type `" + l + "` supplied to `" + r + "`, expected `object`."
                     );
                   for (var c in e) {
                     var d = e[c];
@@ -5948,15 +5240,7 @@ and limitations under the License.
                     c = x(l);
                   if ("object" !== c)
                     return new u(
-                      "Invalid " +
-                        o +
-                        " `" +
-                        i +
-                        "` of type `" +
-                        c +
-                        "` supplied to `" +
-                        r +
-                        "`, expected `object`."
+                      "Invalid " + o + " `" + i + "` of type `" + c + "` supplied to `" + r + "`, expected `object`."
                     );
                   var d = a({}, t[n], e);
                   for (var p in d) {
@@ -6019,13 +5303,7 @@ and limitations under the License.
               }
               function x(e) {
                 var t = typeof e;
-                return Array.isArray(e)
-                  ? "array"
-                  : e instanceof RegExp
-                  ? "object"
-                  : w(t, e)
-                  ? "symbol"
-                  : t;
+                return Array.isArray(e) ? "array" : e instanceof RegExp ? "object" : w(t, e) ? "symbol" : t;
               }
               function E(e) {
                 if (void 0 === e || null === e) return "" + e;
@@ -6051,9 +5329,7 @@ and limitations under the License.
                 }
               }
               function C(e) {
-                return e.constructor && e.constructor.name
-                  ? e.constructor.name
-                  : O;
+                return e.constructor && e.constructor.name ? e.constructor.name : O;
               }
               var S = "function" == typeof Symbol && Symbol.iterator,
                 _ = "@@iterator",
@@ -6095,15 +5371,7 @@ and limitations under the License.
                     function e(e, t, n, r, o) {
                       return b(e[t])
                         ? null
-                        : new u(
-                            "Invalid " +
-                              r +
-                              " `" +
-                              o +
-                              "` supplied to `" +
-                              n +
-                              "`, expected a ReactNode."
-                          );
+                        : new u("Invalid " + r + " `" + o + "` supplied to `" + n + "`, expected a ReactNode.");
                     }
                     return d(e);
                   })(),
@@ -6113,21 +5381,14 @@ and limitations under the License.
                   shape: v,
                   exact: y,
                 };
-              return (
-                (u.prototype = Error.prototype),
-                (I.checkPropTypes = l),
-                (I.PropTypes = I),
-                I
-              );
+              return (u.prototype = Error.prototype), (I.checkPropTypes = l), (I.PropTypes = I), I;
             };
           },
           function (e, t, n) {
             "use strict";
             function r(e) {
               if (null === e || void 0 === e)
-                throw new TypeError(
-                  "Object.assign cannot be called with null or undefined"
-                );
+                throw new TypeError("Object.assign cannot be called with null or undefined");
               return Object(e);
             } /*
 object-assign
@@ -6141,10 +5402,8 @@ object-assign
               try {
                 if (!Object.assign) return !1;
                 var e = new String("abc");
-                if (((e[5] = "de"), "5" === Object.getOwnPropertyNames(e)[0]))
-                  return !1;
-                for (var t = {}, n = 0; n < 10; n++)
-                  t["_" + String.fromCharCode(n)] = n;
+                if (((e[5] = "de"), "5" === Object.getOwnPropertyNames(e)[0])) return !1;
+                for (var t = {}, n = 0; n < 10; n++) t["_" + String.fromCharCode(n)] = n;
                 if (
                   "0123456789" !==
                   Object.getOwnPropertyNames(t)
@@ -6159,8 +5418,7 @@ object-assign
                   "abcdefghijklmnopqrst".split("").forEach(function (e) {
                     r[e] = e;
                   }),
-                  "abcdefghijklmnopqrst" ===
-                    Object.keys(Object.assign({}, r)).join("")
+                  "abcdefghijklmnopqrst" === Object.keys(Object.assign({}, r)).join("")
                 );
               } catch (e) {
                 return !1;
@@ -6173,8 +5431,7 @@ object-assign
                     for (var u in n) i.call(n, u) && (l[u] = n[u]);
                     if (o) {
                       s = o(n);
-                      for (var d = 0; d < s.length; d++)
-                        a.call(n, s[d]) && (l[s[d]] = n[s[d]]);
+                      for (var d = 0; d < s.length; d++) a.call(n, s[d]) && (l[s[d]] = n[s[d]]);
                     }
                   }
                   return l;
@@ -6212,13 +5469,7 @@ object-assign
                   ) {
                     s[u.message] = !0;
                     var d = l ? l() : "";
-                    i(
-                      !1,
-                      "Failed %s type: %s%s",
-                      n,
-                      u.message,
-                      null != d ? d : ""
-                    );
+                    i(!1, "Failed %s type: %s%s", n, u.message, null != d ? d : "");
                   }
                 }
             }
@@ -6246,13 +5497,9 @@ object-assign
               var l = this;
               if (a) {
                 var c = a.call(window, e);
-                (this.matches = c.matches),
-                  (this.media = c.media),
-                  c.addListener(o);
+                (this.matches = c.matches), (this.media = c.media), c.addListener(o);
               } else (this.matches = i(e, t)), (this.media = e);
-              (this.addListener = n),
-                (this.removeListener = r),
-                (this.dispose = s);
+              (this.addListener = n), (this.removeListener = r), (this.dispose = s);
             }
             function o(e, t) {
               return new r(e, t);
@@ -6334,10 +5581,7 @@ object-assign
             function i(e) {
               var t,
                 n = Number(e);
-              return (
-                n || ((t = e.match(/^(\d+)\s*\/\s*(\d+)$/)), (n = t[1] / t[2])),
-                n
-              );
+              return n || ((t = e.match(/^(\d+)\s*\/\s*(\d+)$/)), (n = t[1] / t[2])), n;
             }
             function a(e) {
               var t = parseFloat(e);
@@ -6384,10 +5628,7 @@ object-assign
             }
             function o(e, t) {
               var n = (0, s.default)(e);
-              return (
-                "number" == typeof t && (t += "px"),
-                !0 === t ? e : !1 === t ? u(e) : "(" + n + ": " + t + ")"
-              );
+              return "number" == typeof t && (t += "px"), !0 === t ? e : !1 === t ? u(e) : "(" + n + ": " + t + ")";
             }
             function i(e) {
               return e.join(" and ");
@@ -6418,22 +5659,15 @@ object-assign
     62: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -6442,10 +5676,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -6472,10 +5703,7 @@ object-assign
         f = (function (e) {
           function t(e) {
             r(this, t);
-            var n = o(
-              this,
-              (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-            );
+            var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
             return (n.state = { hasError: !1, errorId: null }), n;
           }
           return (
@@ -6487,8 +5715,7 @@ object-assign
                   var n = this;
                   d.withScope(function (r) {
                     r.setTag("project", "scratch-www"),
-                      n.props.componentName &&
-                        r.setTag("component", n.props.componentName),
+                      n.props.componentName && r.setTag("component", n.props.componentName),
                       Object.keys(t).forEach(function (e) {
                         r.setExtra(e, t[e]);
                       }),
@@ -6519,18 +5746,13 @@ object-assign
             t
           );
         })(u.Component);
-      (f.propTypes = { children: c.node, componentName: c.string }),
-        (e.exports = f);
+      (f.propTypes = { children: c.node, componentName: c.string }), (e.exports = f);
     },
     63: function (e, t, n) {
       "use strict";
       (function (e, r) {
         function o(e) {
-          return e &&
-            e.__esModule &&
-            Object.prototype.hasOwnProperty.call(e, "default")
-            ? e.default
-            : e;
+          return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e;
         }
         function i(e, t) {
           return (t = { exports: {} }), e(t, t.exports), t.exports;
@@ -6647,18 +5869,15 @@ object-assign
           var t,
             n = "",
             r = 32 * e.length;
-          for (t = 0; t < r; t += 8)
-            n += String.fromCharCode((e[t >> 5] >>> t % 32) & 255);
+          for (t = 0; t < r; t += 8) n += String.fromCharCode((e[t >> 5] >>> t % 32) & 255);
           return n;
         }
         function m(e) {
           var t,
             n = [];
-          for (n[(e.length >> 2) - 1] = void 0, t = 0; t < n.length; t += 1)
-            n[t] = 0;
+          for (n[(e.length >> 2) - 1] = void 0, t = 0; t < n.length; t += 1) n[t] = 0;
           var r = 8 * e.length;
-          for (t = 0; t < r; t += 8)
-            n[t >> 5] |= (255 & e.charCodeAt(t / 8)) << t % 32;
+          for (t = 0; t < r; t += 8) n[t >> 5] |= (255 & e.charCodeAt(t / 8)) << t % 32;
           return n;
         }
         function g(e) {
@@ -6670,26 +5889,16 @@ object-assign
             o = m(e),
             i = [],
             a = [];
-          for (
-            i[15] = a[15] = void 0,
-              o.length > 16 && (o = f(o, 8 * e.length)),
-              n = 0;
-            n < 16;
-            n += 1
-          )
+          for (i[15] = a[15] = void 0, o.length > 16 && (o = f(o, 8 * e.length)), n = 0; n < 16; n += 1)
             (i[n] = 909522486 ^ o[n]), (a[n] = 1549556828 ^ o[n]);
-          return (
-            (r = f(i.concat(m(t)), 512 + 8 * t.length)), h(f(a.concat(r), 640))
-          );
+          return (r = f(i.concat(m(t)), 512 + 8 * t.length)), h(f(a.concat(r), 640));
         }
         function v(e) {
           var t,
             n,
             r = "0123456789abcdef",
             o = "";
-          for (n = 0; n < e.length; n += 1)
-            (t = e.charCodeAt(n)),
-              (o += r.charAt((t >>> 4) & 15) + r.charAt(15 & t));
+          for (n = 0; n < e.length; n += 1) (t = e.charCodeAt(n)), (o += r.charAt((t >>> 4) & 15) + r.charAt(15 & t));
           return o;
         }
         function y(e) {
@@ -6714,9 +5923,7 @@ object-assign
           return Object.prototype.hasOwnProperty.call(e, t);
         }
         function S() {
-          return "undefined" == typeof document || null == document.location
-            ? ""
-            : document.location.href;
+          return "undefined" == typeof document || null == document.location ? "" : document.location.href;
         }
         function _() {
           return "undefined" == typeof document || null == document.location
@@ -6731,12 +5938,7 @@ object-assign
         function O(e) {
           var t = M(e.stack),
             n = { stacktrace: { frames: t }, type: e.name, value: e.message };
-          return (
-            void 0 === n.type &&
-              "" === n.value &&
-              (n.value = "Unrecoverable error caught"),
-            n
-          );
+          return void 0 === n.type && "" === n.value && (n.value = "Unrecoverable error caught"), n;
         }
         function I(e, t) {
           var n = Object.keys(e).sort(),
@@ -6761,8 +5963,7 @@ object-assign
             n = t[0].func || "",
             r = t[t.length - 1].func || "";
           return (
-            (_e(n, "captureMessage") || _e(n, "captureException")) &&
-              (t = t.slice(1)),
+            (_e(n, "captureMessage") || _e(n, "captureException")) && (t = t.slice(1)),
             _e(r, "sentryWrapped") && (t = t.slice(0, -1)),
             t
               .map(function (e) {
@@ -6803,9 +6004,7 @@ object-assign
               var i = o.map(function (e) {
                 return D(e, t);
               });
-              return e.handleEvent
-                ? e.handleEvent.apply(this, i)
-                : e.apply(this, i);
+              return e.handleEvent ? e.handleEvent.apply(this, i) : e.apply(this, i);
             } catch (e) {
               throw (
                 (N(),
@@ -6821,8 +6020,7 @@ object-assign
                               return (
                                 (n = z.__assign({}, e)),
                                 t.mechanism &&
-                                  ((n.exception = n.exception || {}),
-                                  (n.exception.mechanism = t.mechanism)),
+                                  ((n.exception = n.exception || {}), (n.exception.mechanism = t.mechanism)),
                                 (n.extra = z.__assign({}, n.extra, {
                                   arguments: xe(o, 2),
                                 })),
@@ -6842,15 +6040,10 @@ object-assign
             }
           };
           try {
-            for (var o in e)
-              Object.prototype.hasOwnProperty.call(e, o) && (r[o] = e[o]);
+            for (var o in e) Object.prototype.hasOwnProperty.call(e, o) && (r[o] = e[o]);
           } catch (e) {}
           return (
-            (r.prototype = e.prototype),
-            (e.__sentry_wrapped__ = r),
-            (r.__sentry__ = !0),
-            (r.__sentry_original__ = e),
-            r
+            (r.prototype = e.prototype), (e.__sentry_wrapped__ = r), (r.__sentry__ = !0), (r.__sentry_original__ = e), r
           );
         }
         function F(e) {
@@ -6863,10 +6056,7 @@ object-assign
               } catch (e) {
                 n = "<unknown>";
               }
-              G.getCurrentHub().addBreadcrumb(
-                { category: "ui." + e, message: n },
-                { event: t, name: e }
-              );
+              G.getCurrentHub().addBreadcrumb({ category: "ui." + e, message: n }, { event: t, name: e });
             }
           };
         }
@@ -6924,14 +6114,7 @@ object-assign
         Object.defineProperty(t, "__esModule", { value: !0 });
         var z = n(6),
           G = n(73),
-          W =
-            "undefined" != typeof window
-              ? window
-              : void 0 !== e
-              ? e
-              : "undefined" != typeof self
-              ? self
-              : {},
+          W = "undefined" != typeof window ? window : void 0 !== e ? e : "undefined" != typeof self ? self : {},
           q = i(function (e, t) {
             Object.defineProperty(t, "__esModule", { value: !0 });
             !(function (e) {
@@ -7004,17 +6187,13 @@ object-assign
               }
             }
             function r(e) {
-              return (
-                "[object ErrorEvent]" === Object.prototype.toString.call(e)
-              );
+              return "[object ErrorEvent]" === Object.prototype.toString.call(e);
             }
             function o(e) {
               return "[object DOMError]" === Object.prototype.toString.call(e);
             }
             function i(e) {
-              return (
-                "[object DOMException]" === Object.prototype.toString.call(e)
-              );
+              return "[object DOMException]" === Object.prototype.toString.call(e);
             }
             function a(e) {
               return void 0 === e;
@@ -7067,60 +6246,32 @@ object-assign
                 return e.require(t);
               }
               function o() {
-                return (
-                  "[object process]" ===
-                  Object.prototype.toString.call(void 0 !== r ? r : 0)
-                );
+                return "[object process]" === Object.prototype.toString.call(void 0 !== r ? r : 0);
               }
               function i() {
-                return o()
-                  ? W
-                  : "undefined" != typeof window
-                  ? window
-                  : "undefined" != typeof self
-                  ? self
-                  : {};
+                return o() ? W : "undefined" != typeof window ? window : "undefined" != typeof self ? self : {};
               }
               function a() {
                 var e = i(),
                   t = e.crypto || e.msCrypto;
                 if (void 0 !== t && t.getRandomValues) {
                   var n = new Uint16Array(8);
-                  t.getRandomValues(n),
-                    (n[3] = (4095 & n[3]) | 16384),
-                    (n[4] = (16383 & n[4]) | 32768);
+                  t.getRandomValues(n), (n[3] = (4095 & n[3]) | 16384), (n[4] = (16383 & n[4]) | 32768);
                   var r = function (e) {
                     for (var t = e.toString(16); t.length < 4; ) t = "0" + t;
                     return t;
                   };
-                  return (
-                    r(n[0]) +
-                    r(n[1]) +
-                    r(n[2]) +
-                    r(n[3]) +
-                    r(n[4]) +
-                    r(n[5]) +
-                    r(n[6]) +
-                    r(n[7])
-                  );
+                  return r(n[0]) + r(n[1]) + r(n[2]) + r(n[3]) + r(n[4]) + r(n[5]) + r(n[6]) + r(n[7]);
                 }
-                return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(
-                  /[xy]/g,
-                  function (e) {
-                    var t = (16 * Math.random()) | 0;
-                    return ("x" === e ? t : (3 & t) | 8).toString(16);
-                  }
-                );
+                return "xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx".replace(/[xy]/g, function (e) {
+                  var t = (16 * Math.random()) | 0;
+                  return ("x" === e ? t : (3 & t) | 8).toString(16);
+                });
               }
               function s(e) {
                 for (
                   var t, n = e, r = [], o = 0, i = 0, a = " > ".length;
-                  n &&
-                  o++ < 5 &&
-                  !(
-                    "html" === (t = l(n)) ||
-                    (o > 1 && i + r.length * a + t.length >= 80)
-                  );
+                  n && o++ < 5 && !("html" === (t = l(n)) || (o > 1 && i + r.length * a + t.length >= 80));
 
                 )
                   r.push(t), (i += t.length), (n = n.parentNode);
@@ -7134,25 +6285,15 @@ object-assign
                   i,
                   a = [];
                 if (!e || !e.tagName) return "";
-                if (
-                  (a.push(e.tagName.toLowerCase()),
-                  e.id && a.push("#" + e.id),
-                  (t = e.className) && K.isString(t))
-                )
-                  for (n = t.split(/\s+/), i = 0; i < n.length; i++)
-                    a.push("." + n[i]);
+                if ((a.push(e.tagName.toLowerCase()), e.id && a.push("#" + e.id), (t = e.className) && K.isString(t)))
+                  for (n = t.split(/\s+/), i = 0; i < n.length; i++) a.push("." + n[i]);
                 var s = ["type", "name", "title", "alt"];
-                for (i = 0; i < s.length; i++)
-                  (r = s[i]),
-                    (o = e.getAttribute(r)) &&
-                      a.push("[" + r + '="' + o + '"]');
+                for (i = 0; i < s.length; i++) (r = s[i]), (o = e.getAttribute(r)) && a.push("[" + r + '="' + o + '"]');
                 return a.join("");
               }
               function c(e) {
                 if (!e) return {};
-                var t = e.match(
-                  /^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/
-                );
+                var t = e.match(/^(([^:\/?#]+):)?(\/\/([^\/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/);
                 if (!t) return {};
                 var n = t[6] || "",
                   r = t[8] || "";
@@ -7165,15 +6306,9 @@ object-assign
               }
               function u(e) {
                 if (e.message) return e.message;
-                if (
-                  e.exception &&
-                  e.exception.values &&
-                  e.exception.values[0]
-                ) {
+                if (e.exception && e.exception.values && e.exception.values[0]) {
                   var t = e.exception.values[0];
-                  return t.type && t.value
-                    ? t.type + ": " + t.value
-                    : t.type || t.value || e.event_id || "<unknown>";
+                  return t.type && t.value ? t.type + ": " + t.value : t.type || t.value || e.event_id || "<unknown>";
                 }
                 return e.event_id || "<unknown>";
               }
@@ -7186,8 +6321,7 @@ object-assign
                 n.forEach(function (e) {
                   e in t.console &&
                     r[e].__sentry__ &&
-                    ((o[e] = r[e].__sentry_wrapped__),
-                    (r[e] = r[e].__sentry_original__));
+                    ((o[e] = r[e].__sentry_wrapped__), (r[e] = r[e].__sentry_original__));
                 });
                 var a = e();
                 return (
@@ -7230,31 +6364,24 @@ object-assign
                       this.enabled = !0;
                     }),
                     (e.prototype.log = function () {
-                      for (var e = [], t = 0; t < arguments.length; t++)
-                        e[t] = arguments[t];
+                      for (var e = [], t = 0; t < arguments.length; t++) e[t] = arguments[t];
                       this.enabled &&
                         oe.consoleSandbox(function () {
                           n.console.log("Sentry Logger [Log]: " + e.join(" "));
                         });
                     }),
                     (e.prototype.warn = function () {
-                      for (var e = [], t = 0; t < arguments.length; t++)
-                        e[t] = arguments[t];
+                      for (var e = [], t = 0; t < arguments.length; t++) e[t] = arguments[t];
                       this.enabled &&
                         oe.consoleSandbox(function () {
-                          n.console.warn(
-                            "Sentry Logger [Warn]: " + e.join(" ")
-                          );
+                          n.console.warn("Sentry Logger [Warn]: " + e.join(" "));
                         });
                     }),
                     (e.prototype.error = function () {
-                      for (var e = [], t = 0; t < arguments.length; t++)
-                        e[t] = arguments[t];
+                      for (var e = [], t = 0; t < arguments.length; t++) e[t] = arguments[t];
                       this.enabled &&
                         oe.consoleSandbox(function () {
-                          n.console.error(
-                            "Sentry Logger [Error]: " + e.join(" ")
-                          );
+                          n.console.error("Sentry Logger [Error]: " + e.join(" "));
                         });
                     }),
                     e
@@ -7296,10 +6423,7 @@ object-assign
               }
             }
             function a() {
-              return (
-                !!i() &&
-                -1 !== oe.getGlobalObject().fetch.toString().indexOf("native")
-              );
+              return !!i() && -1 !== oe.getGlobalObject().fetch.toString().indexOf("native");
             }
             function s() {
               var e = oe.getGlobalObject();
@@ -7311,9 +6435,7 @@ object-assign
             function c() {
               if (!i()) return !1;
               try {
-                return (
-                  new Request("pickleRick", { referrerPolicy: "origin" }), !0
-                );
+                return new Request("pickleRick", { referrerPolicy: "origin" }), !0;
               } catch (e) {
                 return !1;
               }
@@ -7322,10 +6444,7 @@ object-assign
               var e = oe.getGlobalObject(),
                 t = e.chrome,
                 n = t && t.app && t.app.runtime,
-                r =
-                  "history" in e &&
-                  !!e.history.pushState &&
-                  !!e.history.replaceState;
+                r = "history" in e && !!e.history.pushState && !!e.history.replaceState;
               return !n && r;
             }
             Object.defineProperty(t, "__esModule", { value: !0 }),
@@ -7340,11 +6459,7 @@ object-assign
               (t.supportsHistory = u);
           });
         o(de);
-        var pe =
-            (de.supportsErrorEvent,
-            de.supportsDOMError,
-            de.supportsDOMException,
-            de.supportsFetch),
+        var pe = (de.supportsErrorEvent, de.supportsDOMError, de.supportsDOMException, de.supportsFetch),
           fe = de.supportsNativeFetch,
           he = de.supportsBeacon,
           me = de.supportsReportingObserver,
@@ -7364,10 +6479,7 @@ object-assign
               if (t in e && !e[t].__sentry__) {
                 var r = e[t],
                   o = n(r);
-                (o.__sentry__ = !0),
-                  (o.__sentry_original__ = r),
-                  (o.__sentry_wrapped__ = o),
-                  (e[t] = o);
+                (o.__sentry__ = !0), (o.__sentry_original__ = r), (o.__sentry_wrapped__ = o), (e[t] = o);
               }
             }
             function a(e) {
@@ -7384,10 +6496,8 @@ object-assign
               return s(JSON.stringify(e));
             }
             function c(e) {
-              if ("string" == typeof e)
-                return e.length <= 40 ? e : e.substr(0, 39) + "…";
-              if ("number" == typeof e || "boolean" == typeof e || void 0 === e)
-                return e;
+              if ("string" == typeof e) return e.length <= 40 ? e : e.substr(0, 39) + "…";
+              if ("number" == typeof e || "boolean" == typeof e || void 0 === e) return e;
               if (K.isNaN(e)) return "[NaN]";
               if (K.isUndefined(e)) return "[undefined]";
               var t = Object.prototype.toString.call(e);
@@ -7424,8 +6534,7 @@ object-assign
               return l(n(o)) > r ? d(e, t - 1) : o;
             }
             function p(e, t) {
-              if ((void 0 === t && (t = b), !e.length))
-                return "[object has no keys]";
+              if ((void 0 === t && (t = b), !e.length)) return "[object has no keys]";
               if (e[0].length >= t) return e[0];
               for (var n = e.length; n > 0; n--) {
                 var r = e.slice(0, n).join(", ");
@@ -7434,24 +6543,17 @@ object-assign
               return "";
             }
             function f(e) {
-              for (var t = [], n = 1; n < arguments.length; n++)
-                t[n - 1] = arguments[n];
-              if (null === e || void 0 === e)
-                throw new TypeError(
-                  "Cannot convert undefined or null to object"
-                );
+              for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
+              if (null === e || void 0 === e) throw new TypeError("Cannot convert undefined or null to object");
               for (var r = Object(e), o = 0; o < t.length; o++) {
                 var i = t[o];
-                if (null !== i)
-                  for (var a in i)
-                    Object.prototype.hasOwnProperty.call(i, a) && (r[a] = i[a]);
+                if (null !== i) for (var a in i) Object.prototype.hasOwnProperty.call(i, a) && (r[a] = i[a]);
               }
               return r;
             }
             function h(e) {
               var t = { message: e.message, name: e.name, stack: e.stack };
-              for (var n in e)
-                Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
+              for (var n in e) Object.prototype.hasOwnProperty.call(e, n) && (t[n] = e[n]);
               return t;
             }
             function m(e, t) {
@@ -7479,18 +6581,14 @@ object-assign
             }
             function g() {
               function e(e, r) {
-                return t[0] === r
-                  ? "[Circular ~]"
-                  : "[Circular ~." + n.slice(0, t.indexOf(r)).join(".") + "]";
+                return t[0] === r ? "[Circular ~]" : "[Circular ~." + n.slice(0, t.indexOf(r)).join(".") + "]";
               }
               var t = [],
                 n = [];
               return function (r, o) {
                 if (t.length > 0) {
                   var i = t.indexOf(this);
-                  -1 === i
-                    ? (t.push(this), n.push(r))
-                    : (t.splice(i + 1), n.splice(i, 1 / 0, r)),
+                  -1 === i ? (t.push(this), n.push(r)) : (t.splice(i + 1), n.splice(i, 1 / 0, r)),
                     -1 !== t.indexOf(o) && (o = e.call(this, r, o));
                 } else t.push(o);
                 return m(o, r);
@@ -7531,12 +6629,7 @@ object-assign
             i(function (e, t) {
               function n(e, t) {
                 return (
-                  void 0 === t && (t = 0),
-                  0 !== t && K.isString(e)
-                    ? e.length <= t
-                      ? e
-                      : e.substr(0, t) + "…"
-                    : e
+                  void 0 === t && (t = 0), 0 !== t && K.isString(e) ? (e.length <= t ? e : e.substr(0, t) + "…") : e
                 );
               }
               function r(e, t) {
@@ -7610,8 +6703,7 @@ object-assign
               m.push(e);
             }
             function t(e) {
-              for (var t = m.length - 1; t >= 0; --t)
-                m[t] === e && m.splice(t, 1);
+              for (var t = m.length - 1; t >= 0; --t) m[t] === e && m.splice(t, 1);
               0 === m.length && (a(), l());
             }
             function n(e, t, n) {
@@ -7630,17 +6722,8 @@ object-assign
             function r(e, t, r, o, i) {
               var a = null;
               if (((i = Z(i) ? i.error : i), (e = Z(e) ? e.message : e), A))
-                Ie.computeStackTrace.augmentStackTraceWithInitialElement(
-                  A,
-                  t,
-                  r,
-                  e
-                ),
-                  c();
-              else if (i && V(i))
-                (a = Ie.computeStackTrace(i)),
-                  (a.mechanism = "onerror"),
-                  n(a, !0, i);
+                Ie.computeStackTrace.augmentStackTraceWithInitialElement(A, t, r, e), c();
+              else if (i && V(i)) (a = Ie.computeStackTrace(i)), (a.mechanism = "onerror"), n(a, !0, i);
               else {
                 var s,
                   l = { url: t, line: r, column: o },
@@ -7649,14 +6732,8 @@ object-assign
                   var p = e.match(je);
                   p && ((s = p[1]), (u = p[2]));
                 }
-                (l.func = Ie.computeStackTrace.guessFunctionName(
-                  l.url,
-                  l.line
-                )),
-                  (l.context = Ie.computeStackTrace.gatherContext(
-                    l.url,
-                    l.line
-                  )),
+                (l.func = Ie.computeStackTrace.guessFunctionName(l.url, l.line)),
+                  (l.context = Ie.computeStackTrace.gatherContext(l.url, l.line)),
                   (a = {
                     name: s,
                     message: u,
@@ -7680,10 +6757,7 @@ object-assign
               p && ((Oe.onerror = d), (p = !1));
             }
             function s() {
-              !0 !== h &&
-                ((f = Oe.onunhandledrejection),
-                (Oe.onunhandledrejection = o),
-                (h = !0));
+              !0 !== h && ((f = Oe.onunhandledrejection), (Oe.onunhandledrejection = o), (h = !0));
             }
             function l() {
               h && ((Oe.onerror = f), (h = !1));
@@ -7794,10 +6868,7 @@ object-assign
             }
             function a(e, n) {
               for (var r, o, i = 0, a = n.length; i < a; ++i)
-                if (
-                  (r = t(n[i])).length &&
-                  ((r = r.join("\n")), (o = e.exec(r)))
-                )
+                if ((r = t(n[i])).length && ((r = r.join("\n")), (o = e.exec(r))))
                   return {
                     url: n[i],
                     line: r.substring(0, o.index).split("\n").length,
@@ -7809,10 +6880,7 @@ object-assign
               var i,
                 a = t(n),
                 s = new RegExp("\\b" + o(e) + "\\b");
-              return (
-                (r -= 1),
-                a && a.length > r && (i = s.exec(a[r])) ? i.index : null
-              );
+              return (r -= 1), a && a.length > r && (i = s.exec(a[r])) ? i.index : null;
             }
             function l(e) {
               if (!ee(Oe && Oe.document)) {
@@ -7837,25 +6905,14 @@ object-assign
                   var m = r[1] ? "\\s+" + r[1] : "",
                     g = r[2].split(",").join("\\s*,\\s*");
                   (t = o(r[3]).replace(/;$/, ";?")),
-                    (n = new RegExp(
-                      "function" +
-                        m +
-                        "\\s*\\(\\s*" +
-                        g +
-                        "\\s*\\)\\s*{\\s*" +
-                        t +
-                        "\\s*}"
-                    ));
+                    (n = new RegExp("function" + m + "\\s*\\(\\s*" + g + "\\s*\\)\\s*{\\s*" + t + "\\s*}"));
                 } else n = new RegExp(o(u).replace(/\s+/g, "\\s+"));
                 if ((s = a(n, l))) return s;
                 if ((r = p.exec(u))) {
                   var A = r[1];
                   if (
                     ((t = i(r[2])),
-                    (n = new RegExp(
-                      "on" + A + "=[\\'\"]\\s*" + t + "\\s*[\\'\"]",
-                      "i"
-                    )),
+                    (n = new RegExp("on" + A + "=[\\'\"]\\s*" + t + "\\s*[\\'\"]", "i")),
                     (s = a(n, l[0])))
                   )
                     return s;
@@ -7908,10 +6965,7 @@ object-assign
                   (t = i[3] && i[3].indexOf(" > eval") > -1),
                     t && (o = d.exec(i[3]))
                       ? (i[3] = o[1])
-                      : 0 !== g ||
-                        i[5] ||
-                        ee(e.columnNumber) ||
-                        (h[0].column = e.columnNumber + 1),
+                      : 0 !== g || i[5] || ee(e.columnNumber) || (h[0].column = e.columnNumber + 1),
                     (a = {
                       url: i[3],
                       func: i[1] || Me,
@@ -7925,27 +6979,20 @@ object-assign
                   Ie.remoteFetching && a.url && "blob:" === a.url.substr(0, 5))
                 ) {
                   var y = new XMLHttpRequest();
-                  if (
-                    (y.open("GET", a.url, !1), y.send(""), 200 === y.status)
-                  ) {
+                  if ((y.open("GET", a.url, !1), y.send(""), 200 === y.status)) {
                     var b = y.responseText || "";
                     b = b.slice(-300);
                     var w = b.match(/\/\/# sourceMappingURL=(.*)$/);
                     if (w) {
                       var x = w[1];
-                      "~" === x.charAt(0) && (x = _() + x.slice(1)),
-                        (a.url = x.slice(0, -4));
+                      "~" === x.charAt(0) && (x = _() + x.slice(1)), (a.url = x.slice(0, -4));
                     }
                   }
                 }
                 (a.context = a.line ? r(a.url, a.line) : null), h.push(a);
               }
               return h.length
-                ? (h[0] &&
-                    h[0].line &&
-                    !h[0].column &&
-                    m &&
-                    (h[0].column = s(m[1], h[0].url, h[0].line)),
+                ? (h[0] && h[0].line && !h[0].column && m && (h[0].column = s(m[1], h[0].url, h[0].line)),
                   { mode: "stack", name: e.name, message: e.message, stack: h })
                 : null;
             }
@@ -7982,9 +7029,7 @@ object-assign
                         }),
                     u)
                   ) {
-                    if (
-                      (!u.func && u.line && (u.func = n(u.url, u.line)), u.line)
-                    )
+                    if ((!u.func && u.line && (u.func = n(u.url, u.line)), u.line))
                       try {
                         u.context = r(u.url, u.line);
                       } catch (e) {}
@@ -8009,10 +7054,7 @@ object-assign
                 c = /^\s*Line (\d+) of inline#(\d+) script in ((?:file|https?|blob)\S+)(?:: in function (\S+))?\s*$/i,
                 u = /^\s*Line (\d+) of function script\s*$/i,
                 d = [],
-                p =
-                  Oe &&
-                  Oe.document &&
-                  Oe.document.getElementsByTagName("script"),
+                p = Oe && Oe.document && Oe.document.getElementsByTagName("script"),
                 f = [];
               for (var h in p) C(p, h) && !p[h].src && f.push(p[h]);
               for (var m = 2; m < o.length; m += 2) {
@@ -8040,8 +7082,7 @@ object-assign
                     if (y) {
                       y = y.join("\n");
                       var b = y.indexOf(v.innerText);
-                      b >= 0 &&
-                        (g.line = A + y.substring(0, b).split("\n").length);
+                      b >= 0 && (g.line = A + y.substring(0, b).split("\n").length);
                     }
                   }
                 } else if ((s = u.exec(o[m]))) {
@@ -8066,28 +7107,17 @@ object-assign
                     d.push(g);
                 }
               }
-              return d.length
-                ? { mode: "multiline", name: e.name, message: o[0], stack: d }
-                : null;
+              return d.length ? { mode: "multiline", name: e.name, message: o[0], stack: d } : null;
             }
             function p(e, t, o, i) {
               var a = { url: t, line: o };
               if (a.url && a.line) {
-                (e.incomplete = !1),
-                  a.func || (a.func = n(a.url, a.line)),
-                  a.context || (a.context = r(a.url, a.line));
+                (e.incomplete = !1), a.func || (a.func = n(a.url, a.line)), a.context || (a.context = r(a.url, a.line));
                 var l = / '([^']+)' /.exec(i);
-                if (
-                  (l && (a.column = s(l[1], a.url, a.line)),
-                  e.stack.length > 0 && e.stack[0].url === a.url)
-                ) {
+                if ((l && (a.column = s(l[1], a.url, a.line)), e.stack.length > 0 && e.stack[0].url === a.url)) {
                   if (e.stack[0].line === a.line) return !1;
                   if (!e.stack[0].line && e.stack[0].func === a.func)
-                    return (
-                      (e.stack[0].line = a.line),
-                      (e.stack[0].context = a.context),
-                      !1
-                    );
+                    return (e.stack[0].line = a.line), (e.stack[0].context = a.context), !1;
                 }
                 return e.stack.unshift(a), (e.partial = !0), !0;
               }
@@ -8115,18 +7145,14 @@ object-assign
                       line: null,
                       column: null,
                     }),
-                    m.name
-                      ? (o.func = m.name)
-                      : (r = a.exec(m.toString())) && (o.func = r[1]),
+                    m.name ? (o.func = m.name) : (r = a.exec(m.toString())) && (o.func = r[1]),
                     void 0 === o.func)
                   )
                     try {
                       o.func = r.input.substring(0, r.input.indexOf("{"));
                     } catch (e) {}
                   if ((i = l(m))) {
-                    (o.url = i.url),
-                      (o.line = i.line),
-                      o.func === Me && (o.func = n(o.url, o.line));
+                    (o.url = i.url), (o.line = i.line), o.func === Me && (o.func = n(o.url, o.line));
                     var g = / '([^']+)' /.exec(e.message || e.description);
                     g && (o.column = s(g[1], i.url, i.line));
                   }
@@ -8139,15 +7165,7 @@ object-assign
                 message: e.message,
                 stack: c,
               };
-              return (
-                p(
-                  A,
-                  e.sourceURL || e.fileName,
-                  e.line || e.lineNumber,
-                  e.message || e.description
-                ),
-                A
-              );
+              return p(A, e.sourceURL || e.fileName, e.line || e.lineNumber, e.message || e.description), A;
             }
             function h(e, t) {
               var n = null;
@@ -8200,10 +7218,7 @@ object-assign
               Oe[e] = function () {
                 var e = Te.call(arguments),
                   n = e[0];
-                return (
-                  "function" == typeof n && (e[0] = Ie.wrap(n)),
-                  t.apply ? t.apply(this, e) : t(e[0], e[1])
-                );
+                return "function" == typeof n && (e[0] = Ie.wrap(n)), t.apply ? t.apply(this, e) : t(e[0], e[1]);
               };
             };
             e("setTimeout"), e("setInterval");
@@ -8222,18 +7237,13 @@ object-assign
           He = 50,
           Qe = (function () {
             function e(e) {
-              (this.options = e),
-                (this.url = new G.API(
-                  this.options.dsn
-                ).getStoreEndpointWithUrlEncodedAuth());
+              (this.options = e), (this.url = new G.API(this.options.dsn).getStoreEndpointWithUrlEncodedAuth());
             }
             return (
               (e.prototype.captureEvent = function (e) {
                 return z.__awaiter(this, void 0, void 0, function () {
                   return z.__generator(this, function (e) {
-                    throw new G.SentryError(
-                      "Transport Class has to implement `captureEvent` method"
-                    );
+                    throw new G.SentryError("Transport Class has to implement `captureEvent` method");
                   });
                 });
               }),
@@ -8262,10 +7272,7 @@ object-assign
                           [4, ze.fetch(this.url, t)]
                         );
                       case 1:
-                        return (
-                          (n = r.sent()),
-                          [2, { status: J.fromHttpCode(n.status) }]
-                        );
+                        return (n = r.sent()), [2, { status: J.fromHttpCode(n.status) }];
                     }
                   });
                 });
@@ -8288,10 +7295,7 @@ object-assign
                       new Promise(function (n, r) {
                         var o = new XMLHttpRequest();
                         (o.onreadystatechange = function () {
-                          4 === o.readyState &&
-                            (200 === o.status &&
-                              n({ status: J.fromHttpCode(o.status) }),
-                            r(o));
+                          4 === o.readyState && (200 === o.status && n({ status: J.fromHttpCode(o.status) }), r(o));
                         }),
                           o.open("POST", t.url),
                           o.send(ye(e));
@@ -8315,9 +7319,7 @@ object-assign
                   var t, n;
                   return z.__generator(this, function (r) {
                     return (
-                      (t = ye(e)),
-                      (n = qe.navigator.sendBeacon(this.url, t)),
-                      [2, { status: n ? J.Success : J.Failed }]
+                      (t = ye(e)), (n = qe.navigator.sendBeacon(this.url, t)), [2, { status: n ? J.Success : J.Failed }]
                     );
                   });
                 });
@@ -8339,9 +7341,7 @@ object-assign
               z.__extends(t, e),
               (t.prototype.install = function () {
                 if (!this.options.dsn)
-                  throw new G.SentryError(
-                    "Invariant exception: install() must not be called when disabled"
-                  );
+                  throw new G.SentryError("Invariant exception: install() must not be called when disabled");
                 return (Error.stackTraceLimit = 50), !0;
               }),
               (t.prototype.eventFromException = function (e, t) {
@@ -8350,14 +7350,11 @@ object-assign
                   return z.__generator(this, function (a) {
                     switch (a.label) {
                       case 0:
-                        return Z(e) && e.error
-                          ? ((r = e), (e = r.error), (n = T(Le(e))), [3, 7])
-                          : [3, 1];
+                        return Z(e) && e.error ? ((r = e), (e = r.error), (n = T(Le(e))), [3, 7]) : [3, 1];
                       case 1:
                         return X(e) || $(e)
                           ? ((r = e),
-                            (o =
-                              r.name || (X(r) ? "DOMError" : "DOMException")),
+                            (o = r.name || (X(r) ? "DOMError" : "DOMException")),
                             (i = r.message ? o + ": " + r.message : o),
                             [4, this.eventFromMessage(i, void 0, t)])
                           : [3, 3];
@@ -8370,9 +7367,7 @@ object-assign
                           ? ((r = e), (n = I(r, t.syntheticException)), [3, 7])
                           : [3, 5];
                       case 5:
-                        return (
-                          (r = e), [4, this.eventFromMessage(r, void 0, t)]
-                        );
+                        return (r = e), [4, this.eventFromMessage(r, void 0, t)];
                       case 6:
                         (n = a.sent()), (a.label = 7);
                       case 7:
@@ -8404,9 +7399,7 @@ object-assign
                         this.options.attachStacktrace &&
                           n &&
                           n.syntheticException &&
-                          ((o = Le(n.syntheticException)),
-                          (i = M(o.stack)),
-                          (r.stacktrace = { frames: i })),
+                          ((o = Le(n.syntheticException)), (i = M(o.stack)), (r.stacktrace = { frames: i })),
                         [2, r]
                       );
                     });
@@ -8432,15 +7425,12 @@ object-assign
                             ? (this.transport = new Ge(t))
                             : (this.transport = new We(t))),
                         [2, this.transport.captureEvent(e)])
-                      : (ue.warn(
-                          "Event has been skipped because no Dsn is configured."
-                        ),
+                      : (ue.warn("Event has been skipped because no Dsn is configured."),
                         [
                           2,
                           {
                             status: J.Skipped,
-                            reason:
-                              "Event has been skipped because no Dsn is configured.",
+                            reason: "Event has been skipped because no Dsn is configured.",
                           },
                         ]);
                   });
@@ -8478,18 +7468,10 @@ object-assign
                 var t = ie().document;
                 if (t) {
                   var n = e.dsn || this.getDsn();
-                  if (!e.eventId)
-                    throw new G.SentryError(
-                      "Missing `eventId` option in showReportDialog call"
-                    );
-                  if (!n)
-                    throw new G.SentryError(
-                      "Missing `Dsn` option in showReportDialog call"
-                    );
+                  if (!e.eventId) throw new G.SentryError("Missing `eventId` option in showReportDialog call");
+                  if (!n) throw new G.SentryError("Missing `Dsn` option in showReportDialog call");
                   var r = t.createElement("script");
-                  (r.async = !0),
-                    (r.src = new G.API(n).getReportDialogEndpoint(e)),
-                    (t.head || t.body).appendChild(r);
+                  (r.async = !0), (r.src = new G.API(n).getReportDialogEndpoint(e)), (t.head || t.body).appendChild(r);
                 }
               }),
               t
@@ -8499,11 +7481,7 @@ object-assign
           $e = 0,
           et = (function () {
             function e(t) {
-              (this.name = e.id),
-                (this.options = z.__assign(
-                  { onerror: !0, onunhandledrejection: !0 },
-                  t
-                ));
+              (this.name = e.id), (this.options = z.__assign({ onerror: !0, onunhandledrejection: !0 }, t));
             }
             return (
               (e.prototype.setupOnce = function () {
@@ -8511,17 +7489,14 @@ object-assign
                   if (!j()) {
                     var o = G.getCurrentHub().getIntegration(e);
                     o &&
-                      G.getCurrentHub().captureEvent(
-                        o.eventFromGlobalHandler(t),
-                        { originalException: r, data: { stack: t } }
-                      );
+                      G.getCurrentHub().captureEvent(o.eventFromGlobalHandler(t), {
+                        originalException: r,
+                        data: { stack: t },
+                      });
                   }
                 }),
-                  this.options.onerror &&
-                    (ue.log("Global Handler attached: onerror"), Pe()),
-                  this.options.onunhandledrejection &&
-                    (ue.log("Global Handler attached: onunhandledrejection"),
-                    Ue());
+                  this.options.onerror && (ue.log("Global Handler attached: onerror"), Pe()),
+                  this.options.onunhandledrejection && (ue.log("Global Handler attached: onunhandledrejection"), Ue());
               }),
               (e.prototype.eventFromGlobalHandler = function (e) {
                 var t = T(e);
@@ -8546,8 +7521,7 @@ object-assign
             return (
               (e.prototype.wrapTimeFunction = function (e) {
                 return function () {
-                  for (var t = [], n = 0; n < arguments.length; n++)
-                    t[n] = arguments[n];
+                  for (var t = [], n = 0; n < arguments.length; n++) t[n] = arguments[n];
                   var r = t[0];
                   return (
                     (t[0] = D(r, {
@@ -8611,11 +7585,7 @@ object-assign
                               } catch (e) {
                                 return;
                               }
-                              return "click" === t
-                                ? a(e)
-                                : "keypress" === t
-                                ? s(e)
-                                : void 0;
+                              return "click" === t ? a(e) : "keypress" === t ? s(e) : void 0;
                             }
                           })),
                         t.call(
@@ -8714,8 +7684,7 @@ object-assign
               (e.prototype.instrumentBeacon = function () {
                 function t(t) {
                   return function () {
-                    for (var n = [], r = 0; r < arguments.length; r++)
-                      n[r] = arguments[r];
+                    for (var n = [], r = 0; r < arguments.length; r++) n[r] = arguments[r];
                     var o = n[0],
                       i = n[1],
                       a = t.apply(this, n),
@@ -8726,25 +7695,18 @@ object-assign
                       if (c && _e(o, c)) return B(i), a;
                     }
                     var u = { category: "beacon", data: i, type: "http" };
-                    return (
-                      a || (u.level = Y.Error),
-                      e.addBreadcrumb(u, { input: n, result: a }),
-                      a
-                    );
+                    return a || (u.level = Y.Error), e.addBreadcrumb(u, { input: n, result: a }), a;
                   };
                 }
                 he() && we(nt.navigator, "sendBeacon", t);
               }),
               (e.prototype.instrumentConsole = function () {
                 "console" in nt &&
-                  ["debug", "info", "warn", "error", "log"].forEach(function (
-                    t
-                  ) {
+                  ["debug", "info", "warn", "error", "log"].forEach(function (t) {
                     t in nt.console &&
                       we(nt.console, t, function (n) {
                         return function () {
-                          for (var r = [], o = 0; o < arguments.length; o++)
-                            r[o] = arguments[o];
+                          for (var r = [], o = 0; o < arguments.length; o++) r[o] = arguments[o];
                           var i = {
                             category: "console",
                             data: {
@@ -8756,13 +7718,10 @@ object-assign
                           };
                           "assert" === t &&
                             !1 === r[0] &&
-                            ((i.message =
-                              "Assertion failed: " +
-                              (Se(r.slice(1), " ") || "console.assert")),
+                            ((i.message = "Assertion failed: " + (Se(r.slice(1), " ") || "console.assert")),
                             (i.data.extra.arguments = xe(r.slice(1), 2))),
                             e.addBreadcrumb(i, { input: r, level: t }),
-                            n &&
-                              Function.prototype.apply.call(n, nt.console, r);
+                            n && Function.prototype.apply.call(n, nt.console, r);
                         };
                       });
                   });
@@ -8776,8 +7735,7 @@ object-assign
                 fe() &&
                   we(nt, "fetch", function (t) {
                     return function () {
-                      for (var n = [], r = 0; r < arguments.length; r++)
-                        n[r] = arguments[r];
+                      for (var n = [], r = 0; r < arguments.length; r++) n[r] = arguments[r];
                       var o,
                         i = n[0],
                         a = "GET";
@@ -8791,11 +7749,7 @@ object-assign
                         l = s && s.getDsn();
                       if (l) {
                         var c = new G.API(l).getStoreEndpoint();
-                        if (c && _e(o, c))
-                          return (
-                            "POST" === a && n[1] && n[1].body && B(n[1].body),
-                            t.apply(nt, n)
-                          );
+                        if (c && _e(o, c)) return "POST" === a && n[1] && n[1].body && B(n[1].body), t.apply(nt, n);
                       }
                       var u = { method: a, url: o };
                       return t
@@ -8803,10 +7757,7 @@ object-assign
                         .then(function (t) {
                           return (
                             (u.status_code = t.status),
-                            e.addBreadcrumb(
-                              { category: "fetch", data: u, type: "http" },
-                              { input: n, response: t }
-                            ),
+                            e.addBreadcrumb({ category: "fetch", data: u, type: "http" }, { input: n, response: t }),
                             t
                           );
                         })
@@ -8830,8 +7781,7 @@ object-assign
               (e.prototype.instrumentHistory = function () {
                 function t(e) {
                   return function () {
-                    for (var t = [], n = 0; n < arguments.length; n++)
-                      t[n] = arguments[n];
+                    for (var t = [], n = 0; n < arguments.length; n++) t[n] = arguments[n];
                     var o = t.length > 2 ? t[2] : void 0;
                     return o && r(Fe, String(o)), e.apply(this, t);
                   };
@@ -8844,12 +7794,8 @@ object-assign
                         i = se(t);
                       i.path || (i = r),
                         (Fe = n),
-                        r.protocol === o.protocol &&
-                          r.host === o.host &&
-                          (n = o.relative),
-                        r.protocol === i.protocol &&
-                          r.host === i.host &&
-                          (t = i.relative),
+                        r.protocol === o.protocol && r.host === o.host && (n = o.relative),
+                        r.protocol === i.protocol && r.host === i.host && (t = i.relative),
                         e.addBreadcrumb({
                           category: "navigation",
                           data: { from: t, to: n },
@@ -8857,8 +7803,7 @@ object-assign
                     },
                     o = nt.onpopstate;
                   (nt.onpopstate = function () {
-                    for (var e = [], t = 0; t < arguments.length; t++)
-                      e[t] = arguments[t];
+                    for (var e = [], t = 0; t < arguments.length; t++) e[t] = arguments[t];
                     var i = nt.location.href;
                     if ((r(Fe, i), o)) return o.apply(n, e);
                   }),
@@ -8887,18 +7832,14 @@ object-assign
                   var n = XMLHttpRequest.prototype;
                   we(n, "open", function (e) {
                     return function () {
-                      for (var t = [], n = 0; n < arguments.length; n++)
-                        t[n] = arguments[n];
+                      for (var t = [], n = 0; n < arguments.length; n++) t[n] = arguments[n];
                       var r = t[1];
                       this.__sentry_xhr__ = { method: t[0], url: t[1] };
                       var o = G.getCurrentHub().getClient(),
                         i = o && o.getDsn();
                       if (i) {
                         var a = new G.API(i).getStoreEndpoint();
-                        ne(r) &&
-                          a &&
-                          _e(r, a) &&
-                          (this.__sentry_own_request__ = !0);
+                        ne(r) && a && _e(r, a) && (this.__sentry_own_request__ = !0);
                       }
                       return e.apply(this, t);
                     };
@@ -8909,8 +7850,7 @@ object-assign
                           if (4 === a.readyState) {
                             if (a.__sentry_own_request__) return;
                             try {
-                              a.__sentry_xhr__ &&
-                                (a.__sentry_xhr__.status_code = a.status);
+                              a.__sentry_xhr__ && (a.__sentry_xhr__.status_code = a.status);
                             } catch (e) {}
                             e.addBreadcrumb(
                               {
@@ -8922,14 +7862,11 @@ object-assign
                             );
                           }
                         }
-                        for (var o = [], i = 0; i < arguments.length; i++)
-                          o[i] = arguments[i];
+                        for (var o = [], i = 0; i < arguments.length; i++) o[i] = arguments[i];
                         var a = this;
                         return (
                           a.__sentry_own_request__ && B(o[0]),
-                          ["onload", "onerror", "onprogress"].forEach(function (
-                            e
-                          ) {
+                          ["onload", "onerror", "onprogress"].forEach(function (e) {
                             t(e, a);
                           }),
                           "onreadystatechange" in a && te(a.onreadystatechange)
@@ -8957,8 +7894,7 @@ object-assign
                 }
               }),
               (e.addBreadcrumb = function (t, n) {
-                G.getCurrentHub().getIntegration(e) &&
-                  G.getCurrentHub().addBreadcrumb(t, n);
+                G.getCurrentHub().getIntegration(e) && G.getCurrentHub().addBreadcrumb(t, n);
               }),
               (e.prototype.setupOnce = function () {
                 this.options.console && this.instrumentConsole(),
@@ -8976,10 +7912,7 @@ object-assign
           it = 5,
           at = (function () {
             function e(t) {
-              void 0 === t && (t = {}),
-                (this.name = e.id),
-                (this.key = t.key || ot),
-                (this.limit = t.limit || it);
+              void 0 === t && (t = {}), (this.name = e.id), (this.key = t.key || ot), (this.limit = t.limit || it);
             }
             return (
               (e.prototype.setupOnce = function () {
@@ -8988,35 +7921,18 @@ object-assign
                   return z.__awaiter(t, void 0, void 0, function () {
                     var t;
                     return z.__generator(this, function (o) {
-                      return (
-                        (t = G.getCurrentHub().getIntegration(e)),
-                        t ? [2, t.handler(n, r)] : [2, n]
-                      );
+                      return (t = G.getCurrentHub().getIntegration(e)), t ? [2, t.handler(n, r)] : [2, n];
                     });
                   });
                 });
               }),
               (e.prototype.handler = function (e, t) {
-                if (
-                  !(
-                    e.exception &&
-                    e.exception.values &&
-                    t &&
-                    t.originalException instanceof Error
-                  )
-                )
-                  return e;
+                if (!(e.exception && e.exception.values && t && t.originalException instanceof Error)) return e;
                 var n = this.walkErrorTree(t.originalException, this.key);
-                return (
-                  (e.exception.values = z.__spread(n, e.exception.values)), e
-                );
+                return (e.exception.values = z.__spread(n, e.exception.values)), e;
               }),
               (e.prototype.walkErrorTree = function (e, t, n) {
-                if (
-                  (void 0 === n && (n = []),
-                  !(e[t] instanceof Error) || n.length + 1 >= this.limit)
-                )
-                  return n;
+                if ((void 0 === n && (n = []), !(e[t] instanceof Error) || n.length + 1 >= this.limit)) return n;
                 var r = Le(e[t]),
                   o = O(r);
                 return this.walkErrorTree(e[t], t, z.__spread([o], n));
@@ -9037,9 +7953,7 @@ object-assign
                   return z.__awaiter(t, void 0, void 0, function () {
                     var t;
                     return z.__generator(this, function (r) {
-                      return G.getCurrentHub().getIntegration(e) &&
-                        st.navigator &&
-                        st.location
+                      return G.getCurrentHub().getIntegration(e) && st.navigator && st.location
                         ? ((t = n.request || {}),
                           (t.url = t.url || st.location.href),
                           (t.headers = t.headers || {}),
@@ -9056,9 +7970,7 @@ object-assign
           })(),
           ct = (function () {
             function e(t) {
-              void 0 === t && (t = {}),
-                (this.name = e.id),
-                (this.Ember = t.Ember || ie().Ember);
+              void 0 === t && (t = {}), (this.name = e.id), (this.Ember = t.Ember || ie().Ember);
             }
             return (
               (e.prototype.setupOnce = function () {
@@ -9080,17 +7992,12 @@ object-assign
                       G.getCurrentHub().getIntegration(e) &&
                         G.withScope(function (e) {
                           n instanceof Error
-                            ? (e.setExtra(
-                                "context",
-                                "Unhandled Promise error detected"
-                              ),
+                            ? (e.setExtra("context", "Unhandled Promise error detected"),
                               t.addIntegrationToSdkInfo(e),
                               G.captureException(n))
                             : (e.setExtra("reason", n),
                               t.addIntegrationToSdkInfo(e),
-                              G.captureMessage(
-                                "Unhandled Promise error detected"
-                              ));
+                              G.captureMessage("Unhandled Promise error detected"));
                         });
                     });
                 }
@@ -9119,21 +8026,15 @@ object-assign
           })(),
           ut = (function () {
             function e(t) {
-              void 0 === t && (t = {}),
-                (this.name = e.id),
-                (this.Vue = t.Vue || ie().Vue);
+              void 0 === t && (t = {}), (this.name = e.id), (this.Vue = t.Vue || ie().Vue);
             }
             return (
               (e.prototype.formatComponentName = function (e) {
                 if (e.$root === e) return "root instance";
-                var t = e._isVue
-                  ? e.$options.name || e.$options._componentTag
-                  : e.name;
+                var t = e._isVue ? e.$options.name || e.$options._componentTag : e.name;
                 return (
                   (t ? "component <" + t + ">" : "anonymous component") +
-                  (e._isVue && e.$options.__file
-                    ? " at " + e.$options.__file
-                    : "")
+                  (e._isVue && e.$options.__file ? " at " + e.$options.__file : "")
                 );
               }),
               (e.prototype.setupOnce = function () {
@@ -9142,9 +8043,7 @@ object-assign
                   var n = this.Vue.config.errorHandler;
                   this.Vue.config.errorHandler = function (r, o, i) {
                     var a = {};
-                    re(o) &&
-                      ((a.componentName = t.formatComponentName(o)),
-                      (a.propsData = o.$options.propsData)),
+                    re(o) && ((a.componentName = t.formatComponentName(o)), (a.propsData = o.$options.propsData)),
                       ee(i) || (a.lifecycleHook = i),
                       G.getCurrentHub().getIntegration(e) &&
                         G.withScope(function (e) {
@@ -9152,24 +8051,19 @@ object-assign
                             e.setExtra(t, a[t]);
                           }),
                             e.addEventProcessor(function (e) {
-                              return z.__awaiter(
-                                t,
-                                void 0,
-                                void 0,
-                                function () {
-                                  var t;
-                                  return z.__generator(this, function (n) {
-                                    return (
-                                      e.sdk &&
-                                        ((t = e.sdk.integrations || []),
-                                        (e.sdk = z.__assign({}, e.sdk, {
-                                          integrations: z.__spread(t, ["vue"]),
-                                        }))),
-                                      [2, e]
-                                    );
-                                  });
-                                }
-                              );
+                              return z.__awaiter(t, void 0, void 0, function () {
+                                var t;
+                                return z.__generator(this, function (n) {
+                                  return (
+                                    e.sdk &&
+                                      ((t = e.sdk.integrations || []),
+                                      (e.sdk = z.__assign({}, e.sdk, {
+                                        integrations: z.__spread(t, ["vue"]),
+                                      }))),
+                                    [2, e]
+                                  );
+                                });
+                              });
                             }),
                             G.captureException(r);
                         }),
@@ -9182,14 +8076,11 @@ object-assign
             );
           })();
         !(function (e) {
-          (e.Crash = "crash"),
-            (e.Deprecation = "deprecation"),
-            (e.Intervention = "intervention");
+          (e.Crash = "crash"), (e.Deprecation = "deprecation"), (e.Intervention = "intervention");
         })(Re || (Re = {}));
         var dt = (function () {
             function e(t) {
-              void 0 === t &&
-                (t = { types: [Re.Crash, Re.Deprecation, Re.Intervention] }),
+              void 0 === t && (t = { types: [Re.Crash, Re.Deprecation, Re.Intervention] }),
                 (this.options = t),
                 (this.name = e.id);
             }
@@ -9206,11 +8097,7 @@ object-assign
                 var n, r;
                 if (G.getCurrentHub().getIntegration(e)) {
                   try {
-                    for (
-                      var o = z.__values(t), i = o.next();
-                      !i.done;
-                      i = o.next()
-                    ) {
+                    for (var o = z.__values(t), i = o.next(); !i.done; i = o.next()) {
                       var a = i.value;
                       !(function (e) {
                         G.withScope(function (t) {
@@ -9222,10 +8109,7 @@ object-assign
                             for (var i in e.body) o[i] = e.body[i];
                             if ((t.setExtra("body", o), e.type === Re.Crash)) {
                               var a = e.body;
-                              r =
-                                [a.crashId || "", a.reason || ""]
-                                  .join(" ")
-                                  .trim() || r;
+                              r = [a.crashId || "", a.reason || ""].join(" ").trim() || r;
                             } else {
                               var a = e.body;
                               r = a.message || r;
@@ -9326,11 +8210,7 @@ object-assign
               style: { content: { padding: 15 } },
               onRequestClose: n,
             },
-            r.createElement(
-              "h4",
-              null,
-              r.createElement(i, { id: "general.noDeletionTitle" })
-            ),
+            r.createElement("h4", null, r.createElement(i, { id: "general.noDeletionTitle" })),
             r.createElement(
               "p",
               null,
@@ -9354,8 +8234,7 @@ object-assign
       };
       var p = function (e) {
           return {
-            canceledDeletionOpen:
-              e.navigation && e.navigation.canceledDeletionOpen,
+            canceledDeletionOpen: e.navigation && e.navigation.canceledDeletionOpen,
           };
         },
         f = function (e) {
@@ -9424,22 +8303,15 @@ object-assign
     69: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -9448,10 +8320,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -9478,15 +8347,8 @@ object-assign
       var h = (function (e) {
         function t(e) {
           r(this, t);
-          var n = o(
-            this,
-            (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-          );
-          return (
-            s(n, ["handleMessage", "toggleMessageListener"]),
-            (n.state = { recaptchaOpen: !1 }),
-            n
-          );
+          var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
+          return s(n, ["handleMessage", "toggleMessageListener"]), (n.state = { recaptchaOpen: !1 }), n;
         }
         return (
           i(t, e),
@@ -9500,12 +8362,8 @@ object-assign
             {
               key: "componentDidUpdate",
               value: function (e) {
-                this.props.isOpen &&
-                  !e.isOpen &&
-                  this.toggleMessageListener(!0),
-                  !this.props.isOpen &&
-                    e.isOpen &&
-                    this.toggleMessageListener(!1);
+                this.props.isOpen && !e.isOpen && this.toggleMessageListener(!0),
+                  !this.props.isOpen && e.isOpen && this.toggleMessageListener(!1);
               },
             },
             {
@@ -9519,14 +8377,10 @@ object-assign
               value: function (e) {
                 e.origin === window.location.origin &&
                   e.source === this.registrationIframe.contentWindow &&
-                  ("registration-done" === e.data &&
-                    this.props.handleCompleteRegistration(),
-                  "registration-relaunch" === e.data &&
-                    this.registrationIframe.contentWindow.location.reload(),
-                  "recaptcha-opened" === e.data &&
-                    this.setState({ recaptchaOpen: !0 }),
-                  "recaptcha-closed" === e.data &&
-                    this.setState({ recaptchaOpen: !1 }));
+                  ("registration-done" === e.data && this.props.handleCompleteRegistration(),
+                  "registration-relaunch" === e.data && this.registrationIframe.contentWindow.location.reload(),
+                  "recaptcha-opened" === e.data && this.setState({ recaptchaOpen: !0 }),
+                  "recaptcha-closed" === e.data && this.setState({ recaptchaOpen: !1 }));
               },
             },
             {
@@ -9584,22 +8438,15 @@ object-assign
         return e && e.__esModule ? e : { default: e };
       }
       function o(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function i(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function a(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -9608,10 +8455,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       (t.__esModule = !0), (t.NextArrow = t.PrevArrow = void 0);
       var s =
@@ -9619,8 +8463,7 @@ object-assign
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -9643,8 +8486,7 @@ object-assign
             var e = { "slick-arrow": !0, "slick-prev": !0 },
               t = this.clickHandler.bind(this, { message: "previous" });
             !this.props.infinite &&
-              (0 === this.props.currentSlide ||
-                this.props.slideCount <= this.props.slidesToShow) &&
+              (0 === this.props.currentSlide || this.props.slideCount <= this.props.slidesToShow) &&
               ((e["slick-disabled"] = !0), (t = null));
             var n = {
                 key: "0",
@@ -9659,11 +8501,7 @@ object-assign
               };
             return this.props.prevArrow
               ? c.default.cloneElement(this.props.prevArrow, s({}, n, r))
-              : c.default.createElement(
-                  "button",
-                  s({ key: "0", type: "button" }, n),
-                  " Previous"
-                );
+              : c.default.createElement("button", s({ key: "0", type: "button" }, n), " Previous");
           }),
           t
         );
@@ -9680,8 +8518,7 @@ object-assign
             (t.prototype.render = function () {
               var e = { "slick-arrow": !0, "slick-next": !0 },
                 t = this.clickHandler.bind(this, { message: "next" });
-              f.default.canGoNext(this.props) ||
-                ((e["slick-disabled"] = !0), (t = null));
+              f.default.canGoNext(this.props) || ((e["slick-disabled"] = !0), (t = null));
               var n = {
                   key: "1",
                   "data-role": "none",
@@ -9695,11 +8532,7 @@ object-assign
                 };
               return this.props.nextArrow
                 ? c.default.cloneElement(this.props.nextArrow, s({}, n, r))
-                : c.default.createElement(
-                    "button",
-                    s({ key: "1", type: "button" }, n),
-                    " Next"
-                  );
+                : c.default.createElement("button", s({ key: "1", type: "button" }, n), " Next");
             }),
             t
           );
@@ -9722,24 +8555,21 @@ object-assign
               this.enabled = !0;
             }),
             (e.prototype.log = function () {
-              for (var e = [], t = 0; t < arguments.length; t++)
-                e[t] = arguments[t];
+              for (var e = [], t = 0; t < arguments.length; t++) e[t] = arguments[t];
               this.enabled &&
                 r.consoleSandbox(function () {
                   o.console.log("Sentry Logger [Log]: " + e.join(" "));
                 });
             }),
             (e.prototype.warn = function () {
-              for (var e = [], t = 0; t < arguments.length; t++)
-                e[t] = arguments[t];
+              for (var e = [], t = 0; t < arguments.length; t++) e[t] = arguments[t];
               this.enabled &&
                 r.consoleSandbox(function () {
                   o.console.warn("Sentry Logger [Warn]: " + e.join(" "));
                 });
             }),
             (e.prototype.error = function () {
-              for (var e = [], t = 0; t < arguments.length; t++)
-                e[t] = arguments[t];
+              for (var e = [], t = 0; t < arguments.length; t++) e[t] = arguments[t];
               this.enabled &&
                 r.consoleSandbox(function () {
                   o.console.error("Sentry Logger [Error]: " + e.join(" "));
@@ -9780,9 +8610,7 @@ object-assign
             }),
             (e.prototype.getStoreEndpointPath = function () {
               var e = this.dsnObject;
-              return (
-                (e.path ? "/" + e.path : "") + "/api/" + e.projectId + "/store/"
-              );
+              return (e.path ? "/" + e.path : "") + "/api/" + e.projectId + "/store/";
             }),
             (e.prototype.getRequestHeaders = function (e, t) {
               var n = this.dsnObject,
@@ -9801,23 +8629,15 @@ object-assign
             (e.prototype.getReportDialogEndpoint = function (e) {
               void 0 === e && (e = {});
               var t = this.dsnObject,
-                n =
-                  this.getBaseUrl() +
-                  (t.path ? "/" + t.path : "") +
-                  "/api/embed/error-page/",
+                n = this.getBaseUrl() + (t.path ? "/" + t.path : "") + "/api/embed/error-page/",
                 r = [];
               r.push("dsn=" + t.toString());
               for (var o in e)
                 if ("user" === o) {
                   if (!e.user) continue;
-                  e.user.name &&
-                    r.push("name=" + encodeURIComponent(e.user.name)),
-                    e.user.email &&
-                      r.push("email=" + encodeURIComponent(e.user.email));
-                } else
-                  r.push(
-                    encodeURIComponent(o) + "=" + encodeURIComponent(e[o])
-                  );
+                  e.user.name && r.push("name=" + encodeURIComponent(e.user.name)),
+                    e.user.email && r.push("email=" + encodeURIComponent(e.user.email));
+                } else r.push(encodeURIComponent(o) + "=" + encodeURIComponent(e[o]));
               return r.length ? n + "?" + r.join("&") : n;
             }),
             e
@@ -9831,22 +8651,15 @@ object-assign
         return e && e.__esModule ? e : { default: e };
       }
       function o(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function i(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function a(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -9855,10 +8668,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       (t.__esModule = !0), (t.Dots = void 0);
       var s = n(0),
@@ -9892,8 +8702,7 @@ object-assign
                 var r = n * e.props.slidesToScroll,
                   o = n * e.props.slidesToScroll + (e.props.slidesToScroll - 1),
                   i = (0, u.default)({
-                    "slick-active":
-                      e.props.currentSlide >= r && e.props.currentSlide <= o,
+                    "slick-active": e.props.currentSlide >= r && e.props.currentSlide <= o,
                   }),
                   a = {
                     message: "dots",
@@ -9910,11 +8719,7 @@ object-assign
                   })
                 );
               });
-            return l.default.createElement(
-              "ul",
-              { className: this.props.dotsClass, style: { display: "block" } },
-              n
-            );
+            return l.default.createElement("ul", { className: this.props.dotsClass, style: { display: "block" } }, n);
           }),
           t
         );
@@ -9959,8 +8764,7 @@ object-assign
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -10002,17 +8806,9 @@ object-assign
         },
         componentWillMount: function () {
           this.props.init && this.props.init(), this.setState({ mounted: !0 });
-          for (
-            var e = [], t = 0;
-            t < a.default.Children.count(this.props.children);
-            t++
-          )
-            t >= this.state.currentSlide &&
-              t < this.state.currentSlide + this.props.slidesToShow &&
-              e.push(t);
-          this.props.lazyLoad &&
-            0 === this.state.lazyLoadedList.length &&
-            this.setState({ lazyLoadedList: e });
+          for (var e = [], t = 0; t < a.default.Children.count(this.props.children); t++)
+            t >= this.state.currentSlide && t < this.state.currentSlide + this.props.slidesToShow && e.push(t);
+          this.props.lazyLoad && 0 === this.state.lazyLoadedList.length && this.setState({ lazyLoadedList: e });
         },
         componentDidMount: function () {
           this.initialize(this.props),
@@ -10071,21 +8867,16 @@ object-assign
         },
         render: function () {
           var e,
-            t = (0, v.default)(
-              "slick-initialized",
-              "slick-slider",
-              this.props.className,
-              { "slick-vertical": this.props.vertical }
-            ),
+            t = (0, v.default)("slick-initialized", "slick-slider", this.props.className, {
+              "slick-vertical": this.props.vertical,
+            }),
             n = {
               fade: this.props.fade,
               cssEase: this.props.cssEase,
               speed: this.props.speed,
               infinite: this.props.infinite,
               centerMode: this.props.centerMode,
-              focusOnSelect: this.props.focusOnSelect
-                ? this.selectHandler
-                : null,
+              focusOnSelect: this.props.focusOnSelect ? this.selectHandler : null,
               currentSlide: this.state.currentSlide,
               lazyLoad: this.props.lazyLoad,
               lazyLoadedList: this.state.lazyLoadedList,
@@ -10097,10 +8888,7 @@ object-assign
               trackStyle: this.state.trackStyle,
               variableWidth: this.props.variableWidth,
             };
-          if (
-            !0 === this.props.dots &&
-            this.state.slideCount >= this.props.slidesToShow
-          ) {
+          if (!0 === this.props.dots && this.state.slideCount >= this.props.slidesToShow) {
             var r = {
               dotsClass: this.props.dotsClass,
               slideCount: this.state.slideCount,
@@ -10126,16 +8914,13 @@ object-assign
               clickHandler: this.changeSlide,
             };
           this.props.arrows &&
-            ((i = a.default.createElement(E.PrevArrow, l)),
-            (s = a.default.createElement(E.NextArrow, l)));
+            ((i = a.default.createElement(E.PrevArrow, l)), (s = a.default.createElement(E.NextArrow, l)));
           var c = null;
           this.props.vertical && (c = { height: this.state.listHeight });
           var u = null;
           !1 === this.props.vertical
-            ? !0 === this.props.centerMode &&
-              (u = { padding: "0px " + this.props.centerPadding })
-            : !0 === this.props.centerMode &&
-              (u = { padding: this.props.centerPadding + " 0px" });
+            ? !0 === this.props.centerMode && (u = { padding: "0px " + this.props.centerPadding })
+            : !0 === this.props.centerMode && (u = { padding: this.props.centerPadding + " 0px" });
           var d = (0, b.default)({}, c, u);
           return a.default.createElement(
             "div",
@@ -10162,11 +8947,7 @@ object-assign
                 onTouchCancel: this.state.dragging ? this.swipeEnd : null,
                 onKeyDown: this.props.accessibility ? this.keyHandler : null,
               },
-              a.default.createElement(
-                w.Track,
-                o({ ref: this.trackRefHandler }, n),
-                this.props.children
-              )
+              a.default.createElement(w.Track, o({ ref: this.trackRefHandler }, n), this.props.children)
             ),
             s,
             e
@@ -10199,26 +8980,13 @@ object-assign
               c = this.state,
               u = c.slideCount,
               d = c.currentSlide;
-            if (
-              ((o = u % s != 0),
-              (t = o ? 0 : (u - d) % s),
-              "previous" === e.message)
-            )
-              (r = 0 === t ? s : l - t),
-                (i = d - r),
-                this.props.lazyLoad &&
-                  ((n = d - r), (i = -1 === n ? u - 1 : n));
+            if (((o = u % s != 0), (t = o ? 0 : (u - d) % s), "previous" === e.message))
+              (r = 0 === t ? s : l - t), (i = d - r), this.props.lazyLoad && ((n = d - r), (i = -1 === n ? u - 1 : n));
             else if ("next" === e.message)
-              (r = 0 === t ? s : t),
-                (i = d + r),
-                this.props.lazyLoad && (i = ((d + s) % u) + t);
+              (r = 0 === t ? s : t), (i = d + r), this.props.lazyLoad && (i = ((d + s) % u) + t);
             else if ("dots" === e.message || "children" === e.message) {
               if ((i = e.index * e.slidesToScroll) === e.currentSlide) return;
-            } else if (
-              "index" === e.message &&
-              (i = Number(e.index)) === e.currentSlide
-            )
-              return;
+            } else if ("index" === e.message && (i = Number(e.index)) === e.currentSlide) return;
             this.slideHandler(i);
           },
           keyHandler: function (e) {
@@ -10252,38 +9020,25 @@ object-assign
             if (!this.state.dragging) return void e.preventDefault();
             if (!this.state.scrolling) {
               if (this.state.animating) return void e.preventDefault();
-              this.props.vertical &&
-                this.props.swipeToSlide &&
-                this.props.verticalSwiping &&
-                e.preventDefault();
+              this.props.vertical && this.props.swipeToSlide && this.props.verticalSwiping && e.preventDefault();
               var t,
                 n,
                 r,
                 i = this.state.touchObject;
               (n = (0, o.getTrackLeft)(
-                (0, s.default)(
-                  { slideIndex: this.state.currentSlide, trackRef: this.track },
-                  this.props,
-                  this.state
-                )
+                (0, s.default)({ slideIndex: this.state.currentSlide, trackRef: this.track }, this.props, this.state)
               )),
                 (i.curX = e.touches ? e.touches[0].pageX : e.clientX),
                 (i.curY = e.touches ? e.touches[0].pageY : e.clientY),
-                (i.swipeLength = Math.round(
-                  Math.sqrt(Math.pow(i.curX - i.startX, 2))
-                ));
+                (i.swipeLength = Math.round(Math.sqrt(Math.pow(i.curX - i.startX, 2))));
               var a = Math.round(Math.sqrt(Math.pow(i.curY - i.startY, 2)));
               if (!this.props.verticalSwiping && !this.state.swiping && a > 4)
                 return void this.setState({ scrolling: !0 });
               this.props.verticalSwiping && (i.swipeLength = a),
-                (r =
-                  (!1 === this.props.rtl ? 1 : -1) *
-                  (i.curX > i.startX ? 1 : -1)),
+                (r = (!1 === this.props.rtl ? 1 : -1) * (i.curX > i.startX ? 1 : -1)),
                 this.props.verticalSwiping && (r = i.curY > i.startY ? 1 : -1);
               var l = this.state.currentSlide,
-                c = Math.ceil(
-                  this.state.slideCount / this.props.slidesToScroll
-                ),
+                c = Math.ceil(this.state.slideCount / this.props.slidesToScroll),
                 u = this.swipeDirection(this.state.touchObject),
                 d = i.swipeLength;
               !1 === this.props.infinite &&
@@ -10291,26 +9046,19 @@ object-assign
                 ((d = i.swipeLength * this.props.edgeFriction),
                 !1 === this.state.edgeDragged &&
                   this.props.edgeEvent &&
-                  (this.props.edgeEvent(u),
-                  this.setState({ edgeDragged: !0 }))),
+                  (this.props.edgeEvent(u), this.setState({ edgeDragged: !0 }))),
                 !1 === this.state.swiped &&
                   this.props.swipeEvent &&
                   (this.props.swipeEvent(u), this.setState({ swiped: !0 })),
-                (t = this.props.vertical
-                  ? n + d * (this.state.listHeight / this.state.listWidth) * r
-                  : n + d * r),
+                (t = this.props.vertical ? n + d * (this.state.listHeight / this.state.listWidth) * r : n + d * r),
                 this.props.verticalSwiping && (t = n + d * r),
                 this.setState({
                   touchObject: i,
                   swipeLeft: t,
-                  trackStyle: (0, o.getTrackCSS)(
-                    (0, s.default)({ left: t }, this.props, this.state)
-                  ),
+                  trackStyle: (0, o.getTrackCSS)((0, s.default)({ left: t }, this.props, this.state)),
                 }),
-                Math.abs(i.curX - i.startX) <
-                  0.8 * Math.abs(i.curY - i.startY) ||
-                  (i.swipeLength > 4 &&
-                    (this.setState({ swiping: !0 }), e.preventDefault()));
+                Math.abs(i.curX - i.startX) < 0.8 * Math.abs(i.curY - i.startY) ||
+                  (i.swipeLength > 4 && (this.setState({ swiping: !0 }), e.preventDefault()));
             }
           },
           getNavigableIndexes: function () {
@@ -10351,18 +9099,14 @@ object-assign
           },
           getSlideCount: function () {
             var e = this,
-              t = this.props.centerMode
-                ? this.state.slideWidth *
-                  Math.floor(this.props.slidesToShow / 2)
-                : 0;
+              t = this.props.centerMode ? this.state.slideWidth * Math.floor(this.props.slidesToShow / 2) : 0;
             if (this.props.swipeToSlide) {
               var n = void 0,
                 r = c.default.findDOMNode(this.list),
                 o = r.querySelectorAll(".slick-slide");
               Array.from(o).every(function (r) {
                 if (e.props.vertical) {
-                  if (r.offsetTop + e.getHeight(r) / 2 > -1 * e.state.swipeLeft)
-                    return (n = r), !1;
+                  if (r.offsetTop + e.getHeight(r) / 2 > -1 * e.state.swipeLeft) return (n = r), !1;
                 } else if (r.offsetLeft - t + e.getWidth(r) / 2 > -1 * e.state.swipeLeft) return (n = r), !1;
                 return !0;
               });
@@ -10371,13 +9115,11 @@ object-assign
             return this.props.slidesToScroll;
           },
           swipeEnd: function (e) {
-            if (!this.state.dragging)
-              return void (this.props.swipe && e.preventDefault());
+            if (!this.state.dragging) return void (this.props.swipe && e.preventDefault());
             var t = this.state.touchObject,
               n = this.state.listWidth / this.props.touchThreshold,
               r = this.swipeDirection(t);
-            this.props.verticalSwiping &&
-              (n = this.state.listHeight / this.props.touchThreshold);
+            this.props.verticalSwiping && (n = this.state.listHeight / this.props.touchThreshold);
             var i = this.state.scrolling;
             if (
               (this.setState({
@@ -10399,17 +9141,13 @@ object-assign
                   case "left":
                   case "down":
                     (l = this.state.currentSlide + this.getSlideCount()),
-                      (a = this.props.swipeToSlide
-                        ? this.checkNavigable(l)
-                        : l),
+                      (a = this.props.swipeToSlide ? this.checkNavigable(l) : l),
                       (this.state.currentDirection = 0);
                     break;
                   case "right":
                   case "up":
                     (l = this.state.currentSlide - this.getSlideCount()),
-                      (a = this.props.swipeToSlide
-                        ? this.checkNavigable(l)
-                        : l),
+                      (a = this.props.swipeToSlide ? this.checkNavigable(l) : l),
                       (this.state.currentDirection = 1);
                     break;
                   default:
@@ -10428,9 +9166,7 @@ object-assign
                   )
                 );
                 this.setState({
-                  trackStyle: (0, o.getTrackAnimateCSS)(
-                    (0, s.default)({ left: c }, this.props, this.state)
-                  ),
+                  trackStyle: (0, o.getTrackAnimateCSS)((0, s.default)({ left: c }, this.props, this.state)),
                 });
               }
           },
@@ -10452,22 +9188,15 @@ object-assign
         return e && e.__esModule ? e : { default: e };
       }
       function o(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function i(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function a(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -10476,10 +9205,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       t.__esModule = !0;
       var s =
@@ -10487,8 +9213,7 @@ object-assign
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -10521,8 +9246,7 @@ object-assign
               this.innerSlider = e;
             }),
             (t.prototype.media = function (e, t) {
-              y.register(e, t),
-                this._responsiveMediaHandlers.push({ query: e, handler: t });
+              y.register(e, t), this._responsiveMediaHandlers.push({ query: e, handler: t });
             }),
             (t.prototype.componentWillMount = function () {
               var e = this;
@@ -10573,10 +9297,7 @@ object-assign
                 ? ((t = this.props.responsive.filter(function (e) {
                     return e.breakpoint === n.state.breakpoint;
                   })),
-                  (e =
-                    "unslick" === t[0].settings
-                      ? "unslick"
-                      : (0, p.default)({}, this.props, t[0].settings)))
+                  (e = "unslick" === t[0].settings ? "unslick" : (0, p.default)({}, this.props, t[0].settings)))
                 : (e = (0, p.default)({}, g.default, this.props));
               var r = this.props.children;
               return (
@@ -10585,16 +9306,8 @@ object-assign
                   return !!e;
                 })),
                 "unslick" === e
-                  ? c.default.createElement(
-                      "div",
-                      { className: this.props.className + " unslicked" },
-                      r
-                    )
-                  : c.default.createElement(
-                      u.InnerSlider,
-                      s({ ref: this.innerSliderRefHandler }, e),
-                      r
-                    )
+                  ? c.default.createElement("div", { className: this.props.className + " unslicked" }, r)
+                  : c.default.createElement(u.InnerSlider, s({ ref: this.innerSliderRefHandler }, e), r)
               );
             }),
             t
@@ -10608,22 +9321,15 @@ object-assign
         return e && e.__esModule ? e : { default: e };
       }
       function o(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function i(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function a(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -10632,10 +9338,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       (t.__esModule = !0), (t.Track = void 0);
       var s = n(0),
@@ -10652,11 +9355,8 @@ object-assign
             e.centerMode
               ? ((o = Math.floor(e.slidesToShow / 2)),
                 (n = (i - e.currentSlide) % e.slideCount == 0),
-                i > e.currentSlide - o - 1 &&
-                  i <= e.currentSlide + o &&
-                  (t = !0))
-              : (t =
-                  e.currentSlide <= i && i < e.currentSlide + e.slidesToShow),
+                i > e.currentSlide - o - 1 && i <= e.currentSlide + o && (t = !0))
+              : (t = e.currentSlide <= i && i < e.currentSlide + e.slidesToShow),
             (0, p.default)({
               "slick-slide": !0,
               "slick-active": t,
@@ -10668,8 +9368,7 @@ object-assign
         h = function (e) {
           var t = {};
           return (
-            (void 0 !== e.variableWidth && !1 !== e.variableWidth) ||
-              (t.width = e.slideWidth),
+            (void 0 !== e.variableWidth && !1 !== e.variableWidth) || (t.width = e.slideWidth),
             e.fade &&
               ((t.position = "relative"),
               (t.left = -e.index * e.slideWidth),
@@ -10704,24 +9403,16 @@ object-assign
               var g = h((0, u.default)({}, e, { index: s })),
                 A = c.props.className || "",
                 v = function (t) {
-                  c.props && c.props.onClick && c.props.onClick(t),
-                    e.focusOnSelect && e.focusOnSelect(d);
+                  c.props && c.props.onClick && c.props.onClick(t), e.focusOnSelect && e.focusOnSelect(d);
                 };
               if (
                 (n.push(
                   l.default.cloneElement(c, {
                     key: "original" + m(c, s),
                     "data-index": s,
-                    className: (0, p.default)(
-                      f((0, u.default)({ index: s }, e)),
-                      A
-                    ),
+                    className: (0, p.default)(f((0, u.default)({ index: s }, e)), A),
                     tabIndex: "-1",
-                    style: (0, u.default)(
-                      { outline: "none" },
-                      c.props.style || {},
-                      g
-                    ),
+                    style: (0, u.default)({ outline: "none" }, c.props.style || {}, g),
                     onClick: v,
                   })
                 ),
@@ -10734,10 +9425,7 @@ object-assign
                     l.default.cloneElement(c, {
                       key: "precloned" + m(c, t),
                       "data-index": t,
-                      className: (0, p.default)(
-                        f((0, u.default)({ index: t }, e)),
-                        A
-                      ),
+                      className: (0, p.default)(f((0, u.default)({ index: t }, e)), A),
                       style: (0, u.default)({}, c.props.style || {}, g),
                       onClick: v,
                     })
@@ -10748,10 +9436,7 @@ object-assign
                       l.default.cloneElement(c, {
                         key: "postcloned" + m(c, t),
                         "data-index": t,
-                        className: (0, p.default)(
-                          f((0, u.default)({ index: t }, e)),
-                          A
-                        ),
+                        className: (0, p.default)(f((0, u.default)({ index: t }, e)), A),
                         style: (0, u.default)({}, c.props.style || {}, g),
                         onClick: v,
                       })
@@ -10769,11 +9454,7 @@ object-assign
           a(t, e),
           (t.prototype.render = function () {
             var e = g.call(this, this.props);
-            return l.default.createElement(
-              "div",
-              { className: "slick-track", style: this.props.trackStyle },
-              e
-            );
+            return l.default.createElement("div", { className: "slick-track", style: this.props.trackStyle }, e);
           }),
           t
         );
@@ -10790,34 +9471,27 @@ object-assign
           function e(e) {
             (this.buffer = new a.RequestBuffer()),
               (this.options = e),
-              this.options.dsn ||
-                o.logger.warn("No DSN provided, backend will not do anything.");
+              this.options.dsn || o.logger.warn("No DSN provided, backend will not do anything.");
           }
           return (
             (e.prototype.eventFromException = function (e, t) {
               return r.__awaiter(this, void 0, void 0, function () {
                 return r.__generator(this, function (e) {
-                  throw new i.SentryError(
-                    "Backend has to implement `eventFromException` method"
-                  );
+                  throw new i.SentryError("Backend has to implement `eventFromException` method");
                 });
               });
             }),
             (e.prototype.eventFromMessage = function (e, t, n) {
               return r.__awaiter(this, void 0, void 0, function () {
                 return r.__generator(this, function (e) {
-                  throw new i.SentryError(
-                    "Backend has to implement `eventFromMessage` method"
-                  );
+                  throw new i.SentryError("Backend has to implement `eventFromMessage` method");
                 });
               });
             }),
             (e.prototype.sendEvent = function (e) {
               return r.__awaiter(this, void 0, void 0, function () {
                 return r.__generator(this, function (e) {
-                  throw new i.SentryError(
-                    "Backend has to implement `sendEvent` method"
-                  );
+                  throw new i.SentryError("Backend has to implement `sendEvent` method");
                 });
               });
             }),
@@ -10871,10 +9545,7 @@ object-assign
             (e.prototype.install = function () {
               if (!this.isEnabled()) return (this.installed = !1);
               var e = this.getBackend();
-              return (
-                !this.installed && e.install && e.install(),
-                (this.installed = !0)
-              );
+              return !this.installed && e.install && e.install(), (this.installed = !0);
             }),
             (e.prototype.buffer = function (e) {
               return r.__awaiter(this, void 0, void 0, function () {
@@ -10896,15 +9567,9 @@ object-assign
                           return r.__generator(this, function (r) {
                             switch (r.label) {
                               case 0:
-                                return [
-                                  4,
-                                  this.getBackend().eventFromException(e, t),
-                                ];
+                                return [4, this.getBackend().eventFromException(e, t)];
                               case 1:
-                                return (
-                                  (o = r.sent()),
-                                  [2, this.captureEvent(o, t, n)]
-                                );
+                                return (o = r.sent()), [2, this.captureEvent(o, t, n)];
                             }
                           });
                         });
@@ -10927,15 +9592,9 @@ object-assign
                           return r.__generator(this, function (r) {
                             switch (r.label) {
                               case 0:
-                                return [
-                                  4,
-                                  this.getBackend().eventFromMessage(e, t, n),
-                                ];
+                                return [4, this.getBackend().eventFromMessage(e, t, n)];
                               case 1:
-                                return (
-                                  (i = r.sent()),
-                                  [2, this.captureEvent(i, n, o)]
-                                );
+                                return (i = r.sent()), [2, this.captureEvent(i, n, o)];
                             }
                           });
                         });
@@ -10961,19 +9620,11 @@ object-assign
                               this.processEvent(
                                 e,
                                 function (e) {
-                                  return r.__awaiter(
-                                    o,
-                                    void 0,
-                                    void 0,
-                                    function () {
-                                      return r.__generator(this, function (t) {
-                                        return [
-                                          2,
-                                          this.getBackend().sendEvent(e),
-                                        ];
-                                      });
-                                    }
-                                  );
+                                  return r.__awaiter(o, void 0, void 0, function () {
+                                    return r.__generator(this, function (t) {
+                                      return [2, this.getBackend().sendEvent(e)];
+                                    });
+                                  });
                                 },
                                 t,
                                 n
@@ -11000,10 +9651,7 @@ object-assign
                         return i(u, t);
                       })
                     : u;
-                null !== d &&
-                  this.getBackend().storeBreadcrumb(d) &&
-                  n &&
-                  n.addBreadcrumb(d, Math.min(l, 100));
+                null !== d && this.getBackend().storeBreadcrumb(d) && n && n.addBreadcrumb(d, Math.min(l, 100));
               }
             }),
             (e.prototype.getDsn = function () {
@@ -11030,16 +9678,11 @@ object-assign
                     (u = o.release),
                     (d = o.dist),
                     (p = r.__assign({}, e)),
-                    void 0 === p.environment &&
-                      void 0 !== i &&
-                      (p.environment = i),
+                    void 0 === p.environment && void 0 !== i && (p.environment = i),
                     void 0 === p.release && void 0 !== u && (p.release = u),
                     void 0 === p.dist && void 0 !== d && (p.dist = d),
                     p.message && (p.message = l.truncate(p.message, 250)),
-                    (f =
-                      p.exception &&
-                      p.exception.values &&
-                      p.exception.values[0]),
+                    (f = p.exception && p.exception.values && p.exception.values[0]),
                     f && f.value && (f.value = l.truncate(f.value, 250)),
                     (h = p.request),
                     h && h.url && (h.url = l.truncate(h.url, 250)),
@@ -11064,8 +9707,7 @@ object-assign
                             : [4, this.prepareEvent(e, s, n)])
                         : [2, { status: o.Status.Skipped }];
                     case 1:
-                      if (null === (d = r.sent()))
-                        return [2, { status: o.Status.Skipped }];
+                      if (null === (d = r.sent())) return [2, { status: o.Status.Skipped }];
                       (p = d), (r.label = 2);
                     case 2:
                       return (
@@ -11075,10 +9717,7 @@ object-assign
                       );
                     case 3:
                       (p = r.sent()),
-                        void 0 === p &&
-                          a.logger.error(
-                            "`beforeSend` method has to return `null` or a valid event"
-                          ),
+                        void 0 === p && a.logger.error("`beforeSend` method has to return `null` or a valid event"),
                         (r.label = 4);
                     case 4:
                       return [3, 6];
@@ -11094,8 +9733,7 @@ object-assign
                         [
                           2,
                           {
-                            reason:
-                              "Event processing in beforeSend method threw an exception",
+                            reason: "Event processing in beforeSend method threw an exception",
                             status: o.Status.Invalid,
                           },
                         ]
@@ -11105,20 +9743,13 @@ object-assign
                         ? [
                             2,
                             {
-                              reason:
-                                "Event dropped due to being discarded by beforeSend method",
+                              reason: "Event dropped due to being discarded by beforeSend method",
                               status: o.Status.Skipped,
                             },
                           ]
                         : [4, t(p)];
                     case 7:
-                      return (
-                        (m = r.sent()),
-                        (m.event = p),
-                        m.status,
-                        o.Status.RateLimit,
-                        [2, m]
-                      );
+                      return (m = r.sent()), (m.event = p), m.status, o.Status.RateLimit, [2, m];
                   }
                 });
               });
@@ -11137,14 +9768,7 @@ object-assign
               try {
                 return this.integrations[e.id] || null;
               } catch (t) {
-                return (
-                  a.logger.warn(
-                    "Cannot retrieve integration " +
-                      e.id +
-                      " from the current Client"
-                  ),
-                  null
-                );
+                return a.logger.warn("Cannot retrieve integration " + e.id + " from the current Client"), null;
               }
             }),
             e
@@ -11222,8 +9846,7 @@ object-assign
           n,
           r,
           o,
-          i =
-            (e.defaultIntegrations && s.__spread(e.defaultIntegrations)) || [],
+          i = (e.defaultIntegrations && s.__spread(e.defaultIntegrations)) || [],
           l = e.integrations,
           c = [];
         if (Array.isArray(l)) {
@@ -11234,9 +9857,7 @@ object-assign
           try {
             for (var p = s.__values(i), f = p.next(); !f.done; f = p.next()) {
               var h = f.value;
-              -1 === u.indexOf(a(h)) &&
-                -1 === d.indexOf(a(h)) &&
-                (c.push(h), d.push(a(h)));
+              -1 === u.indexOf(a(h)) && -1 === d.indexOf(a(h)) && (c.push(h), d.push(a(h)));
             }
           } catch (e) {
             t = { error: e };
@@ -11272,15 +9893,10 @@ object-assign
           try {
             e.setupOnce();
           } catch (t) {
-            l.logger.warn(
-              "Integration " +
-                a(e) +
-                ': The install method is deprecated. Use "setupOnce".'
-            ),
+            l.logger.warn("Integration " + a(e) + ': The install method is deprecated. Use "setupOnce".'),
               e.install && e.install(n);
           }
-          t.installedIntegrations.push(a(e)),
-            l.logger.log("Integration installed: " + a(e));
+          t.installedIntegrations.push(a(e)), l.logger.log("Integration installed: " + a(e));
         }
       }
       function i(e) {
@@ -11323,8 +9939,7 @@ object-assign
                   return r.__generator(this, function (r) {
                     if ((t = o.getCurrentHub().getIntegration(e))) {
                       try {
-                        if (t.shouldDropEvent(n, t.previousEvent))
-                          return [2, null];
+                        if (t.shouldDropEvent(n, t.previousEvent)) return [2, null];
                       } catch (e) {
                         return [2, (t.previousEvent = n)];
                       }
@@ -11444,13 +10059,7 @@ object-assign
                     return (
                       (t = o.getCurrentHub().getIntegration(e)),
                       t && i && i.originalException
-                        ? [
-                            2,
-                            this.enhanceEventWithErrorData(
-                              n,
-                              i.originalException
-                            ),
-                          ]
+                        ? [2, this.enhanceEventWithErrorData(n, i.originalException)]
                         : [2, n]
                     );
                   });
@@ -11459,23 +10068,12 @@ object-assign
             }),
             (e.prototype.enhanceEventWithErrorData = function (e, t) {
               var n = this.extractErrorData(t);
-              return n
-                ? r.__assign({}, e, { extra: r.__assign({}, e.extra, n) })
-                : e;
+              return n ? r.__assign({}, e, { extra: r.__assign({}, e.extra, n) }) : e;
             }),
             (e.prototype.extractErrorData = function (e) {
               var t, n, o;
               try {
-                var s = [
-                    "name",
-                    "message",
-                    "stack",
-                    "line",
-                    "column",
-                    "fileName",
-                    "lineNumber",
-                    "columnNumber",
-                  ],
+                var s = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber"],
                   l = e.name || e.constructor.name,
                   c = Object.keys(e).filter(function (e) {
                     return -1 === s.indexOf(e);
@@ -11483,15 +10081,10 @@ object-assign
                 if (c.length) {
                   var u = {};
                   try {
-                    for (
-                      var d = r.__values(c), p = d.next();
-                      !p.done;
-                      p = d.next()
-                    ) {
+                    for (var d = r.__values(c), p = d.next(); !p.done; p = d.next()) {
                       var f = p.value,
                         h = e[f];
-                      i.isError(h) && (h = h.name || h.constructor.name),
-                        (u[f] = h);
+                      i.isError(h) && (h = h.name || h.constructor.name), (u[f] = h);
                     }
                   } catch (e) {
                     t = { error: e };
@@ -11506,13 +10099,7 @@ object-assign
                 }
                 return null;
               } catch (e) {
-                return (
-                  a.logger.error(
-                    "Unable to extract extra data from the Error object:",
-                    e
-                  ),
-                  null
-                );
+                return a.logger.error("Unable to extract extra data from the Error object:", e), null;
               }
             }),
             (e.id = "ExtraErrorData"),
@@ -11533,8 +10120,7 @@ object-assign
             (e.prototype.setupOnce = function () {
               (r = Function.prototype.toString),
                 (Function.prototype.toString = function () {
-                  for (var e = [], t = 0; t < arguments.length; t++)
-                    e[t] = arguments[t];
+                  for (var e = [], t = 0; t < arguments.length; t++) e[t] = arguments[t];
                   var n = this.__sentry__ ? this.__sentry_original__ : this;
                   return r.apply(n, e);
                 });
@@ -11554,10 +10140,7 @@ object-assign
         a = n(7),
         s = n(11),
         l = n(30),
-        c = [
-          /^Script error\.?$/,
-          /^Javascript error: Script error\.? on line 0$/,
-        ],
+        c = [/^Script error\.?$/, /^Javascript error: Script error\.? on line 0$/],
         u = (function () {
           function e(t) {
             void 0 === t && (t = {}), (this.options = t), (this.name = e.id);
@@ -11586,14 +10169,12 @@ object-assign
             (e.prototype.shouldDropEvent = function (e, t) {
               return this.isSentryError(e, t)
                 ? (a.logger.warn(
-                    "Event dropped due to being internal Sentry Error.\nEvent: " +
-                      s.getEventDescription(e)
+                    "Event dropped due to being internal Sentry Error.\nEvent: " + s.getEventDescription(e)
                   ),
                   !0)
                 : this.isIgnoredError(e, t)
                 ? (a.logger.warn(
-                    "Event dropped due to being matched by `ignoreErrors` option.\nEvent: " +
-                      s.getEventDescription(e)
+                    "Event dropped due to being matched by `ignoreErrors` option.\nEvent: " + s.getEventDescription(e)
                   ),
                   !0)
                 : this.isBlacklistedUrl(e, t)
@@ -11635,11 +10216,7 @@ object-assign
             }),
             (e.prototype.isBlacklistedUrl = function (e, t) {
               var n = this;
-              if (
-                (void 0 === t && (t = {}),
-                !t.blacklistUrls || !t.blacklistUrls.length)
-              )
-                return !1;
+              if ((void 0 === t && (t = {}), !t.blacklistUrls || !t.blacklistUrls.length)) return !1;
               var r = this.getEventFilterUrl(e);
               return (
                 !!r &&
@@ -11650,11 +10227,7 @@ object-assign
             }),
             (e.prototype.isWhitelistedUrl = function (e, t) {
               var n = this;
-              if (
-                (void 0 === t && (t = {}),
-                !t.whitelistUrls || !t.whitelistUrls.length)
-              )
-                return !0;
+              if ((void 0 === t && (t = {}), !t.whitelistUrls || !t.whitelistUrls.length)) return !0;
               var r = this.getEventFilterUrl(e);
               return (
                 !r ||
@@ -11667,29 +10240,15 @@ object-assign
               return (
                 void 0 === e && (e = {}),
                 {
-                  blacklistUrls: r.__spread(
-                    this.options.blacklistUrls || [],
-                    e.blacklistUrls || []
-                  ),
-                  ignoreErrors: r.__spread(
-                    this.options.ignoreErrors || [],
-                    e.ignoreErrors || [],
-                    c
-                  ),
-                  ignoreInternal:
-                    void 0 === this.options.ignoreInternal ||
-                    this.options.ignoreInternal,
-                  whitelistUrls: r.__spread(
-                    this.options.whitelistUrls || [],
-                    e.whitelistUrls || []
-                  ),
+                  blacklistUrls: r.__spread(this.options.blacklistUrls || [], e.blacklistUrls || []),
+                  ignoreErrors: r.__spread(this.options.ignoreErrors || [], e.ignoreErrors || [], c),
+                  ignoreInternal: void 0 === this.options.ignoreInternal || this.options.ignoreInternal,
+                  whitelistUrls: r.__spread(this.options.whitelistUrls || [], e.whitelistUrls || []),
                 }
               );
             }),
             (e.prototype.isMatchingPattern = function (e, t) {
-              return i.isRegExp(t)
-                ? t.test(e)
-                : "string" == typeof t && l.includes(e, t);
+              return i.isRegExp(t) ? t.test(e) : "string" == typeof t && l.includes(e, t);
             }),
             (e.prototype.getPossibleEventMessages = function (e) {
               if (e.message) return [e.message];
@@ -11700,13 +10259,7 @@ object-assign
                   r = t.value;
                 return ["" + r, n + ": " + r];
               } catch (t) {
-                return (
-                  a.logger.error(
-                    "Cannot extract message for event " +
-                      s.getEventDescription(e)
-                  ),
-                  []
-                );
+                return a.logger.error("Cannot extract message for event " + s.getEventDescription(e)), [];
               }
             }),
             (e.prototype.getEventFilterUrl = function (e) {
@@ -11717,12 +10270,7 @@ object-assign
                   ? e.exception.values[0].stacktrace.frames[0].filename
                   : null;
               } catch (t) {
-                return (
-                  a.logger.error(
-                    "Cannot extract url for event " + s.getEventDescription(e)
-                  ),
-                  null
-                );
+                return a.logger.error("Cannot extract url for event " + s.getEventDescription(e)), null;
               }
             }),
             (e.id = "InboundFilters"),
@@ -11753,8 +10301,7 @@ object-assign
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 });
       var r = n(29);
-      (t.addGlobalEventProcessor = r.addGlobalEventProcessor),
-        (t.Scope = r.Scope);
+      (t.addGlobalEventProcessor = r.addGlobalEventProcessor), (t.Scope = r.Scope);
       var o = n(85);
       (t.getCurrentHub = o.getCurrentHub),
         (t.getHubFromCarrier = o.getHubFromCarrier),
@@ -11769,8 +10316,7 @@ object-assign
         o = n(8),
         i = (function () {
           function e(t) {
-            (this.name = e.id),
-              (this.options = r.__assign({ debugger: !1, stringify: !1 }, t));
+            (this.name = e.id), (this.options = r.__assign({ debugger: !1, stringify: !1 }, t));
           }
           return (
             (e.prototype.setupOnce = function () {
@@ -11784,8 +10330,7 @@ object-assign
                       t &&
                         (t.options.debugger,
                         t.options.stringify
-                          ? (console.log(JSON.stringify(n, null, 2)),
-                            i && console.log(JSON.stringify(i, null, 2)))
+                          ? (console.log(JSON.stringify(n, null, 2)), i && console.log(JSON.stringify(i, null, 2)))
                           : (console.log(n), i && console.log(i))),
                       [2, n]
                     );
@@ -11817,9 +10362,7 @@ object-assign
                     return (
                       e.filename &&
                         e.filename.startsWith("/") &&
-                        ((t = this.root
-                          ? i.relative(this.root, e.filename)
-                          : i.basename(e.filename)),
+                        ((t = this.root ? i.relative(this.root, e.filename) : i.basename(e.filename)),
                         (e.filename = "app:///" + t)),
                       [2, e]
                     );
@@ -11836,10 +10379,7 @@ object-assign
                 return r.__awaiter(t, void 0, void 0, function () {
                   var t;
                   return r.__generator(this, function (r) {
-                    return (
-                      (t = o.getCurrentHub().getIntegration(e)),
-                      t ? [2, t.process(n)] : [2, n]
-                    );
+                    return (t = o.getCurrentHub().getIntegration(e)), t ? [2, t.process(n)] : [2, n];
                   });
                 });
               });
@@ -11855,12 +10395,7 @@ object-assign
                       for (o in t) n.push(o);
                       (i = 0), (r.label = 1);
                     case 1:
-                      return i < n.length
-                        ? ((a = n[i]),
-                          (s = t),
-                          (l = a),
-                          [4, this.iteratee(t[a])])
-                        : [3, 4];
+                      return i < n.length ? ((a = n[i]), (s = t), (l = a), [4, this.iteratee(t[a])]) : [3, 4];
                     case 2:
                       (s[l] = r.sent()), (r.label = 3);
                     case 3:
@@ -11934,17 +10469,9 @@ object-assign
         (e.exports.splashReducer = function (t, n) {
           switch ((void 0 === t && (t = e.exports.getInitialState()), n.type)) {
             case "SET_ROWS":
-              return (
-                (t = JSON.parse(JSON.stringify(t))),
-                (t[n.rowType].rows = n.rows),
-                t
-              );
+              return (t = JSON.parse(JSON.stringify(t))), (t[n.rowType].rows = n.rows), t;
             case "SET_FETCH_STATUS":
-              return (
-                (t = JSON.parse(JSON.stringify(t))),
-                (t[n.rowType].status = n.status),
-                t
-              );
+              return (t = JSON.parse(JSON.stringify(t))), (t[n.rowType].status = n.status), t;
             case "ERROR":
               return i.error(n.error), t;
             default:
@@ -11970,31 +10497,11 @@ object-assign
                 },
                 function (t, n, o) {
                   return t
-                    ? (r(
-                        e.exports.setFetchStatus(
-                          "activity",
-                          e.exports.Status.ERROR
-                        )
-                      ),
-                      void r(e.exports.setError(t)))
+                    ? (r(e.exports.setFetchStatus("activity", e.exports.Status.ERROR)), void r(e.exports.setError(t)))
                     : void 0 === n || 200 !== o.statusCode
-                    ? (r(
-                        e.exports.setFetchStatus(
-                          "activity",
-                          e.exports.Status.ERROR
-                        )
-                      ),
-                      void r(
-                        e.exports.setError(
-                          "getActivity: request failed or response had no content"
-                        )
-                      ))
-                    : (r(
-                        e.exports.setFetchStatus(
-                          "activity",
-                          e.exports.Status.FETCHED
-                        )
-                      ),
+                    ? (r(e.exports.setFetchStatus("activity", e.exports.Status.ERROR)),
+                      void r(e.exports.setError("getActivity: request failed or response had no content")))
+                    : (r(e.exports.setFetchStatus("activity", e.exports.Status.FETCHED)),
                       void r(e.exports.setRows("activity", n)));
                 }
               );
@@ -12005,31 +10512,11 @@ object-assign
             t(e.exports.setFetchStatus("featured", e.exports.Status.FETCHING)),
               o({ uri: "/proxy/featured" }, function (n, r, o) {
                 return n
-                  ? (t(
-                      e.exports.setFetchStatus(
-                        "featured",
-                        e.exports.Status.ERROR
-                      )
-                    ),
-                    void t(e.exports.setError(n)))
+                  ? (t(e.exports.setFetchStatus("featured", e.exports.Status.ERROR)), void t(e.exports.setError(n)))
                   : void 0 === r || 200 !== o.statusCode
-                  ? (t(
-                      e.exports.setFetchStatus(
-                        "featured",
-                        e.exports.Status.ERROR
-                      )
-                    ),
-                    void t(
-                      e.exports.setError(
-                        "getFeaturedGlobal: request failed or response had no content"
-                      )
-                    ))
-                  : (t(
-                      e.exports.setFetchStatus(
-                        "featured",
-                        e.exports.Status.FETCHED
-                      )
-                    ),
+                  ? (t(e.exports.setFetchStatus("featured", e.exports.Status.ERROR)),
+                    void t(e.exports.setError("getFeaturedGlobal: request failed or response had no content")))
+                  : (t(e.exports.setFetchStatus("featured", e.exports.Status.FETCHED)),
                     void t(e.exports.setRows("featured", r)));
               });
           };
@@ -12044,31 +10531,12 @@ object-assign
                 },
                 function (t, n, o) {
                   return t
-                    ? (r(
-                        e.exports.setFetchStatus(
-                          "shared",
-                          e.exports.Status.Status.ERROR
-                        )
-                      ),
+                    ? (r(e.exports.setFetchStatus("shared", e.exports.Status.Status.ERROR)),
                       void r(e.exports.setError(t)))
                     : void 0 === n || 200 !== o.statusCode
-                    ? (r(
-                        e.exports.setFetchStatus(
-                          "shared",
-                          e.exports.Status.ERROR
-                        )
-                      ),
-                      void r(
-                        e.exports.setError(
-                          "getSharedByFollowing: request failed or response had no content"
-                        )
-                      ))
-                    : (r(
-                        e.exports.setFetchStatus(
-                          "shared",
-                          e.exports.Status.FETCHED
-                        )
-                      ),
+                    ? (r(e.exports.setFetchStatus("shared", e.exports.Status.ERROR)),
+                      void r(e.exports.setError("getSharedByFollowing: request failed or response had no content")))
+                    : (r(e.exports.setFetchStatus("shared", e.exports.Status.FETCHED)),
                       void r(e.exports.setRows("shared", n)));
                 }
               );
@@ -12084,31 +10552,11 @@ object-assign
                 },
                 function (t, n, o) {
                   return t
-                    ? (r(
-                        e.exports.setFetchStatus(
-                          "studios",
-                          e.exports.Status.ERROR
-                        )
-                      ),
-                      void r(e.exports.setError(t)))
+                    ? (r(e.exports.setFetchStatus("studios", e.exports.Status.ERROR)), void r(e.exports.setError(t)))
                     : void 0 === n || 200 !== o.statusCode
-                    ? (r(
-                        e.exports.setFetchStatus(
-                          "studios",
-                          e.exports.Status.ERROR
-                        )
-                      ),
-                      void r(
-                        e.exports.setError(
-                          "getInStudiosFollowing: request failed or response had no content"
-                        )
-                      ))
-                    : (r(
-                        e.exports.setFetchStatus(
-                          "studios",
-                          e.exports.Status.FETCHED
-                        )
-                      ),
+                    ? (r(e.exports.setFetchStatus("studios", e.exports.Status.ERROR)),
+                      void r(e.exports.setError("getInStudiosFollowing: request failed or response had no content")))
+                    : (r(e.exports.setFetchStatus("studios", e.exports.Status.FETCHED)),
                       void r(e.exports.setRows("studios", n)));
                 }
               );
@@ -12124,31 +10572,11 @@ object-assign
                 },
                 function (t, n, o) {
                   return t
-                    ? (r(
-                        e.exports.setFetchStatus(
-                          "loved",
-                          e.exports.Status.ERROR
-                        )
-                      ),
-                      void r(e.exports.setError(t)))
+                    ? (r(e.exports.setFetchStatus("loved", e.exports.Status.ERROR)), void r(e.exports.setError(t)))
                     : void 0 === n || 200 !== o.statusCode
-                    ? (r(
-                        e.exports.setFetchStatus(
-                          "loved",
-                          e.exports.Status.ERROR
-                        )
-                      ),
-                      void r(
-                        e.exports.setError(
-                          "getLovedByFollowing: request failed or response had no content"
-                        )
-                      ))
-                    : (r(
-                        e.exports.setFetchStatus(
-                          "loved",
-                          e.exports.Status.FETCHED
-                        )
-                      ),
+                    ? (r(e.exports.setFetchStatus("loved", e.exports.Status.ERROR)),
+                      void r(e.exports.setError("getLovedByFollowing: request failed or response had no content")))
+                    : (r(e.exports.setFetchStatus("loved", e.exports.Status.FETCHED)),
                       void r(e.exports.setRows("loved", n)));
                 }
               );
@@ -12168,22 +10596,15 @@ object-assign
     833: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -12192,10 +10613,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -12245,10 +10663,7 @@ object-assign
       var B = (function (e) {
         function t(e) {
           r(this, t);
-          var n = o(
-            this,
-            (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-          );
+          var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
           return s(n, ["getComponentForMessage"]), n;
         }
         return (
@@ -12346,17 +10761,11 @@ object-assign
                           { className: "activity-ul", key: "activity-ul" },
                           this.props.items.map(function (t) {
                             var n = "/users/" + t.actor_username + "/",
-                              r =
-                                "//uploads.scratch.mit.edu/users/avatars/" +
-                                t.actor_id +
-                                ".png";
+                              r = "//uploads.scratch.mit.edu/users/avatars/" + t.actor_id + ".png";
                             return (
                               "becomeownerstudio" === t.type &&
                                 ((n = "/users/" + t.recipient_username + "/"),
-                                (r =
-                                  "//uploads.scratch.mit.edu/users/avatars/" +
-                                  t.recipient_id +
-                                  ".png")),
+                                (r = "//uploads.scratch.mit.edu/users/avatars/" + t.recipient_id + ".png")),
                               f.createElement(
                                 "li",
                                 {
@@ -12386,8 +10795,7 @@ object-assign
                             "h4",
                             null,
                             f.createElement(l, {
-                              defaultMessage:
-                                "This is where you will see updates from Scratchers you follow",
+                              defaultMessage: "This is where you will see updates from Scratchers you follow",
                               id: "activity.seeUpdates",
                             })
                           ),
@@ -12395,8 +10803,7 @@ object-assign
                             "a",
                             { href: "/studios/146521/" },
                             f.createElement(l, {
-                              defaultMessage:
-                                "Check out some Scratchers you might like to follow",
+                              defaultMessage: "Check out some Scratchers you might like to follow",
                               id: "activity.checkOutScratchers",
                             })
                           )
@@ -12414,10 +10821,7 @@ object-assign
         U = (function (e) {
           function t(e) {
             r(this, t);
-            var n = o(
-              this,
-              (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-            );
+            var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
             return s(n, ["handleMessage", "renderHomepageRows"]), n;
           }
           return (
@@ -12426,8 +10830,7 @@ object-assign
               {
                 key: "componentDidMount",
                 value: function () {
-                  this.props.shouldShowEmailConfirmation &&
-                    window.addEventListener("message", this.handleMessage);
+                  this.props.shouldShowEmailConfirmation && window.addEventListener("message", this.handleMessage);
                 },
               },
               {
@@ -12439,16 +10842,11 @@ object-assign
               {
                 key: "handleMessage",
                 value: function (e) {
-                  if (
-                    e.origin === window.location.origin &&
-                    e.source === this.emailConfirmationiFrame.contentWindow
-                  )
-                    if ("resend-done" === e.data)
-                      this.props.onHideEmailConfirmationModal();
+                  if (e.origin === window.location.origin && e.source === this.emailConfirmationiFrame.contentWindow)
+                    if ("resend-done" === e.data) this.props.onHideEmailConfirmationModal();
                     else {
                       var t = JSON.parse(e.data);
-                      "leave-page" === t.action &&
-                        (window.location.href = t.uri);
+                      "leave-page" === t.action && (window.location.href = t.uri);
                     }
                 },
               },
@@ -12465,8 +10863,7 @@ object-assign
                         }),
                       },
                       f.createElement(k, {
-                        items: this.props.featuredGlobal
-                          .community_featured_projects,
+                        items: this.props.featuredGlobal.community_featured_projects,
                       })
                     ),
                     f.createElement(
@@ -12478,8 +10875,7 @@ object-assign
                         }),
                       },
                       f.createElement(k, {
-                        items: this.props.featuredGlobal
-                          .community_featured_studios,
+                        items: this.props.featuredGlobal.community_featured_studios,
                         settings: {
                           slidesToShow: 4,
                           slidesToScroll: 4,
@@ -12492,8 +10888,7 @@ object-assign
                     this.props.featuredGlobal.curator_top_projects &&
                     this.props.featuredGlobal.curator_top_projects.length > 4
                   ) {
-                    var t = this.props.featuredGlobal.curator_top_projects[0]
-                      .curator_name;
+                    var t = this.props.featuredGlobal.curator_top_projects[0].curator_name;
                     e.push(
                       f.createElement(
                         v,
@@ -12503,10 +10898,7 @@ object-assign
                           moreTitle: this.props.intl.formatMessage({
                             id: "general.learnMore",
                           }),
-                          title: this.props.intl.formatMessage(
-                            { id: "splash.projectsCuratedBy" },
-                            { curatorId: t }
-                          ),
+                          title: this.props.intl.formatMessage({ id: "splash.projectsCuratedBy" }, { curatorId: t }),
                         },
                         f.createElement(k, {
                           items: this.props.featuredGlobal.curator_top_projects,
@@ -12518,18 +10910,13 @@ object-assign
                     this.props.featuredGlobal.scratch_design_studio &&
                     this.props.featuredGlobal.scratch_design_studio.length > 4
                   ) {
-                    var n = this.props.featuredGlobal.scratch_design_studio[0]
-                      .gallery_title;
+                    var n = this.props.featuredGlobal.scratch_design_studio[0].gallery_title;
                     e.push(
                       f.createElement(
                         v,
                         {
                           key: "scratch_design_studio",
-                          moreHref:
-                            "/studios/" +
-                            this.props.featuredGlobal.scratch_design_studio[0]
-                              .gallery_id +
-                            "/",
+                          moreHref: "/studios/" + this.props.featuredGlobal.scratch_design_studio[0].gallery_id + "/",
                           moreTitle: this.props.intl.formatMessage({
                             id: "splash.visitTheStudio",
                           }),
@@ -12541,8 +10928,7 @@ object-assign
                             n,
                         },
                         f.createElement(k, {
-                          items: this.props.featuredGlobal
-                            .scratch_design_studio,
+                          items: this.props.featuredGlobal.scratch_design_studio,
                         })
                       )
                     );
@@ -12607,10 +10993,7 @@ object-assign
                         },
                         f.createElement(k, {
                           showRemixes: !0,
-                          items: g(
-                            this.props.featuredGlobal
-                              .community_most_remixed_projects
-                          ),
+                          items: g(this.props.featuredGlobal.community_most_remixed_projects),
                         })
                       ),
                       f.createElement(
@@ -12623,10 +11006,7 @@ object-assign
                         },
                         f.createElement(k, {
                           showLoves: !0,
-                          items: g(
-                            this.props.featuredGlobal
-                              .community_most_loved_projects
-                          ),
+                          items: g(this.props.featuredGlobal.community_most_loved_projects),
                         })
                       )
                     ),
@@ -12692,19 +11072,14 @@ object-assign
                               "a",
                               {
                                 href: "#",
-                                onClick: this.props
-                                  .onShowEmailConfirmationModal,
+                                onClick: this.props.onShowEmailConfirmationModal,
                               },
                               "Confirm your email"
                             ),
                             " ",
                             "to enable sharing.",
                             " ",
-                            f.createElement(
-                              "a",
-                              { href: "/info/faq/#accounts" },
-                              "Having trouble?"
-                            )
+                            f.createElement("a", { href: "/info/faq/#accounts" }, "Having trouble?")
                           ),
                           f.createElement(x, {
                             className: "mod-confirmation",
@@ -12714,8 +11089,7 @@ object-assign
                             isOpen: this.props.emailConfirmationModalOpen,
                             key: "iframe-modal",
                             src: "/accounts/email_resend_standalone/",
-                            onRequestClose: this.props
-                              .onHideEmailConfirmationModal,
+                            onRequestClose: this.props.onHideEmailConfirmationModal,
                           }),
                         ]
                       : [],
@@ -12809,29 +11183,17 @@ object-assign
                                 f.createElement(
                                   "li",
                                   null,
-                                  f.createElement(
-                                    "a",
-                                    { href: "/scratch_admin/tickets" },
-                                    "Ticket Queue"
-                                  )
+                                  f.createElement("a", { href: "/scratch_admin/tickets" }, "Ticket Queue")
                                 ),
                                 f.createElement(
                                   "li",
                                   null,
-                                  f.createElement(
-                                    "a",
-                                    { href: "/scratch_admin/ip-search/" },
-                                    "IP Search"
-                                  )
+                                  f.createElement("a", { href: "/scratch_admin/ip-search/" }, "IP Search")
                                 ),
                                 f.createElement(
                                   "li",
                                   null,
-                                  f.createElement(
-                                    "a",
-                                    { href: "/scratch_admin/email-search/" },
-                                    "Email Search"
-                                  )
+                                  f.createElement("a", { href: "/scratch_admin/email-search/" }, "Email Search")
                                 )
                               )
                             ),
@@ -12848,26 +11210,15 @@ object-assign
                                   f.createElement(
                                     "div",
                                     { className: "button-row" },
-                                    f.createElement(
-                                      "span",
-                                      null,
-                                      "Refresh row data:"
-                                    ),
+                                    f.createElement("span", null, "Refresh row data:"),
                                     f.createElement(
                                       y,
                                       {
-                                        className: this.props.refreshCacheStatus
-                                          .status,
-                                        disabled: this.props.refreshCacheStatus
-                                          .disabled,
-                                        onClick: this.props
-                                          .onRefreshHomepageCache,
+                                        className: this.props.refreshCacheStatus.status,
+                                        disabled: this.props.refreshCacheStatus.disabled,
+                                        onClick: this.props.onRefreshHomepageCache,
                                       },
-                                      f.createElement(
-                                        "span",
-                                        null,
-                                        this.props.refreshCacheStatus.content
-                                      )
+                                      f.createElement("span", null, this.props.refreshCacheStatus.content)
                                     )
                                   )
                                 )
@@ -12886,8 +11237,7 @@ object-assign
                                   f.createElement(
                                     "form",
                                     {
-                                      action:
-                                        "/scratch_admin/page/clear-anon-cache/",
+                                      action: "/scratch_admin/page/clear-anon-cache/",
                                       method: "post",
                                     },
                                     f.createElement("input", {
@@ -12898,16 +11248,8 @@ object-assign
                                     f.createElement(
                                       "div",
                                       { className: "button-row" },
-                                      f.createElement(
-                                        "span",
-                                        null,
-                                        "For anonymous users:"
-                                      ),
-                                      f.createElement(
-                                        y,
-                                        { type: "submit" },
-                                        f.createElement("span", null, "Clear")
-                                      )
+                                      f.createElement("span", null, "For anonymous users:"),
+                                      f.createElement(y, { type: "submit" }, f.createElement("span", null, "Clear"))
                                     )
                                   )
                                 )
@@ -12967,9 +11309,7 @@ object-assign
     84: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (
-          (!0 === t.debug && i.logger.enable(), !o.getCurrentHub().getClient())
-        ) {
+        if ((!0 === t.debug && i.logger.enable(), !o.getCurrentHub().getClient())) {
           var n = new e(t);
           o.getCurrentHub().bindClient(n), n.install();
         }
@@ -13013,15 +11353,10 @@ object-assign
         function s(e) {
           return e && e.__SENTRY__ && e.__SENTRY__.hub
             ? e.__SENTRY__.hub
-            : ((e.__SENTRY__ = {}),
-              (e.__SENTRY__.hub = new f()),
-              e.__SENTRY__.hub);
+            : ((e.__SENTRY__ = {}), (e.__SENTRY__.hub = new f()), e.__SENTRY__.hub);
         }
         function l(e, t) {
-          return (
-            !!e &&
-            ((e.__SENTRY__ = e.__SENTRY__ || {}), (e.__SENTRY__.hub = t), !0)
-          );
+          return !!e && ((e.__SENTRY__ = e.__SENTRY__ || {}), (e.__SENTRY__.hub = t), !0);
         }
         Object.defineProperty(t, "__esModule", { value: !0 });
         var c = n(6),
@@ -13039,28 +11374,21 @@ object-assign
           }
           return (
             (e.prototype.invokeClient = function (e) {
-              for (var t = [], n = 1; n < arguments.length; n++)
-                t[n - 1] = arguments[n];
+              for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
               var r,
                 o = this.getStackTop();
-              o &&
-                o.client &&
-                o.client[e] &&
-                (r = o.client)[e].apply(r, c.__spread(t, [o.scope]));
+              o && o.client && o.client[e] && (r = o.client)[e].apply(r, c.__spread(t, [o.scope]));
             }),
             (e.prototype.invokeClientAsync = function (e) {
-              for (var t = [], n = 1; n < arguments.length; n++)
-                t[n - 1] = arguments[n];
+              for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
               var r,
                 o = this.getStackTop();
               o &&
                 o.client &&
                 o.client[e] &&
-                (r = o.client)[e]
-                  .apply(r, c.__spread(t, [o.scope]))
-                  .catch(function (e) {
-                    u.logger.error(e);
-                  });
+                (r = o.client)[e].apply(r, c.__spread(t, [o.scope])).catch(function (e) {
+                  u.logger.error(e);
+                });
             }),
             (e.prototype.isOlderThan = function (e) {
               return this.version < e;
@@ -13082,9 +11410,7 @@ object-assign
               var e = this.getStack(),
                 t = e.length > 0 ? e[e.length - 1].scope : void 0,
                 n = p.Scope.clone(t);
-              return (
-                this.getStack().push({ client: this.getClient(), scope: n }), n
-              );
+              return this.getStack().push({ client: this.getClient(), scope: n }), n;
             }),
             (e.prototype.popScope = function () {
               return void 0 !== this.getStack().pop();
@@ -13111,37 +11437,15 @@ object-assign
             }),
             (e.prototype.captureException = function (e, t) {
               var n = (this._lastEventId = d.uuid4());
-              return (
-                this.invokeClientAsync(
-                  "captureException",
-                  e,
-                  c.__assign({}, t, { event_id: n })
-                ),
-                n
-              );
+              return this.invokeClientAsync("captureException", e, c.__assign({}, t, { event_id: n })), n;
             }),
             (e.prototype.captureMessage = function (e, t, n) {
               var r = (this._lastEventId = d.uuid4());
-              return (
-                this.invokeClientAsync(
-                  "captureMessage",
-                  e,
-                  t,
-                  c.__assign({}, n, { event_id: r })
-                ),
-                r
-              );
+              return this.invokeClientAsync("captureMessage", e, t, c.__assign({}, n, { event_id: r })), r;
             }),
             (e.prototype.captureEvent = function (e, t) {
               var n = (this._lastEventId = d.uuid4());
-              return (
-                this.invokeClientAsync(
-                  "captureEvent",
-                  e,
-                  c.__assign({}, t, { event_id: n })
-                ),
-                n
-              );
+              return this.invokeClientAsync("captureEvent", e, c.__assign({}, t, { event_id: n })), n;
             }),
             (e.prototype.lastEventId = function () {
               return this._lastEventId;
@@ -13165,14 +11469,7 @@ object-assign
               try {
                 return this.getClient().getIntegration(e);
               } catch (t) {
-                return (
-                  u.logger.warn(
-                    "Cannot retrieve integration " +
-                      e.id +
-                      " from the current Hub"
-                  ),
-                  null
-                );
+                return u.logger.warn("Cannot retrieve integration " + e.id + " from the current Hub"), null;
               }
             }),
             e
@@ -13190,15 +11487,10 @@ object-assign
     86: function (e, t, n) {
       "use strict";
       function r(e) {
-        for (var t = [], n = 1; n < arguments.length; n++)
-          t[n - 1] = arguments[n];
+        for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
         var r = p.getCurrentHub();
         if (r && r[e]) return r[e].apply(r, d.__spread(t));
-        throw new Error(
-          "No hub defined or " +
-            e +
-            " was not found on the hub, please open a bug report."
-        );
+        throw new Error("No hub defined or " + e + " was not found on the hub, please open a bug report.");
       }
       function o(e) {
         var t;
@@ -13237,8 +11529,7 @@ object-assign
         r("withScope", e);
       }
       function u(e) {
-        for (var t = [], n = 1; n < arguments.length; n++)
-          t[n - 1] = arguments[n];
+        for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
         r.apply(void 0, d.__spread(["invokeClient", e], t));
       }
       Object.defineProperty(t, "__esModule", { value: !0 });
@@ -13349,8 +11640,7 @@ object-assign
           function (e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = arguments[t];
-              for (var r in n)
-                Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
+              for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r]);
             }
             return e;
           },
@@ -13489,22 +11779,15 @@ object-assign
     887: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -13513,10 +11796,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -13544,10 +11824,7 @@ object-assign
       var m = (function (e) {
         function t(e) {
           r(this, t);
-          var n = o(
-            this,
-            (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-          );
+          var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
           return s(n, ["handleShowVideo"]), (n.state = { videoOpen: !1 }), n;
         }
         return (
@@ -13574,17 +11851,9 @@ object-assign
                       u.createElement(
                         "h1",
                         { className: "intro-header" },
-                        u.createElement(
-                          "span",
-                          null,
-                          this.props.messages["intro.tagLine1"]
-                        ),
+                        u.createElement("span", null, this.props.messages["intro.tagLine1"]),
                         u.createElement("br", null),
-                        u.createElement(
-                          "span",
-                          null,
-                          this.props.messages["intro.tagLine2"]
-                        )
+                        u.createElement("span", null, this.props.messages["intro.tagLine2"])
                       ),
                       u.createElement(
                         f,
@@ -13719,11 +11988,7 @@ object-assign
       function r(e, t) {
         for (var n = 0, r = e.length - 1; r >= 0; r--) {
           var o = e[r];
-          "." === o
-            ? e.splice(r, 1)
-            : ".." === o
-            ? (e.splice(r, 1), n++)
-            : n && (e.splice(r, 1), n--);
+          "." === o ? e.splice(r, 1) : ".." === o ? (e.splice(r, 1), n++) : n && (e.splice(r, 1), n--);
         }
         if (t) for (; n--; n) e.unshift("..");
         return e;
@@ -13755,15 +12020,7 @@ object-assign
       }
       function s(e, t) {
         (e = i(e).substr(1)), (t = i(t).substr(1));
-        for (
-          var n = a(e.split("/")),
-            r = a(t.split("/")),
-            o = Math.min(n.length, r.length),
-            s = o,
-            l = 0;
-          l < o;
-          l++
-        )
+        for (var n = a(e.split("/")), r = a(t.split("/")), o = Math.min(n.length, r.length), s = o, l = 0; l < o; l++)
           if (n[l] !== r[l]) {
             s = l;
             break;
@@ -13797,12 +12054,7 @@ object-assign
       }
       function p(e, t) {
         var n = o(e)[2];
-        return (
-          t &&
-            n.substr(-1 * t.length) === t &&
-            (n = n.substr(0, n.length - t.length)),
-          n
-        );
+        return t && n.substr(-1 * t.length) === t && (n = n.substr(0, n.length - t.length)), n;
       }
       Object.defineProperty(t, "__esModule", { value: !0 });
       var f = /^(\/?|)([\s\S]*?)((?:\.{1,2}|[^\/]+?|)(\.[^.\/]*|))(?:[\/]*)$/;
@@ -13833,16 +12085,8 @@ object-assign
           i.createElement(
             "div",
             { className: "crash-message" },
-            i.createElement(
-              "h2",
-              null,
-              i.createElement(a, { id: "general.error" })
-            ),
-            i.createElement(
-              "p",
-              null,
-              i.createElement(a, { id: "general.unhandledError" })
-            ),
+            i.createElement("h2", null, i.createElement(a, { id: "general.error" })),
+            i.createElement("p", null, i.createElement(a, { id: "general.unhandledError" })),
             e.eventId &&
               i.createElement(
                 "p",
@@ -13852,11 +12096,7 @@ object-assign
                   values: { errorId: e.eventId },
                 })
               ),
-            i.createElement(
-              s,
-              { className: "", onClick: e.onBack },
-              i.createElement(a, { id: "general.back" })
-            )
+            i.createElement(s, { className: "", onClick: e.onBack }, i.createElement(a, { id: "general.back" }))
           )
         );
       };
@@ -13974,29 +12214,17 @@ object-assign
                     a.createElement(
                       "a",
                       { href: "/educators/classes", key: "classes-button" },
-                      a.createElement(
-                        c,
-                        null,
-                        e.messages["teacherbanner.classesButton"]
-                      )
+                      a.createElement(c, null, e.messages["teacherbanner.classesButton"])
                     ),
                     a.createElement(
                       "a",
                       { href: "/info/educators", key: "resources-button" },
-                      a.createElement(
-                        c,
-                        null,
-                        e.messages["teacherbanner.resourcesButton"]
-                      )
+                      a.createElement(c, null, e.messages["teacherbanner.resourcesButton"])
                     ),
                     a.createElement(
                       "a",
                       { href: "/educators/faq", key: "faq-button" },
-                      a.createElement(
-                        c,
-                        null,
-                        e.messages["teacherbanner.faqButton"]
-                      )
+                      a.createElement(c, null, e.messages["teacherbanner.faqButton"])
                     ),
                   ]
                 : []
@@ -14061,11 +12289,7 @@ object-assign
             o.createElement(
               "h4",
               null,
-              o.createElement(
-                "a",
-                { href: "/projects/editor/?tutorial=getStarted" },
-                e.messages["welcome.learn"]
-              )
+              o.createElement("a", { href: "/projects/editor/?tutorial=getStarted" }, e.messages["welcome.learn"])
             ),
             o.createElement(
               "a",
@@ -14082,11 +12306,7 @@ object-assign
             o.createElement(
               "h4",
               null,
-              o.createElement(
-                "a",
-                { href: "/starter_projects/" },
-                e.messages["welcome.tryOut"]
-              )
+              o.createElement("a", { href: "/starter_projects/" }, e.messages["welcome.tryOut"])
             ),
             o.createElement(
               "a",
@@ -14103,11 +12323,7 @@ object-assign
             o.createElement(
               "h4",
               null,
-              o.createElement(
-                "a",
-                { href: "/studios/146521/" },
-                e.messages["welcome.connect"]
-              )
+              o.createElement("a", { href: "/studios/146521/" }, e.messages["welcome.connect"])
             ),
             o.createElement(
               "a",
@@ -14148,10 +12364,7 @@ object-assign
         if (e) {
           var o = e.slice(0);
           for (t = e.length - 1; t > 0; t -= 1)
-            (n = Math.floor(Math.random() * (t + 1))),
-              (r = o[t]),
-              (o[t] = o[n]),
-              (o[n] = r);
+            (n = Math.floor(Math.random() * (t + 1))), (r = o[t]), (o[t] = o[n]), (o[n] = r);
           return o;
         }
         return e;
@@ -14184,11 +12397,7 @@ object-assign
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/about" },
-                    s.createElement(r, { id: "general.aboutScratch" })
-                  )
+                  s.createElement("a", { href: "/about" }, s.createElement(r, { id: "general.aboutScratch" }))
                 ),
                 s.createElement(
                   "dd",
@@ -14202,11 +12411,7 @@ object-assign
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/contact-us/" },
-                    s.createElement(r, { id: "general.contactUs" })
-                  )
+                  s.createElement("a", { href: "/contact-us/" }, s.createElement(r, { id: "general.contactUs" }))
                 )
               ),
               s.createElement(
@@ -14215,20 +12420,12 @@ object-assign
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/terms_of_use" },
-                    s.createElement(r, { id: "general.termsOfUse" })
-                  )
+                  s.createElement("a", { href: "/terms_of_use" }, s.createElement(r, { id: "general.termsOfUse" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/privacy_policy" },
-                    s.createElement(r, { id: "general.privacyPolicy" })
-                  )
+                  s.createElement("a", { href: "/privacy_policy" }, s.createElement(r, { id: "general.privacyPolicy" }))
                 ),
                 s.createElement(
                   "dd",
@@ -14251,55 +12448,31 @@ object-assign
               s.createElement(
                 "dl",
                 null,
+                s.createElement("dt", null, s.createElement(r, { id: "general.about" })),
                 s.createElement(
-                  "dt",
+                  "dd",
                   null,
-                  s.createElement(r, { id: "general.about" })
+                  s.createElement("a", { href: "/about" }, s.createElement(r, { id: "general.aboutScratch" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/about" },
-                    s.createElement(r, { id: "general.aboutScratch" })
-                  )
+                  s.createElement("a", { href: "/parents/" }, s.createElement(r, { id: "general.forParents" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/parents/" },
-                    s.createElement(r, { id: "general.forParents" })
-                  )
+                  s.createElement("a", { href: "/educators" }, s.createElement(r, { id: "general.forEducators" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/educators" },
-                    s.createElement(r, { id: "general.forEducators" })
-                  )
+                  s.createElement("a", { href: "/developers" }, s.createElement(r, { id: "general.forDevelopers" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/developers" },
-                    s.createElement(r, { id: "general.forDevelopers" })
-                  )
-                ),
-                s.createElement(
-                  "dd",
-                  null,
-                  s.createElement(
-                    "a",
-                    { href: "/credits" },
-                    s.createElement(r, { id: "general.credits" })
-                  )
+                  s.createElement("a", { href: "/credits" }, s.createElement(r, { id: "general.credits" }))
                 ),
                 s.createElement(
                   "dd",
@@ -14323,11 +12496,7 @@ object-assign
               s.createElement(
                 "dl",
                 null,
-                s.createElement(
-                  "dt",
-                  null,
-                  s.createElement(r, { id: "general.community" })
-                ),
+                s.createElement("dt", null, s.createElement(r, { id: "general.community" })),
                 s.createElement(
                   "dd",
                   null,
@@ -14340,11 +12509,7 @@ object-assign
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/discuss/" },
-                    s.createElement(r, { id: "footer.discuss" })
-                  )
+                  s.createElement("a", { href: "/discuss/" }, s.createElement(r, { id: "footer.discuss" }))
                 ),
                 s.createElement(
                   "dd",
@@ -14358,65 +12523,37 @@ object-assign
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/statistics/" },
-                    s.createElement(r, { id: "general.statistics" })
-                  )
+                  s.createElement("a", { href: "/statistics/" }, s.createElement(r, { id: "general.statistics" }))
                 )
               ),
               s.createElement(
                 "dl",
                 null,
+                s.createElement("dt", null, s.createElement(r, { id: "general.support" })),
                 s.createElement(
-                  "dt",
+                  "dd",
                   null,
-                  s.createElement(r, { id: "general.support" })
+                  s.createElement("a", { href: "/ideas" }, s.createElement(r, { id: "general.ideas" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/ideas" },
-                    s.createElement(r, { id: "general.ideas" })
-                  )
+                  s.createElement("a", { href: "/info/faq" }, s.createElement(r, { id: "general.faq" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/info/faq" },
-                    s.createElement(r, { id: "general.faq" })
-                  )
+                  s.createElement("a", { href: "/download" }, s.createElement(r, { id: "general.download" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/download" },
-                    s.createElement(r, { id: "general.download" })
-                  )
+                  s.createElement("a", { href: "/contact-us/" }, s.createElement(r, { id: "general.contactUs" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/contact-us/" },
-                    s.createElement(r, { id: "general.contactUs" })
-                  )
-                ),
-                s.createElement(
-                  "dd",
-                  null,
-                  s.createElement(
-                    "a",
-                    { href: "/store" },
-                    s.createElement(r, { id: "general.scratchStore" })
-                  )
+                  s.createElement("a", { href: "/store" }, s.createElement(r, { id: "general.scratchStore" }))
                 ),
                 s.createElement(
                   "dd",
@@ -14433,47 +12570,27 @@ object-assign
               s.createElement(
                 "dl",
                 null,
+                s.createElement("dt", null, s.createElement(r, { id: "general.legal" })),
                 s.createElement(
-                  "dt",
+                  "dd",
                   null,
-                  s.createElement(r, { id: "general.legal" })
+                  s.createElement("a", { href: "/terms_of_use" }, s.createElement(r, { id: "general.termsOfUse" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/terms_of_use" },
-                    s.createElement(r, { id: "general.termsOfUse" })
-                  )
+                  s.createElement("a", { href: "/privacy_policy" }, s.createElement(r, { id: "general.privacyPolicy" }))
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/privacy_policy" },
-                    s.createElement(r, { id: "general.privacyPolicy" })
-                  )
-                ),
-                s.createElement(
-                  "dd",
-                  null,
-                  s.createElement(
-                    "a",
-                    { href: "/DMCA" },
-                    s.createElement(r, { id: "general.dmca" })
-                  )
+                  s.createElement("a", { href: "/DMCA" }, s.createElement(r, { id: "general.dmca" }))
                 )
               ),
               s.createElement(
                 "dl",
                 null,
-                s.createElement(
-                  "dt",
-                  null,
-                  s.createElement(r, { id: "footer.scratchFamily" })
-                ),
+                s.createElement("dt", null, s.createElement(r, { id: "footer.scratchFamily" })),
                 s.createElement(
                   "dd",
                   null,
@@ -14495,20 +12612,12 @@ object-assign
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "http://day.scratch.mit.edu/" },
-                    "Scratch Day"
-                  )
+                  s.createElement("a", { href: "http://day.scratch.mit.edu/" }, "Scratch Day")
                 ),
                 s.createElement(
                   "dd",
                   null,
-                  s.createElement(
-                    "a",
-                    { href: "/conference" },
-                    s.createElement(r, { id: "general.scratchConference" })
-                  )
+                  s.createElement("a", { href: "/conference" }, s.createElement(r, { id: "general.scratchConference" }))
                 ),
                 s.createElement(
                   "dd",
@@ -14570,22 +12679,15 @@ object-assign
     93: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -14594,10 +12696,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -14626,10 +12725,7 @@ object-assign
       var g = (function (e) {
         function t(e) {
           r(this, t);
-          var n = o(
-            this,
-            (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-          );
+          var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
           return s(n, ["handleSubmit"]), (n.state = { waiting: !1 }), n;
         }
         return (
@@ -14650,12 +12746,7 @@ object-assign
               value: function () {
                 var e = void 0;
                 return (
-                  this.props.error &&
-                    (e = u.createElement(
-                      "div",
-                      { className: "error" },
-                      this.props.error
-                    )),
+                  this.props.error && (e = u.createElement("div", { className: "error" }, this.props.error)),
                   u.createElement(
                     "div",
                     { className: "login" },
@@ -14763,11 +12854,7 @@ object-assign
           s.createElement(
             "a",
             {
-              className: r([
-                "ignore-react-onclickoutside",
-                "user-info",
-                { open: i },
-              ]),
+              className: r(["ignore-react-onclickoutside", "user-info", { open: i }]),
               href: "#",
               onClick: f,
             },
@@ -14780,20 +12867,12 @@ object-assign
             s.createElement(
               "li",
               null,
-              s.createElement(
-                "a",
-                { href: u },
-                s.createElement(o, { id: "general.profile" })
-              )
+              s.createElement("a", { href: u }, s.createElement(o, { id: "general.profile" }))
             ),
             s.createElement(
               "li",
               null,
-              s.createElement(
-                "a",
-                { href: "/mystuff/" },
-                s.createElement(o, { id: "general.myStuff" })
-              )
+              s.createElement("a", { href: "/mystuff/" }, s.createElement(o, { id: "general.myStuff" }))
             ),
             n
               ? [
@@ -14813,11 +12892,7 @@ object-assign
                   s.createElement(
                     "li",
                     { key: "my-class-li" },
-                    s.createElement(
-                      "a",
-                      { href: "/classes/" + t + "/" },
-                      s.createElement(o, { id: "general.myClass" })
-                    )
+                    s.createElement("a", { href: "/classes/" + t + "/" }, s.createElement(o, { id: "general.myClass" }))
                   ),
                 ]
               : [],
@@ -14833,11 +12908,7 @@ object-assign
             s.createElement(
               "li",
               { className: "divider" },
-              s.createElement(
-                "a",
-                { href: "#", onClick: h },
-                s.createElement(o, { id: "navigation.signOut" })
-              )
+              s.createElement("a", { href: "#", onClick: h }, s.createElement(o, { id: "navigation.signOut" }))
             )
           )
         );
@@ -14859,22 +12930,15 @@ object-assign
     95: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -14883,10 +12947,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -14925,15 +12986,8 @@ object-assign
       var S = (function (e) {
         function t(e) {
           r(this, t);
-          var n = o(
-            this,
-            (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-          );
-          return (
-            s(n, ["getProfileUrl", "handleSearchSubmit"]),
-            (n.state = { messageCountIntervalId: -1 }),
-            n
-          );
+          var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
+          return s(n, ["getProfileUrl", "handleSearchSubmit"]), (n.state = { messageCountIntervalId: -1 }), n;
         }
         return (
           i(t, e),
@@ -14978,24 +13032,20 @@ object-assign
             {
               key: "getProfileUrl",
               value: function () {
-                if (this.props.user)
-                  return "/users/" + this.props.user.username + "/";
+                if (this.props.user) return "/users/" + this.props.user.username + "/";
               },
             },
             {
               key: "handleSearchSubmit",
               value: function (e) {
                 var t = "/search/projects";
-                e.q && (t += "?q=" + encodeURIComponent(e.q)),
-                  (window.location.href = t);
+                e.q && (t += "?q=" + encodeURIComponent(e.q)), (window.location.href = t);
               },
             },
             {
               key: "render",
               value: function () {
-                var e = this.props.user
-                  ? "/projects/editor/"
-                  : "/projects/editor/?tutorial=getStarted";
+                var e = this.props.user ? "/projects/editor/" : "/projects/editor/?tutorial=getStarted";
                 return h.createElement(
                   E,
                   { className: l({ "logged-in": this.props.user }) },
@@ -15013,11 +13063,7 @@ object-assign
                     h.createElement(
                       "li",
                       { className: "link create" },
-                      h.createElement(
-                        "a",
-                        { href: e },
-                        h.createElement(u, { id: "general.create" })
-                      )
+                      h.createElement("a", { href: e }, h.createElement(u, { id: "general.create" }))
                     ),
                     h.createElement(
                       "li",
@@ -15031,20 +13077,12 @@ object-assign
                     h.createElement(
                       "li",
                       { className: "link ideas" },
-                      h.createElement(
-                        "a",
-                        { href: "/ideas" },
-                        h.createElement(u, { id: "general.ideas" })
-                      )
+                      h.createElement("a", { href: "/ideas" }, h.createElement(u, { id: "general.ideas" }))
                     ),
                     h.createElement(
                       "li",
                       { className: "link about" },
-                      h.createElement(
-                        "a",
-                        { href: "/about" },
-                        h.createElement(u, { id: "general.about" })
-                      )
+                      h.createElement("a", { href: "/about" }, h.createElement(u, { id: "general.about" }))
                     ),
                     h.createElement(
                       "li",
@@ -15340,16 +13378,8 @@ object-assign
             a.createElement(o, {
               id: "messages.becomeCuratorText",
               values: {
-                username: a.createElement(
-                  "a",
-                  { href: "/users/" + e.actorUsername + "/" },
-                  e.actorUsername
-                ),
-                studio: a.createElement(
-                  "a",
-                  { href: "/studios/" + e.studioId + "/" },
-                  e.studioTitle
-                ),
+                username: a.createElement("a", { href: "/users/" + e.actorUsername + "/" }, e.actorUsername),
+                studio: a.createElement("a", { href: "/studios/" + e.studioId + "/" }, e.studioTitle),
               },
             })
           );
@@ -15381,16 +13411,8 @@ object-assign
             a.createElement(o, {
               id: "messages.becomeManagerText",
               values: {
-                username: a.createElement(
-                  "a",
-                  { href: "/users/" + e.recipientUsername + "/" },
-                  e.recipientUsername
-                ),
-                studio: a.createElement(
-                  "a",
-                  { href: "/studios/" + e.studioId + "/" },
-                  e.studioTitle
-                ),
+                username: a.createElement("a", { href: "/users/" + e.recipientUsername + "/" }, e.recipientUsername),
+                studio: a.createElement("a", { href: "/studios/" + e.studioId + "/" }, e.studioTitle),
               },
             })
           );
@@ -15422,16 +13444,8 @@ object-assign
             a.createElement(o, {
               id: "messages.favoriteText",
               values: {
-                profileLink: a.createElement(
-                  "a",
-                  { href: "/users/" + e.actorUsername },
-                  e.actorUsername
-                ),
-                projectLink: a.createElement(
-                  "a",
-                  { href: "/projects/" + e.projectId },
-                  e.projectTitle
-                ),
+                profileLink: a.createElement("a", { href: "/users/" + e.actorUsername }, e.actorUsername),
+                projectLink: a.createElement("a", { href: "/projects/" + e.projectId }, e.projectTitle),
               },
             })
           );
@@ -15469,11 +13483,7 @@ object-assign
               a.createElement(o, {
                 id: "messages.followText",
                 values: {
-                  profileLink: a.createElement(
-                    "a",
-                    { href: "/users/" + e.followerUsername + "/" },
-                    e.followerUsername
-                  ),
+                  profileLink: a.createElement("a", { href: "/users/" + e.followerUsername + "/" }, e.followerUsername),
                   followeeLink: a.createElement("a", { href: t }, n),
                 },
               })
@@ -15507,16 +13517,8 @@ object-assign
             a.createElement(o, {
               id: "messages.loveText",
               values: {
-                profileLink: a.createElement(
-                  "a",
-                  { href: "/users/" + e.actorUsername },
-                  e.actorUsername
-                ),
-                projectLink: a.createElement(
-                  "a",
-                  { href: "/projects/" + e.projectId },
-                  e.projectTitle
-                ),
+                profileLink: a.createElement("a", { href: "/users/" + e.actorUsername }, e.actorUsername),
+                projectLink: a.createElement("a", { href: "/projects/" + e.projectId }, e.projectTitle),
               },
             })
           );
@@ -15548,21 +13550,9 @@ object-assign
             a.createElement(o, {
               id: "messages.remixText",
               values: {
-                profileLink: a.createElement(
-                  "a",
-                  { href: "/users/" + e.actorUsername },
-                  e.actorUsername
-                ),
-                projectLink: a.createElement(
-                  "a",
-                  { href: "/projects/" + e.projectId },
-                  e.projectTitle
-                ),
-                remixedProjectLink: a.createElement(
-                  "a",
-                  { href: "/projects/" + e.parentId },
-                  e.parentTitle
-                ),
+                profileLink: a.createElement("a", { href: "/users/" + e.actorUsername }, e.actorUsername),
+                projectLink: a.createElement("a", { href: "/projects/" + e.projectId }, e.projectTitle),
+                remixedProjectLink: a.createElement("a", { href: "/projects/" + e.parentId }, e.parentTitle),
               },
             })
           );
@@ -15596,16 +13586,8 @@ object-assign
             a.createElement(o, {
               id: "messages.shareText",
               values: {
-                profileLink: a.createElement(
-                  "a",
-                  { href: "/users/" + e.actorUsername },
-                  e.actorUsername
-                ),
-                projectLink: a.createElement(
-                  "a",
-                  { href: "/projects/" + e.projectId },
-                  e.projectTitle
-                ),
+                profileLink: a.createElement("a", { href: "/users/" + e.actorUsername }, e.actorUsername),
+                projectLink: a.createElement("a", { href: "/projects/" + e.projectId }, e.projectTitle),
               },
             })
           );
@@ -15639,11 +13621,7 @@ object-assign
             i.createElement(
               l,
               { className: "hoc-title-container" },
-              i.createElement(
-                "h1",
-                { className: "hoc-header" },
-                i.createElement(r, { id: "hocbanner.title" })
-              ),
+              i.createElement("h1", { className: "hoc-header" }, i.createElement(r, { id: "hocbanner.title" })),
               i.createElement(
                 "a",
                 {
@@ -15731,11 +13709,7 @@ object-assign
             i.createElement(
               l,
               { className: "hoc-title-container" },
-              i.createElement(
-                "h1",
-                { className: "hoc-header" },
-                i.createElement(r, { id: "hocbanner.title" })
-              ),
+              i.createElement("h1", { className: "hoc-header" }, i.createElement(r, { id: "hocbanner.title" })),
               i.createElement(
                 "a",
                 {
@@ -15814,22 +13788,15 @@ object-assign
     980: function (e, t, n) {
       "use strict";
       function r(e, t) {
-        if (!(e instanceof t))
-          throw new TypeError("Cannot call a class as a function");
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
       }
       function o(e, t) {
-        if (!e)
-          throw new ReferenceError(
-            "this hasn't been initialised - super() hasn't been called"
-          );
+        if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
         return !t || ("object" != typeof t && "function" != typeof t) ? e : t;
       }
       function i(e, t) {
         if ("function" != typeof t && null !== t)
-          throw new TypeError(
-            "Super expression must either be null or a function, not " +
-              typeof t
-          );
+          throw new TypeError("Super expression must either be null or a function, not " + typeof t);
         (e.prototype = Object.create(t && t.prototype, {
           constructor: {
             value: e,
@@ -15838,10 +13805,7 @@ object-assign
             configurable: !0,
           },
         })),
-          t &&
-            (Object.setPrototypeOf
-              ? Object.setPrototypeOf(e, t)
-              : (e.__proto__ = t));
+          t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : (e.__proto__ = t));
       }
       var a = (function () {
           function e(e, t) {
@@ -15871,10 +13835,7 @@ object-assign
         v = (function (e) {
           function t(e) {
             r(this, t);
-            var n = o(
-              this,
-              (t.__proto__ || Object.getPrototypeOf(t)).call(this, e)
-            );
+            var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
             return (
               s(n, [
                 "getNews",
@@ -15905,22 +13866,10 @@ object-assign
                 value: function () {
                   this.props.getFeaturedGlobal(),
                     this.props.user.username &&
-                      (this.props.getActivity(
-                        this.props.user.username,
-                        this.props.user.token
-                      ),
-                      this.props.getSharedByFollowing(
-                        this.props.user.username,
-                        this.props.user.token
-                      ),
-                      this.props.getInStudiosFollowing(
-                        this.props.user.username,
-                        this.props.user.token
-                      ),
-                      this.props.getLovedByFollowing(
-                        this.props.user.username,
-                        this.props.user.token
-                      ),
+                      (this.props.getActivity(this.props.user.username, this.props.user.token),
+                      this.props.getSharedByFollowing(this.props.user.username, this.props.user.token),
+                      this.props.getInStudiosFollowing(this.props.user.username, this.props.user.token),
+                      this.props.getLovedByFollowing(this.props.user.username, this.props.user.token),
                       this.getNews());
                 },
               },
@@ -15929,22 +13878,10 @@ object-assign
                 value: function (e) {
                   this.props.user.username !== e.user.username &&
                     (this.props.user.username
-                      ? (this.props.getActivity(
-                          this.props.user.username,
-                          this.props.user.token
-                        ),
-                        this.props.getSharedByFollowing(
-                          this.props.user.username,
-                          this.props.user.token
-                        ),
-                        this.props.getInStudiosFollowing(
-                          this.props.user.username,
-                          this.props.user.token
-                        ),
-                        this.props.getLovedByFollowing(
-                          this.props.user.username,
-                          this.props.user.token
-                        ),
+                      ? (this.props.getActivity(this.props.user.username, this.props.user.token),
+                        this.props.getSharedByFollowing(this.props.user.username, this.props.user.token),
+                        this.props.getInStudiosFollowing(this.props.user.username, this.props.user.token),
+                        this.props.getLovedByFollowing(this.props.user.username, this.props.user.token),
                         this.getNews())
                       : (this.props.setRows("shared", []),
                         this.props.setRows("loved", []),
@@ -15962,11 +13899,7 @@ object-assign
                   var e = this;
                   d({ uri: "/news?limit=3" }, function (t, n, r) {
                     return 200 !== r.statusCode
-                      ? p.error(
-                          "Unexpected status code " +
-                            r.statusCode +
-                            " received from news request"
-                        )
+                      ? p.error("Unexpected status code " + r.statusCode + " received from news request")
                       : n
                       ? t
                         ? void 0
@@ -16011,8 +13944,7 @@ object-assign
                       ? ((e.disabled = !0), (e.content = "In Progress"))
                       : "pass" === this.state.refreshCacheStatus
                       ? ((e.disabled = !0), (e.content = "Requested"))
-                      : "fail" === this.state.refreshCacheStatus &&
-                        ((e.disabled = !1), (e.content = "Error")),
+                      : "fail" === this.state.refreshCacheStatus && ((e.disabled = !1), (e.content = "Error")),
                     e
                   );
                 },
@@ -16064,8 +13996,7 @@ object-assign
                 value: function () {
                   return (
                     !(!this.props.user || !this.props.flags.show_welcome) &&
-                    new Date(this.props.user.dateJoined) >
-                      new Date(new Date() - 12096e5)
+                    new Date(this.props.user.dateJoined) > new Date(new Date() - 12096e5)
                   );
                 },
               },
@@ -16088,8 +14019,7 @@ object-assign
                   return u.createElement(A, {
                     activity: this.props.activity,
                     adminPanelOpen: this.state.adminPanelOpen,
-                    emailConfirmationModalOpen: this.state
-                      .emailConfirmationModalOpen,
+                    emailConfirmationModalOpen: this.state.emailConfirmationModalOpen,
                     featuredGlobal: this.props.featured,
                     inStudiosFollowing: this.props.studios,
                     isAdmin: this.props.isAdmin,
@@ -16104,12 +14034,10 @@ object-assign
                     user: this.props.user,
                     onCloseAdminPanel: this.handleCloseAdminPanel,
                     onDismiss: this.handleDismiss,
-                    onHideEmailConfirmationModal: this
-                      .handleHideEmailConfirmationModal,
+                    onHideEmailConfirmationModal: this.handleHideEmailConfirmationModal,
                     onOpenAdminPanel: this.handleOpenAdminPanel,
                     onRefreshHomepageCache: this.handleRefreshHomepageCache,
-                    onShowEmailConfirmationModal: this
-                      .handleShowEmailConfirmationModal,
+                    onShowEmailConfirmationModal: this.handleShowEmailConfirmationModal,
                   });
                 },
               },
@@ -16206,15 +14134,9 @@ object-assign
           };
         },
         w = l(y, b)(v);
-      f(
-        u.createElement(
-          g,
-          { showDonorRecognition: !0 },
-          u.createElement(w, null)
-        ),
-        document.getElementById("app"),
-        { splash: m.splashReducer }
-      );
+      f(u.createElement(g, { showDonorRecognition: !0 }, u.createElement(w, null)), document.getElementById("app"), {
+        splash: m.splashReducer,
+      });
     },
     99: function (e, t, n) {
       (t = e.exports = n(2)()),
