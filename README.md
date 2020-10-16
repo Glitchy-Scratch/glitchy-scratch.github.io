@@ -25,6 +25,6 @@ Many Words Slowly Get Spelling Mistakes(A big thank you to @BoomerScratch for th
 
 # Mirror Website
 
-:warning: The mirror website is used for testing purposes; please be sure to use it only if GitHub pages is under maintanence.
+:warning: The mirror website is used for testing purposes; please be sure to use it only if GitHub Pages is under maintenance.
 
 We have a mirror of this website at https://glitchy-scratch.glitch.me.
