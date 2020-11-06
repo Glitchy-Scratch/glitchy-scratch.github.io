@@ -2,6 +2,15 @@
   <!--<!
   [endif]--><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then((reg) => console.log("Service worker has been registered."))
+          .catch((err) => console.log("Service worker could not be registered", err));
+      }
+    </script>
 
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
