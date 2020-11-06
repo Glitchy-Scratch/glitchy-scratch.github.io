@@ -1,0 +1,10 @@
+  
+{
+  "name": "Radman Writes - Radman Siddiki's Website for All His Writings",
+  "short_name": "Radman Writes",
+  "theme_color": "green",
+  "background_color": "black",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}
