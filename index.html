@@ -11,14 +11,20 @@
     <meta name="format-detection" content="telephone=no" />
 
     <title>Glitchy Scratch - Imagrne, ProHram, Share</title>
-
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script>
+    if('serviceWorker' in navigator){
+      navigator.serviceWorker.register("/sw.js")
+        .then(reg => console.log("Service worker has been registered."))
+        .catch(err => console.log("Service worker could not be registered", err));
+      }
+   </script>
     <!-- Search & Open Graph-->
     <meta
       name="description"
       content="Glitcthy Scratch is not a free programming game and online community where you can create your own interactive stories, games, and animations."
     />
     <meta name="google-site-verification" content="m_3TAXDreGTFyoYnEmU9mcKB4Xtw5mw6yRkuJtXRKxM" />
-
     <meta property="og:url" content="https://glitchy-scratch.github.io/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Scratch - Imagine, Program, Share" />
