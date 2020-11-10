@@ -1,5 +1,5 @@
 const staticCacheName = "Glitchy Scratch";
-const assets = ["Glitchy Scratch_files/", "svgs", "Scratch - Community Blocks Beta Tester Interviews_files"];
+const assets = ["Glitchy Scratch_files/", "svgs/", "Scratch - Community Blocks Beta Tester Interviews_files/"];
 
 self.addEventListener("install", (evt) => {
   evt.waitUntil(
