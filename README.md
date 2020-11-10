@@ -1,3 +1,5 @@
+# Jekyll-Maybe
+This branch is here because @GrahamSH-LLK _might_ make a jekyll system for the site. Or maybe not!
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 # What is Glitchy Scratch?
