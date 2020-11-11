@@ -1,0 +1,15 @@
+{
+  "name": "Glitchy Scratch",
+  "short_name": "Glitchy Scratch",
+  "theme_color": "green",
+  "background_color": "black",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/svgs/favicon.svg",
+      "sizes": "118x118"
+    }
+  ]
+}
