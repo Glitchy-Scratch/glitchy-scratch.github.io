@@ -14,6 +14,7 @@ Several bugs and glitches of Scratch became famous at different times. So, I dec
 @BoomerScratch
 @GrahamSH-LLK
 @Thingyman-DEV
+@HPD1155
 
 # Glitches It Currently Has
 
@@ -23,8 +24,6 @@ People's Profile Pictures Cannot Be Seen
 The Website's Title has a Spelling Mistake (Imagrne, instead of Imagine)
 Many Words Slowly Get Spelling Mistakes(A big thank you to @BoomerScratch for this)
 
-# Mirror Website
+# Changelog
 
-:warning: The mirror website is used for testing purposes; please be sure to use it only if GitHub Pages is under maintenance.
-
-We have a mirror of this website at https://glitchy-scratch.glitch.me.
+A changelog for all of Glitchy Scratch can be found <a href="https://glitchyscratch.miraheze.org/wiki/Changelog">here</a>.
