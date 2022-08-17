@@ -15,6 +15,7 @@ Several bugs and glitches of Scratch became famous at different times. So, I dec
 @GrahamSH-LLK
 @Thingyman-DEV
 @HPD1155
+@cyberwolfdev
 
 # Glitches It Currently Has
 
